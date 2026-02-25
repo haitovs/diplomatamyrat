@@ -44,7 +44,7 @@ app.use(express.json());
 // Health check
 app.get('/api/health', (_req, res) => {
   res.json({
-    name: 'Atamyrat Household Goods API',
+    name: 'Hearth & Home API',
     version: '1.0.0',
     status: 'ok'
   });
@@ -74,5 +74,5 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`🏠 Atamyrat Household Goods API running at http://localhost:${PORT}`);
+  console.log(`🏠 Hearth & Home API running at http://localhost:${PORT}`);
 });
