@@ -130,6 +130,9 @@ export default function Footer() {
               <Link to="/terms" className="text-stone-500 hover:text-white transition-colors">
                 {t('footer.terms')}
               </Link>
+              <Link to="/admin" className="text-stone-500 hover:text-white transition-colors">
+                Admin Panel
+              </Link>
             </div>
             <p className="text-stone-500 text-sm flex items-center gap-1">
               Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> for your home

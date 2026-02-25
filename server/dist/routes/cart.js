@@ -82,13 +82,11 @@ router.post('/items', authenticate, async (req, res, next) => {
             return res.status(404).json({ error: 'Product not found' });
         }
         // Check if item already in cart
-        const existingItem = await prisma.cartItem.findUnique({
+        const existingItem = await prisma.cartItem.findFirst({
             where: {
-                cartId_productId_variant: {
-                    cartId: cart.id,
-                    productId: data.productId,
-                    variant: data.variant || null
-                }
+                cartId: cart.id,
+                productId: data.productId,
+                variant: data.variant ?? null
             }
         });
         if (existingItem) {

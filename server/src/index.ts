@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 4000;
 // Middleware
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:4173', 'http://localhost:5174'],
+  origin: process.env.NODE_ENV === 'production' ? true : ['http://localhost:5173', 'http://localhost:4173', 'http://localhost:5174'],
   credentials: true
 }));
 
@@ -42,7 +42,7 @@ app.use('/api/upload', uploadRouter);
 app.use(express.json());
 
 // Health check
-app.get('/', (_req, res) => {
+app.get('/api/health', (_req, res) => {
   res.json({
     name: 'Atamyrat Household Goods API',
     version: '1.0.0',
