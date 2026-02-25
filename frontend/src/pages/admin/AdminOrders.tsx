@@ -119,7 +119,6 @@ export default function AdminOrders() {
                 </thead>
                 <tbody className="divide-y divide-stone-100">
                   {data?.orders?.map((order: AdminOrder) => {
-                    const StatusIcon = statusConfig[order.status]?.icon || Clock;
                     return (
                       <motion.tr 
                         key={order.id}

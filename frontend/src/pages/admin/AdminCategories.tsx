@@ -41,8 +41,6 @@ export default function AdminCategories() {
     }
   });
 
-  const iconOptions = ['chef-hat', 'bath', 'sofa', 'box', 'shirt', 'sun', 'home', 'lamp', 'flower'];
-
   return (
     <div className="space-y-6">
       {/* Header */}
