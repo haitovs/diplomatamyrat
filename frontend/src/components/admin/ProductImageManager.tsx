@@ -105,7 +105,7 @@ export default function ProductImageManager({ productId, productName, onClose }:
   const getImageUrl = (url: string) => {
     // Handle both relative and absolute URLs
     if (url.startsWith('http')) return url;
-    return `http://localhost:4000${url}`;
+    return url;
   };
 
   return (

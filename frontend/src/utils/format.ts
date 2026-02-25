@@ -8,7 +8,7 @@ export function getImageUrl(url: string | undefined | null, fallback = '/images/
 
   // For local uploads, prefix with the API server URL
   const cleanUrl = url.startsWith('/') ? url : `/${url}`;
-  return `http://localhost:4000${cleanUrl}`;
+  return cleanUrl;
 }
 
 /**
