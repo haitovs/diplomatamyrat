@@ -24,30 +24,28 @@ RUN npm ci
 COPY server/ ./server/
 RUN cd server && npx prisma generate && npm run build
 
+# Prune to production-only deps
+RUN npm prune --omit=dev
+
 # ── Stage 3: Production Runtime ─────────────────────────
 FROM node:20-alpine
 
-RUN apk add --no-cache python3 make g++ openssl
+RUN apk add --no-cache openssl
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-COPY server/package.json ./server/
-COPY frontend/package.json ./frontend/
-
-RUN npm ci --omit=dev && apk del python3 make g++
-
-# Copy Prisma schema + generated client (hoisted to root by npm workspaces)
-COPY server/prisma/schema.prisma ./server/prisma/
-COPY --from=server-builder /app/node_modules/.prisma ./node_modules/.prisma
-COPY --from=server-builder /app/node_modules/@prisma ./node_modules/@prisma
+# Copy production node_modules from builder (already pruned)
+COPY --from=server-builder /app/node_modules ./node_modules
 
 # Copy compiled server
 COPY --from=server-builder /app/server/dist ./server/dist
 
-# Copy Prisma seed + migration data
-COPY server/prisma/seed.ts ./server/prisma/
+# Copy Prisma schema + generated client + database
+COPY --from=server-builder /app/server/prisma/schema.prisma ./server/prisma/
 COPY server/prisma/dev.db ./server/prisma/
+
+# Copy server package.json (needed for "type": "module")
+COPY server/package.json ./server/
 
 # Copy built frontend
 COPY --from=frontend-builder /app/frontend/dist ./public
