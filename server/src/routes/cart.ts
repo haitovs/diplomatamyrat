@@ -97,13 +97,11 @@ router.post('/items', authenticate, async (req, res, next) => {
     }
 
     // Check if item already in cart
-    const existingItem = await prisma.cartItem.findUnique({
+    const existingItem = await prisma.cartItem.findFirst({
       where: {
-        cartId_productId_variant: {
-          cartId: cart.id,
-          productId: data.productId,
-          variant: data.variant || null
-        }
+        cartId: cart.id,
+        productId: data.productId,
+        variant: data.variant ?? null
       }
     });
 
