@@ -1,5 +1,5 @@
 # ── Stage 1: Build Frontend ──────────────────────────────
-FROM node:18-alpine AS frontend-builder
+FROM node:20-alpine AS frontend-builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -12,7 +12,7 @@ COPY frontend/ ./frontend/
 RUN npm run build --prefix frontend
 
 # ── Stage 2: Build Server ───────────────────────────────
-FROM node:18-alpine AS server-builder
+FROM node:20-alpine AS server-builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -25,7 +25,7 @@ COPY server/ ./server/
 RUN cd server && npx prisma generate && npm run build
 
 # ── Stage 3: Production Runtime ─────────────────────────
-FROM node:18-alpine
+FROM node:20-alpine
 
 RUN apk add --no-cache python3 make g++ openssl
 
@@ -37,9 +37,8 @@ COPY frontend/package.json ./frontend/
 
 RUN npm ci --omit=dev && apk del python3 make g++
 
-# Copy Prisma schema + generated client
+# Copy Prisma schema + generated client (hoisted to root by npm workspaces)
 COPY server/prisma/schema.prisma ./server/prisma/
-COPY --from=server-builder /app/server/node_modules/.prisma ./server/node_modules/.prisma
 COPY --from=server-builder /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=server-builder /app/node_modules/@prisma ./node_modules/@prisma
 
