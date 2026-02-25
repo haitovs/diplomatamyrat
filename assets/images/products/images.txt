@@ -1,0 +1,134 @@
+# Product Images (30 products)
+# Download each and save with the specified filename
+
+## Kitchen Products (6)
+
+# artisan-canisters.jpg
+https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80
+# Stoneware canisters with wooden lids
+
+# walnut-prep-board.jpg
+https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=600&q=80
+# Wooden cutting board
+
+# stone-dinnerware.jpg
+https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?w=600&q=80
+# Ceramic plates and bowls set
+
+# gooseneck-kettle.jpg
+https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80
+# Copper kettle
+
+# linen-apron-set.jpg
+https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80
+# Linen kitchen aprons
+
+## Bathroom Products (5)
+
+# spa-towels.jpg
+https://images.unsplash.com/photo-1616627561839-074385245ff6?w=600&q=80
+# Plush spa towels stacked
+
+# bath-caddy.jpg
+https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&q=80
+# Wooden bath caddy tray
+
+# cedar-bath-mat.jpg
+https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80
+# Wooden bath mat
+
+# bath-steamers.jpg
+https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80
+# Aromatherapy shower steamers
+
+# bamboo-bath-ladder.jpg
+https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80
+# Bamboo storage ladder
+
+## Living Room Products (5)
+
+# linen-throw.jpg
+https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80
+# Linen throw blanket on sofa
+
+# coffee-table.jpg
+https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&q=80
+# Oak coffee table
+
+# ambient-floor-lamp.jpg
+https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80
+# Arc floor lamp
+
+# ceramic-diffuser.jpg
+https://images.unsplash.com/photo-1602928321679-560bb453f190?w=600&q=80
+# Ceramic oil diffuser
+
+# hearth-pillow-set.jpg
+https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80
+# Decorative pillow set
+
+## Storage Products (5)
+
+# modular-baskets.jpg
+https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&q=80
+# Woven storage baskets
+
+# entryway-console.jpg
+https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&q=80
+# Console table with drawers
+
+# stackable-shoe-drawers.jpg
+https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80
+# Clear shoe storage
+
+# labeling-kit.jpg
+https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80
+# Organization labels
+
+# wardrobe-rack.jpg
+https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80
+# Clothing rack
+
+## Laundry Products (5)
+
+# laundry-set.jpg
+https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&q=80
+# Laundry detergent set
+
+# laundry-hamper.jpg
+https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=600&q=80
+# Canvas laundry hamper
+
+# folding-table.jpg
+https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&q=80
+# Folding laundry table
+
+# linen-spray.jpg
+https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80
+# Linen spray bottle
+
+# steam-iron.jpg
+https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=600&q=80
+# Steam iron
+
+## Outdoor Products (5)
+
+# garden-set.jpg
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80
+# Outdoor entertaining set
+
+# outdoor-blanket.jpg
+https://images.unsplash.com/photo-1526598931030-2c7be6d2ef2a?w=600&q=80
+# Picnic blanket
+
+# terracotta-planters.jpg
+https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&q=80
+# Terracotta plant pots
+
+# solar-lantern.jpg
+https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80
+# Solar outdoor lantern
+
+# outdoor-firepit.jpg
+https://images.unsplash.com/photo-1592281638292-e54341a5c3c1?w=600&q=80
+# Outdoor fire pit

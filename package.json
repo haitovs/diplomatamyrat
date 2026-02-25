@@ -1,0 +1,22 @@
+{
+  "name": "atamyrat-ecommerce-good",
+  "version": "2.0.0",
+  "description": "Modern Household Goods E-Commerce Platform - Complete Rebuild",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:frontend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build --prefix frontend && npm run build --prefix server",
+    "start": "npm run start --prefix server",
+    "db:setup": "cd server && npx prisma generate && npx prisma db push && npx tsx prisma/seed.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

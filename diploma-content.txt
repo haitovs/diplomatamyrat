@@ -1,0 +1,26 @@
+CONTENT
+INTRODUCTION 7
+CHAPTER I. WEB TECHNOLOGIES AND DIGITAL RETAIL PRACTICES 11
+1.1 Modern multipage commerce sites with modular HTML/CSS 11
+1.2 Node.js and Express as a lightweight serving layer 18
+1.3 Client-side state, localStorage, and resilience patterns 26
+1.4 Visual language and responsive layout tokens for the "Hearth & Home" brand 33
+CHAPTER II. INTRODUCING THE "HEARTH & HOME" DIGITAL SHOWROOM CONCEPT 40
+2.1 Merchandise storytelling and curated category landing pages 40
+2.2 Persona journeys: browsing, saving favorites, and checkout path 44
+2.3 Data-driven merchandising rails (stories, testimonials, spotlights) 49
+2.4 Performance budgets, caching, and accessibility considerations 54
+CHAPTER III. DEVELOPMENT AND FEATURES OF THE "HEARTH & HOME" ECOMMERCE PROTOTYPE 59
+3.1 Project structure, static pages, and shared JS modules 59
+3.2 Product catalog modeling and reusable card/detail templates 64
+3.3 Cart, favorites, and local persistence flows 68
+3.4 Search, filtering, sorting, and immersive gallery behaviors 72
+CONCLUSION 77
+RECOMMENDATION 79
+REFERENCES 81
+
+ABSTRACT
+
+    The "Hearth & Home" project is a browser-based ecommerce prototype that showcases curated home goods across kitchen, bath, living, and outdoor categories. A lightweight Express server (server.js) handles compression and static file delivery, falling back to `index.html` for deep links while serving pre-rendered pages like `kitchen.html` and `living.html`. The front end uses ES modules (`assets/app.js` and `assets/data.js`) to hydrate static HTML templates with structured data: product cards, category capsules, testimonials, and gallery images all derive from JSON-like collections rather than hardcoded markup.
+    Client interactions run entirely on the client: state for filters, search, view toggles, cart contents, and favorites lives in memory and persists to localStorage keys (`hearth_home_cart`, `hearth_home_favorites`). Reusable DOM templates enable product detail modals, cart drawers, and favorites grids to share styling and behavior across pages. Accessibility and responsiveness are addressed through semantic HTML, ARIA-aware controls, and a CSS token system in `assets/styles.css` that keeps typography, spacing, and color palettes consistent.
+    This diploma-ready prototype demonstrates how a static-first architecture, enhanced with client-side JavaScript, can deliver a convincing retail experience without a full backend. It covers the complete flow from discovery (category filtering, search, spotlights) to consideration (detailed product dialogs, highlights, reviews) and intent (cart, tax calculation, checkout form). The result is a maintainable, data-driven storefront suitable for presentations on modern web commerce design and implementation.

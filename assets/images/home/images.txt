@@ -1,0 +1,40 @@
+# Home Page Images
+# Download these images and rename them as specified
+
+## Hero Section (3 images)
+# Save as: hero-main.jpg
+https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=85
+# Modern bright living space with natural light
+
+# Save as: hero-secondary-1.jpg
+https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=85
+# Minimalist home interior with plants
+
+# Save as: hero-secondary-2.jpg
+https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=85
+# Cozy corner with textiles
+
+## Category Thumbnails (6 images)
+# Save as: category-kitchen.jpg
+https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80
+# Kitchen with cooking utensils
+
+# Save as: category-bath.jpg
+https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&q=80
+# Bathroom with towels and plants
+
+# Save as: category-living.jpg
+https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80
+# Living room sofa and pillows
+
+# Save as: category-storage.jpg
+https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&q=80
+# Organized shelving and baskets
+
+# Save as: category-laundry.jpg
+https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&q=80
+# Clean laundry and linens
+
+# Save as: category-outdoor.jpg
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80
+# Outdoor patio setting

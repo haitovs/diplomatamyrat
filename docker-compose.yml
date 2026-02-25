@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: atamyrat-ecommerce
+    ports:
+      - "4081:4081"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=4081
+      - DATABASE_URL=file:./dev.db
+      - JWT_SECRET=atamyrat-household-goods-super-secret-key-2024

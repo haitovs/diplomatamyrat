@@ -1,0 +1,15 @@
+# Laundry Page Images
+
+## Hero Image
+# Save as: hero.jpg
+https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=1200&q=85
+# Fresh laundry room
+
+## Lifestyle Images
+# Save as: lifestyle-1.jpg
+https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=800&q=80
+# Folded linens
+
+# Save as: lifestyle-2.jpg
+https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=800&q=80
+# Laundry supplies

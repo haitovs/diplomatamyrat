@@ -1,0 +1,15 @@
+# Outdoor Page Images
+
+## Hero Image
+# Save as: hero.jpg
+https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85
+# Beautiful patio setting
+
+## Lifestyle Images
+# Save as: lifestyle-1.jpg
+https://images.unsplash.com/photo-1592281638292-e54341a5c3c1?w=800&q=80
+# Garden with planters
+
+# Save as: lifestyle-2.jpg
+https://images.unsplash.com/photo-1558171013-50da5d5edfd9?w=800&q=80
+# Outdoor dining setup
