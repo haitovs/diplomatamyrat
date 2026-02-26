@@ -53,7 +53,21 @@
     "livingDesc": "Yşyklandyryş we mata",
     "storageDesc": "Guramaçylyk çözgütleri",
     "laundryDesc": "Ideg serişdeleri",
-    "outdoorDesc": "Howly we bag"
+    "outdoorDesc": "Howly we bag",
+    "kitchenLongDesc": "Gündelik nahary baýramçylyga öwürýän gap-gaçlar, saçak önümleri we gurallar.",
+    "bathroomLongDesc": "Ýumşak matalary, ysly önümleri we ideg däpleri bilen hammaňyzy spa-a öwüriň.",
+    "livingLongDesc": "Ýyly yşyklandyryş, maksatly bezeg we her ýygnak üçin amatly mata.",
+    "storageLongDesc": "Bulaşyklygy tertiplýän we zerur zatlary eliň astynda saklaýan akylly guramaçylyk.",
+    "laundryLongDesc": "Egin-eşikleriňizi täze, eplengi we ulanylyşa taýýar edýän ideg däpleri.",
+    "outdoorLongDesc": "Eýwan üçin, piknikler we gün ýaşanda naharlanmak üçin howa çydamly bezegler.",
+    "notFound": "Kategoriýa tapylmady",
+    "notFoundDesc": "Gözleýän kategoriýaňyz ýok.",
+    "browseAll": "Ähli harytlary görmek",
+    "browseOther": "Beýleki harytlary görmek",
+    "comingSoon": "Ýakynda",
+    "comingSoonDesc": "Bu kategoriýa üçin iň gowy harytlary saýlaýarys.",
+    "productCount_one": "{{count}} haryt",
+    "productCount_other": "{{count}} haryt"
   },
   "product": {
     "details": "Haryt jikme-jiklikleri",
@@ -68,7 +82,10 @@
     "related": "Meňzeş harytlar",
     "featured": "Maslahat berlen",
     "notFound": "Haryt tapylmady",
-    "notFoundDesc": "Gözleýän harydyňyz ýok."
+    "notFoundDesc": "Gözleýän harydyňyz ýok.",
+    "backToProducts": "Harytlara gaýt",
+    "thirtyDayReturns": "30 günlük yzyna gaýtarmak",
+    "addedToCart": "{{name}} sebede goşuldy"
   },
   "cart": {
     "title": "Siziň sebediňiz",
@@ -142,12 +159,23 @@
     "newsletterDesc": "Stil gollanmalaryny we eksklýuziw syn alyň",
     "newsletterLongDesc": "40,000+ abonenta goşulyň we möwsümleýin täzelenme, ideg maslahatlary we esaslandyryjylaryň soraglary hakda hepdelik bellikler alyň.",
     "emailPlaceholder": "siziň@email.com",
-    "joinList": "Sanawhda goşul",
+    "joinList": "Sanawda goşul",
     "newsletterDisclaimer": "Ýazylmak bilen siz marketing hatlaryny almaga razy bolýarsyňyz. Islendik wagt ýazylmakdan ýüz öwrüp bilersiňiz.",
     "fiveStarReviews": "Bäş ýyldyzly synlar",
     "averageDelivery": "Ortaça eltip bermek",
     "sustainableMaterials": "Durnukly materiallar",
-    "youMightLike": "Size hem halyp biler"
+    "youMightLike": "Size hem halyp biler",
+    "springRefresh": "Ýaz täzelenmesi 2024",
+    "viewAllProducts": "Ähli harytlary gör",
+    "testimonial1Quote": "Her eltip bermekdäki jikme-jiklige üns meni haýran galdyrdy. Saklaýyş sebetleri girelgämizi bir gijede üýtgetdi.",
+    "testimonial1Name": "Priýa S.",
+    "testimonial1Location": "Sietl",
+    "testimonial2Quote": "Ahyrsoňy aşhanamyň bitewi bolduğyny duýýaryn. Ösümlik küýzeleri we bankalar çalt eltilýär we bişirmegi şatlykly edýär.",
+    "testimonial2Name": "Ewan M.",
+    "testimonial2Location": "Ostin",
+    "testimonial3Quote": "Dizaýn geňeşçisi myhman otagynyň yşyklandyryşyny sazlamaga kömek etdi. Hearth & Home häzirki zaman dükany ýaly.",
+    "testimonial3Name": "Marina L.",
+    "testimonial3Location": "Sawanna"
   },
   "notFound": {
     "title": "Sahypa tapylmady",
@@ -184,6 +212,355 @@
     "dragDropImages": "Suratlary süýräň ýa-da saýlamak üçin basyň",
     "reorderImages": "Tertibini üýtgetmek üçin süýräň",
     "primaryImage": "Esasy surat",
-    "setPrimary": "Esasy et"
+    "setPrimary": "Esasy et",
+    "manageOrders": "Müşderi sargytlaryny dolandyr",
+    "allOrders": "Ähli sargytlar",
+    "orderItems": "Sargyt harytlary",
+    "noOrders": "Sargyt tapylmady",
+    "showing": "Görkezilýär",
+    "page": "Sahypa {{page}} / {{total}}"
+  },
+  "badges": {
+    "bestseller": "Iň köp satylýan",
+    "new": "Täze",
+    "limited": "Çäkli",
+    "barista_favorite": "Barista saýlawy",
+    "restocked": "Gaýtadan bar",
+    "hotel_quality": "Myhmanhana hili",
+    "editors_pick": "Redaksiýa saýlawy",
+    "small_space_hero": "Kiçi ýer üçin",
+    "made_to_order": "Sargyt boýunça",
+    "cozy_drop": "Ýyly täzelik",
+    "top_rated": "Iň ýokary baha",
+    "bundle": "Toplum",
+    "design_studio_pick": "Dizaýner saýlawy",
+    "staff_favorite": "Işgärler saýlawy",
+    "space_saver": "Ýer tygşytlaýjy",
+    "new_scent": "Täze ys",
+    "pro_finish": "Professional netije",
+    "outdoor_drop": "Daşarky täzelik",
+    "glow_all_night": "Bütin gije ýagty",
+    "gathering_favorite": "Oturylşyk üçin",
+    "chef_favorite": "Aşpeziň saýlawy",
+    "spa_upgrade": "Spa derejeli",
+    "luxury": "Lýuks",
+    "handcrafted": "El işi",
+    "customizable": "Sazlanyp bolýar",
+    "eco_pick": "Eko saýlaw",
+    "travel_ready": "Syýahat üçin",
+    "essential": "Zerur",
+    "weekend_essential": "Dynç alyş üçin",
+    "grow_your_own": "Öz ösümligiň"
+  },
+  "leadTimes": {
+    "ships_within_24_hours": "24 sagadyň içinde iberilýär",
+    "ships_in_2_days": "2 günde iberilýär",
+    "ships_within_2_days": "2 günüň içinde iberilýär",
+    "ships_in_1_2_days": "1-2 günde iberilýär",
+    "ships_within_3_days": "3 günüň içinde iberilýär",
+    "ships_in_3_days": "3 günde iberilýär",
+    "ships_in_2_3_weeks": "2-3 hepdede iberilýär",
+    "ships_next_business_day": "Indiki iş gününde iberilýär",
+    "ships_in_1_week": "1 hepdede iberilýär",
+    "ships_in_5_days": "5 günde iberilýär",
+    "ships_in_3_5_days": "3-5 günde iberilýär",
+    "ships_in_5_7_days": "5-7 günde iberilýär"
+  },
+  "orderStatuses": {
+    "PENDING": "Garaşylýar",
+    "PROCESSING": "Işlenýär",
+    "SHIPPED": "Iberildi",
+    "DELIVERED": "Gowşuryldy",
+    "CANCELLED": "Ýatyryldy"
+  },
+  "products": {
+    "artisan-stoneware-canister-set": {
+      "name": "Ussatlyk keramiki banka toplumy",
+      "description": "Gury önümleri täze saklamak üçin akasiýa agaç gapagy bolan keramiki bankalar.",
+      "materials": "Keramika, akasiýa agajy",
+      "highlights": ["Üç sany salynýan banka", "Tebigy möhür önümleri täze saklaýar", "Gap-gaç ýuwýan maşynda ýuwup bolýar"]
+    },
+    "walnut-mise-en-place-board": {
+      "name": "Hozy agaç taýýarlyk tagtasy",
+      "description": "Dogralan otlary we ysly zatlary guramaçylykly saklamak üçin iki taraply tagta.",
+      "materials": "Hoz agajy, rezin aýaklar",
+      "highlights": ["Mineral ýag çyglylyga garşy", "Ters tarapynda şire çukurjygy", "Süýşmeýän aýaklar"]
+    },
+    "slate-stone-dinnerware-set": {
+      "name": "Şifer daş gap-gaç toplumy",
+      "description": "Gündelik we baýramçylyk üçin mat keramiki on iki bölekli gap-gaç toplumy.",
+      "materials": "Keramika",
+      "highlights": ["Nahar, salat we gapdal tabaklar goşulýar", "Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk", "Gurlan aýaklary bilen üýşürip bolýar"]
+    },
+    "copper-gooseneck-pour-over-kettle": {
+      "name": "Mis gaz boýunly çaýnek",
+      "description": "Irdenki kofe we çaý üçin temperatura gözegçilikli çaýnek.",
+      "materials": "Mis, poslamaýan polat",
+      "highlights": ["Gapagy termometrli", "Induksiýa üçin ýaramly", "Ergonomik ýanmaýan tutawajy"]
+    },
+    "stonewashed-linen-apron-set": {
+      "name": "Ýuwlan zygyr mata öňlük toplumy",
+      "description": "Giň jübüli kesişýän gaýyşly ýuwlan zygyr mata öňlükler.",
+      "materials": "Zygyr mata, pagta gaýyşlar",
+      "highlights": ["Sazlanyp bolýan gaýyşlar boýnuňyzy rahatlandyrýar", "Iki sany el süpürgisi goşulýar", "Öňünden ýuwlup kiçelmä garşy"]
+    },
+    "cloudweight-spa-towel-bundle": {
+      "name": "Spa polotentse toplumy",
+      "description": "Irdenki spa üçin ýumşak mahry tarapy bolan aşa siňdiriji spa polotenseleri.",
+      "materials": "100% Türk pagtasy",
+      "highlights": ["Iki hammam, iki el, iki ýüz polotenseleri", "OEKO-TEX sertifikatly pagta", "Asmak üçin burç halkalary"]
+    },
+    "teak-serenity-bath-caddy": {
+      "name": "Tik agaç hammam tekjesi",
+      "description": "Kitap, planşet we şem üçin ýerli sazlanýan tik agaç tekje.",
+      "materials": "Durnukly tokaýlardan tik agajy",
+      "highlights": ["68 sm-den 104 sm-e çenli uzaýar", "Stakan we enjam üçin ygtybarly ýerler", "Suwa çydamly örtük"]
+    },
+    "cedar-slatted-bath-mat": {
+      "name": "Kedr reýkaly hammam düşegi",
+      "description": "Suwy çekýän we kafel pola ýylylyk goşýan ysly kedr düşegi.",
+      "materials": "Kedr agajy",
+      "highlights": ["Süýşmeýän silikon aýaklar", "Tebigy çyglylyga garşy", "Ýönekeý zımpara bilen täzelenýär"]
+    },
+    "aromatherapy-shower-steamers": {
+      "name": "Aromaterapiýa duş tabletkasy",
+      "description": "Çalt duşy spa pursatyna öwürýän ewkalipt we sitrus tabletkalar.",
+      "materials": "Tebigy minerallar, efir ýaglary",
+      "highlights": ["Sekiz sany aýratyn gaplanan tabletka", "Wegan we rehimsizliksiz", "Keramiki gapjagaz goşulýar"]
+    },
+    "bamboo-bath-storage-ladder": {
+      "name": "Bambuk hammam basgançagy",
+      "description": "Polotentse asmak we hammam esbaplaryny saklamak üçin söýenç basgançak.",
+      "materials": "Bambuk, tozan örtükli polat",
+      "highlights": ["Süýşmeýän aýakly bäş basgançak", "Iki sany aýrylýan sebet goşulýar", "Çyglylyga garşy goralýar"]
+    },
+    "belgian-linen-throw": {
+      "name": "Belgiýa zygyr ýorgan",
+      "description": "Flandriýada dokalan ýeňil zygyr ýorgan, ýumşak ýuwlan örtügi bilen.",
+      "materials": "100% Belgiýa zygyr süýümi",
+      "highlights": ["127×178 sm ölçegi", "Ýumşaklyk üçin öňünden ýuwlan", "Neýtral reňkler bilen jübütlenýär"]
+    },
+    "lowline-oak-coffee-table": {
+      "name": "Pes dub kofe stoly",
+      "description": "Gizlin saklaýyş we ýalpak gyrasyny bolan uly dub stoly.",
+      "materials": "FSC sertifikatly dub",
+      "highlights": ["Pultlar üçin ýuwaş çekmesi", "Ösümlik ýaglary bilen bejerilen", "Hearth modully mebele laýyk"]
+    },
+    "arc-ambient-floor-lamp": {
+      "name": "Arka ýer çyrasy",
+      "description": "Uly zygyr abažury we arka polat esasy ýumşak yşyk döredýär.",
+      "materials": "Polat, zygyr, mermer",
+      "highlights": ["Üç basgançakly dimmer", "Agyrlaşdyrylan mermer esasy", "LED lampa goşulýar"]
+    },
+    "hearth-ceramic-diffuser": {
+      "name": "Hearth keramiki diffuzor",
+      "description": "Agşam däpleri üçin ýumşak yşykly ultrases keramiki diffuzor.",
+      "materials": "Keramika, BPA-syz rezerwuar",
+      "highlights": ["8 sagada çenli işleýär", "Awtomatiki öçüriji taýmer", "Iki sany möwsümleýin ýag goşulýar"]
+    },
+    "hearth-boucle-pillow-set": {
+      "name": "Hearth Bouclé ýassyk toplumy",
+      "description": "Diwanlara we oturgyçlara çuňluk goşýan bukle we zygyr ýassyk jübüti.",
+      "materials": "Bukle poliester, zygyr, guş ýelegi",
+      "highlights": ["50 sm we 56 sm ýassyklar", "Ýelek daşlygy zipper gaply", "Gaplar maşynda ýuwulýar"]
+    },
+    "pine-cane-storage-baskets": {
+      "name": "Sosna we gamyş saklaýyş sebetleri",
+      "description": "Gamyş öňlükli we birleşdirilen ýazgyly modully saklaýyş sebetleri.",
+      "materials": "Sosna agajy, gamyş örme",
+      "highlights": ["2 orta we 1 uly sebet toplumy", "Tekiz saklanmak üçin ýygnap bolýar", "6 sany çalyşyp bolýan ýazgy"]
+    },
+    "willow-entryway-console": {
+      "name": "Willow girelge konsoly",
+      "description": "Gizlin çekmeli we ýüzýän tekjeli inçe konsol.",
+      "materials": "FSC dub şpony, polat",
+      "highlights": ["Kabel üçin gurlan deşikler", "Iki sany gamyş öňlükli çekmä", "Sazlanyp bolýan deňleşdiriji aýaklar"]
+    },
+    "clear-stackable-shoe-drawers": {
+      "name": "Aýdyň üýşürilýän aýakgap çekmeleri",
+      "description": "Aýakgaplary görünýän we goragly saklamak üçin dik üýşürilýän howa geçirýän çekmeler.",
+      "materials": "Gaýtadan işlenen PET",
+      "highlights": ["Magnit açylan gapy", "47-nji ölçege çenli laýyk", "Modully dizaýn ýerinde gulplanýar"]
+    },
+    "pantry-closet-labeling-kit": {
+      "name": "Ammar ýazgy toplumy",
+      "description": "Gaplary we bankalary guramaçylykly saklamak üçin suwa çydamly ýazgylar we hek markerler.",
+      "materials": "Winil, hek syýa",
+      "highlights": ["120 sany taýýar ýazgy", "Iki sany doldurylýan hek marker", "Öz ýazgyňyz üçin boş listler"]
+    },
+    "atelier-wardrobe-rack": {
+      "name": "Atelier eşik asgyçy",
+      "description": "Aýakgap üçin dub tekjeli hereket edýän eşik asgyçy — girelge ýa myhman otagy üçin ajaýyp.",
+      "materials": "Polat, gaty dub",
+      "highlights": ["Gulplanýan tigirler", "Aýrylýan asgyç ilgençekler goşulýar", "Tekje iki sebet ýerleşdirýär"]
+    },
+    "cedar-grove-laundry-trio": {
+      "name": "Cedar Grove kir ýuwuş toplumy",
+      "description": "Kedr ysy bilen ösümlik esasly kir serişdesi, zygyr spreýi we ýüň guradyjy toplar.",
+      "materials": "Aýna, ýüň, ösümlik esasly ýuwujy maddalar",
+      "highlights": ["HE we adaty maşynlara laýyk", "Aýna çüýşeler aňsatlyk bilen doldurylýar", "Üç sany gaýtadan ulanylýan ýüň guradyjy top"]
+    },
+    "canvas-crest-laundry-hamper": {
+      "name": "Canvas Crest kir sebedi",
+      "description": "Aýrylýan pagta içlikleri we hoz tutawaçly goşa sebet.",
+      "materials": "Pagta kanwas, hoz",
+      "highlights": ["Iki aýrylýan ýuwulýan içlik", "Berk çarçuwasy dik durýar", "Gaýtadan işlenen hoz tutawaçlar"]
+    },
+    "foldaway-laundry-table": {
+      "name": "Ýygnalýan kir stoly",
+      "description": "Gizlin tekjeli diwara dakylýan ýygnalýan stol — sekuntda kir iş ýerini döredýär.",
+      "materials": "Gaýyň fanerasy, polat",
+      "highlights": ["Diwardan 10 sm-de tekiz ýygnanýar", "Gurallar üçin çüý reýkasy goşulýar", "Gurlan elektrik uzadyjy"]
+    },
+    "coastal-linen-refresh-spray": {
+      "name": "Coastal zygyr täzelenme spreýi",
+      "description": "Ýuwuş arasy täzelenmek üçin deňiz duzy, bergamot we amber ysly ösümlik esasly spreý.",
+      "materials": "Arassalanan suw, efir ýaglary",
+      "highlights": ["Mebel we ýorgan-düşek üçin howpsuz", "Doldurylýan aýna çüýşe", "Paraben we ftalat ýok"]
+    },
+    "pressguard-steam-iron": {
+      "name": "PressGuard bug ütügi",
+      "description": "Poslamaýan polat dabanly gibrid ütük we bug generatory.",
+      "materials": "Poslamaýan polat, BPA-syz rezerwuar",
+      "highlights": ["Dik rejimli sazlanýan bug", "Howpsuzlyk üçin awtomatiki öçüriji", "Ýylylyga çydamly düşekçe goşulýar"]
+    },
+    "terrace-entertaining-set": {
+      "name": "Eýwan güýmenje toplumy",
+      "description": "Örülen sowadyjy, döwülmeýän gap-gaç we LED çyra bilen howa çydamly toplum.",
+      "materials": "Rattan, poslamaýan polat, Tritan",
+      "highlights": ["8 bölekli Tritan gap-gaç toplumy", "Sowadyjy buzy 12 sagat saklaýar", "Çyra üç sany ýyly reňk hödürleýär"]
+    },
+    "all-season-picnic-blanket": {
+      "name": "Hemme möwsüm piknik ýorgany",
+      "description": "Stýogan ýokarsy we daşaýyş gaýyşly suwa çydamly piknik ýorgany.",
+      "materials": "Gaýtadan işlenen poliester, TPU örtügi",
+      "highlights": ["Gum garşy aşagy süpürilýär", "Maşynda ýuwulýar we çalt guradylýar", "Sazlanyp bolýan daşaýyş gaýyşy"]
+    },
+    "ridge-terracotta-planter-pair": {
+      "name": "Rebraly terrakota küýze jübüti",
+      "description": "Eýwan we balkon üçin drenaž tabakly iki sany rebraly terrakota küýze.",
+      "materials": "Terrakota",
+      "highlights": ["Sowuga we UV-a çydamly", "Damja tabaklary goşulýar", "Otlar we kiçi sitrus üçin ajaýyp"]
+    },
+    "solar-glow-lantern-trio": {
+      "name": "Gün energiýaly çyra toplumy",
+      "description": "Ýyly ak LED yşykly we örülen daşky görnüşli gün energiýaly çyralar.",
+      "materials": "Örülen polimer, gün LED ýadrosy",
+      "highlights": ["6 sagat gün şöhlesinde zarýad alýar", "Üç ýagtylyk derejesi", "Howa çydamly örülen gapy"]
+    },
+    "cinder-bowl-gas-fire-pit": {
+      "name": "Cinder Bowl gaz ojagy",
+      "description": "Tüssesiz ýylylyk berýän lawy daşly pes profilli gaz ojagy.",
+      "materials": "Aýna süýümli beton, polat ýakyjy",
+      "highlights": ["Gizlin propan bölümi", "Howa örtügi we lawy daşy goşulýar", "Sazlanýan ýalyn beýikligi"]
+    },
+    "cast-iron-dutch-oven": {
+      "name": "Guýma demir gazany",
+      "description": "Pomidorly et, çörek we bir gazanly bişirmek üçin emally guýma demir gazan.",
+      "materials": "Emally guýma demir",
+      "highlights": ["5.2 litr göwrüm", "Gapagynda özüni ýaglaýan çyzyklar", "Induksiýa dahil ähli plitalara laýyk"]
+    },
+    "marble-pastry-board": {
+      "name": "Mermer hamyr tagtasy",
+      "description": "Hamyr ýaýmak, şokolad taýýarlamak we peýnir hödürlemek üçin sowuk mermer ýüzü.",
+      "materials": "Karrara mermeri, keçe aýaklar",
+      "highlights": ["Näzik hamyr üçin sowuk galýar", "Gözeneksiz ýylmanan ýüzü", "Deri asmak gaýyşy goşulýar"]
+    },
+    "nested-mixing-bowl-set": {
+      "name": "Salynýan garyşdyrma gap toplumy",
+      "description": "Guýujy we süýşmeýän düýbi bolan ýedi sany dürli ölçegli keramiki gap.",
+      "materials": "Keramika",
+      "highlights": ["Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk", "Salynýan dizaýn ýer tygşytlaýar", "Her gap dürli toprak reňkde"]
+    },
+    "rainfall-showerhead-system": {
+      "name": "Ýagyş duş ulgamy",
+      "description": "El leýkasy we ýönekeý gurnamak bilen islendik hammamy üýtgedýän ýokarky duş.",
+      "materials": "Sürtülen poslamaýan polat",
+      "highlights": ["6 rejimli 25 sm ýagyş başy", "150 sm çeýe şlang goşulýar", "Guralsyz gurnamak"]
+    },
+    "organic-cotton-bath-robe": {
+      "name": "Organiki pagta hammam halady",
+      "description": "Çalt guramak üçin wafli örmeli GOTS sertifikatly organiki pagta halat.",
+      "materials": "100% GOTS organiki pagta",
+      "highlights": ["S/M we L/XL ölçegleri bar", "Çuň jübler we sazlanýan guşak", "Her ýuwuşda has ýumşak bolýar"]
+    },
+    "vanity-organization-tray": {
+      "name": "Bezeg stoly guramaçy tarelkasy",
+      "description": "Hammam üstündäki gündelik zatlary guramaçylykly saklaýan mermer we bürünç tabak.",
+      "materials": "Italýan mermeri, bürünç",
+      "highlights": ["Çyzylmaz keçe düýbi", "Aýrylýan bölüjiler", "Sabyn dispenseri bilen jübütlenýär"]
+    },
+    "woven-jute-area-rug": {
+      "name": "Dokalan jut halysy",
+      "description": "Kofe stollarynyň aşagyna tebigy ýylylyk we dokma goşýan el örmeli jut haly.",
+      "materials": "Tebigy jut süýümi",
+      "highlights": ["150×210 we 240×300 sm ölçegleri bar", "Iki taraply dizaýn", "Haly düşekleri bilen gabat gelýär"]
+    },
+    "floating-oak-wall-shelf-set": {
+      "name": "Ýüzýän dub diwar tekje toplumy",
+      "description": "Gizlin kronşteýnli tüsseli dubdan ýasalan üç sany ýüzýän tekje.",
+      "materials": "Tüsseli dub, polat kronşteýnler",
+      "highlights": ["Üç uzynlyk: 60, 90 we 120 sm", "Her tekje 15 kg-a çenli göterýär", "Ähli berkidiji enjamlar goşulýar"]
+    },
+    "terracotta-table-lamp": {
+      "name": "Terrakota stol çyrasy",
+      "description": "Düşek ýanyndaky stollar üçin zygyr abažurly heýkel terrakota çyrasy.",
+      "materials": "Terrakota, zygyr abažur",
+      "highlights": ["Içerki dimmer wyklýuçatel", "LED lampa goşulýar", "E26 rozetka köp abažurlara laýyk"]
+    },
+    "under-bed-rolling-drawer": {
+      "name": "Krowat aşagyndaky tigirli çekmä",
+      "description": "Krowat aşagyndaky boş ýeri guramaçylykly saklaýşa öwürýän kanwas we dub çekmä.",
+      "materials": "Kanwas, dub çarçuwa, tigirler",
+      "highlights": ["20 sm aralykly krowatlara laýyk", "Aýrylýan ýuwulýan içlik", "Güýçlendirilen tutawaçlar"]
+    },
+    "pegboard-wall-organizer": {
+      "name": "Perforasiýaly diwar guramaçysy",
+      "description": "Girelge, ofis ýa-da ussahana üçin tekjeli, ilgençekli we gapjygazly modully dub tagtasy.",
+      "materials": "Gaty dub, örtükli polat çüýler",
+      "highlights": ["12 çüý, 2 tekje, 1 gapjygaz goşulýar", "Goşmaça esbaplar aýratyn satylýar", "Gipsokarton we agaç üçin berkidiji"]
+    },
+    "tiered-corner-shelf-unit": {
+      "name": "Gatly burç tekjesi",
+      "description": "Islendik otagda burç giňişligini ulanýan bäş gatly burç tekje.",
+      "materials": "Bambuk, polat çarçuwa",
+      "highlights": ["90 gradus burçlara ajaýyp gabat gelýär", "Agdarylyşmaga garşy diwar ankeri goşulýar", "Her tekje 10 kg-a çenli göterýär"]
+    },
+    "retractable-clothesline-reel": {
+      "name": "Yza çekilýän kir ýüpi",
+      "description": "Howa guratmak üçin 12 metr UV-a çydamly şnurly kir ýüpi.",
+      "materials": "ABS plastik, poslamaýan şnur",
+      "highlights": ["Awtomatiki gulplama mehanizmi", "20 kg-a çenli kir göterýär", "Diwara tekiz ýygnanýar"]
+    },
+    "wrinkle-release-steamer": {
+      "name": "Kompakt bug generatory",
+      "description": "Ütük tagtasyz egin-eşikleri sekuntda täzeleýän üznüksiz bugly kompakt otpariwatel.",
+      "materials": "Poslamaýan polat, BPA-syz bak",
+      "highlights": ["25 sekuntda gyzýar", "200 ml bak 15 minut bug", "Mata çotga goşulýar"]
+    },
+    "mesh-wash-bag-set": {
+      "name": "Tor kir haltasy toplumy",
+      "description": "Näzik egin-eşikleri goramak üçin üç ölçegli alty sany tor halta.",
+      "materials": "Poliester tor, YKK fermuarlar",
+      "highlights": ["2 uly, 2 orta, 2 kiçi halta", "Güýçlendirilen tikişler we poslanmaýan fermuarlar", "Maşynda ýuwulýar we guradylýar"]
+    },
+    "hammock-with-steel-stand": {
+      "name": "Polat duralga bilen gamak",
+      "description": "Eýwanda dynç almak üçin minutda gurulýan göçme polat çarçuwaly goşa gamak.",
+      "materials": "Pagta mata, örtükli polat",
+      "highlights": ["200 kg-a çenli göterýär", "Syýahat sumkasy goşulýar", "Ýaýradyjy çybyklar çolaşmany öňüni alýar"]
+    },
+    "solar-pathway-light-set": {
+      "name": "Gün energiýaly ýol çyrasy toplumy",
+      "description": "Bag ýollary üçin ýyly kehraba LED yşykly sekiz sany gün batareýaly çyra.",
+      "materials": "Poslamaýan polat, aýna linza",
+      "highlights": ["Garaňkyda awtomatiki ýakylýar", "IP65 suwa çydamly", "Çalşylýan zarýadlanýan batareýalar"]
+    },
+    "ceramic-herb-planter-kit": {
+      "name": "Keramiki ot ösümlik toplumy",
+      "description": "Üç keramiki küýze, bambuk tabak we reyhan, narpyz, kinza tohumlary bilen penjire toplumy.",
+      "materials": "Keramika, bambuk, organiki tohumlar",
+      "highlights": ["Drenaž deşikleri we bambuk tabak", "Ösdüriş gollanmasy bilen üç tohum bukjasy", "Kwartira baglary üçin ajaýyp"]
+    }
   }
 }

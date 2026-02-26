@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Heart, ShoppingBag, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useProductTranslation, useCategoryTranslation } from '../../hooks/useProductTranslation';
 import { useCartStore } from '../../store/cartStore';
 import { useUIStore } from '../../store/uiStore';
 import type { Product } from '../../types';
@@ -16,6 +17,8 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, index = 0 }: ProductCardProps) {
   const { t } = useTranslation();
+  const tp = useProductTranslation(product);
+  const translateCategory = useCategoryTranslation();
   const addItem = useCartStore((s) => s.addItem);
   const openCart = useUIStore((s) => s.openCart);
 
@@ -23,7 +26,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
     e.preventDefault();
     e.stopPropagation();
     addItem(product);
-    showToast(`${product.name} added to cart`, 'success');
+    showToast(t('product.addedToCart', { name: tp.name }), 'success');
     openCart();
   };
 
@@ -51,7 +54,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
           {/* Badge */}
           {product.badge && (
             <span className="absolute top-3 left-3 badge badge-primary">
-              {product.badge}
+              {tp.badge}
             </span>
           )}
 
@@ -81,13 +84,13 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
 
         <div className="space-y-1">
           <p className="text-xs text-stone-500 uppercase tracking-wide">
-            {product.category?.name}
+            {translateCategory(product.category?.slug, product.category?.name || '')}
           </p>
           <h3 className="font-medium text-stone-900 group-hover:text-primary-600 transition-colors line-clamp-1">
-            {product.name}
+            {tp.name}
           </h3>
           <p className="text-sm text-stone-600 line-clamp-2">
-            {product.description}
+            {tp.description}
           </p>
           <div className="flex items-center justify-between pt-2">
             <div className="flex items-center gap-2">

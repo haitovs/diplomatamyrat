@@ -41,7 +41,7 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <p className="eyebrow mb-4">Spring Refresh 2024</p>
+              <p className="eyebrow mb-4">{t('home.springRefresh')}</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-stone-900 leading-tight mb-6">
                 {t('home.heroTitle')}
               </h1>
@@ -207,7 +207,7 @@ export default function HomePage() {
 
           <div className="mt-8 text-center sm:hidden">
             <Link to="/products" className="btn btn-outline btn-lg">
-              View All Products
+              {t('home.viewAllProducts')}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -218,26 +218,26 @@ export default function HomePage() {
       <section className="py-16 lg:py-20 bg-primary-50">
         <div className="container-narrow">
           <div className="text-center mb-12">
-            <p className="eyebrow mb-2">Loved by Households</p>
-            <h2 className="section-title">What Our Customers Say</h2>
+            <p className="eyebrow mb-2">{t('home.lovedByHouseholds')}</p>
+            <h2 className="section-title">{t('home.customerTestimonials')}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: 'The attention to detail on every delivery blew me away. The storage baskets transformed our entryway overnight.',
-                name: 'Priya S.',
-                location: 'Seattle, WA',
+                quote: t('home.testimonial1Quote'),
+                name: t('home.testimonial1Name'),
+                location: t('home.testimonial1Location'),
               },
               {
-                quote: 'I finally feel like my kitchen is pulled together. The herb planters and canisters ship fast and make cooking joyful.',
-                name: 'Evan M.',
-                location: 'Austin, TX',
+                quote: t('home.testimonial2Quote'),
+                name: t('home.testimonial2Name'),
+                location: t('home.testimonial2Location'),
               },
               {
-                quote: 'The design concierge helped me layer lighting in our lounge. Hearth & Home feels like the modern general store.',
-                name: 'Marina L.',
-                location: 'Savannah, GA',
+                quote: t('home.testimonial3Quote'),
+                name: t('home.testimonial3Name'),
+                location: t('home.testimonial3Location'),
               },
             ].map((testimonial) => (
               <div key={testimonial.name} className="bg-white rounded-xl p-6 shadow-sm">
@@ -261,23 +261,23 @@ export default function HomePage() {
       <section className="py-16 lg:py-20">
         <div className="container-narrow">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="eyebrow mb-2">Stay in the Loop</p>
-            <h2 className="section-title mb-4">Receive Styling Guides & Exclusive Previews</h2>
+            <p className="eyebrow mb-2">{t('home.stayInLoop')}</p>
+            <h2 className="section-title mb-4">{t('home.newsletterDesc')}</h2>
             <p className="text-stone-600 mb-8">
-              Join 40,000+ subscribers and get weekly notes on seasonal refreshes, care tips, and founder Q&As.
+              {t('home.newsletterLongDesc')}
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="you@example.com"
+                placeholder={t('home.emailPlaceholder')}
                 className="input flex-1"
               />
               <button type="submit" className="btn btn-primary btn-lg shrink-0">
-                Join the List
+                {t('home.joinList')}
               </button>
             </form>
             <p className="text-xs text-stone-500 mt-4">
-              By subscribing you agree to receive marketing emails. Unsubscribe anytime.
+              {t('home.newsletterDisclaimer')}
             </p>
           </div>
         </div>

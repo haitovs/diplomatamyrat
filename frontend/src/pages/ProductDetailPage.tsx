@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import { getProduct, getRelatedProducts } from '../api/products';
 import ProductCard from '../components/product/ProductCard';
+import { useProductTranslation, useCategoryTranslation } from '../hooks/useProductTranslation';
 import { useCartStore } from '../store/cartStore';
 import { useUIStore } from '../store/uiStore';
 import { formatPrice } from '../utils/currency';
@@ -53,13 +54,16 @@ export default function ProductDetailPage() {
     );
   }
 
+  const tp = useProductTranslation(product);
+  const translateCategory = useCategoryTranslation();
+
   if (error || !product) {
     return (
       <div className="container-narrow py-12 text-center">
-        <h1 className="text-2xl font-heading font-semibold mb-4">Product Not Found</h1>
-        <p className="text-stone-600 mb-6">The product you're looking for doesn't exist.</p>
+        <h1 className="text-2xl font-heading font-semibold mb-4">{t('product.notFound')}</h1>
+        <p className="text-stone-600 mb-6">{t('product.notFoundDesc')}</p>
         <Link to="/products" className="btn btn-primary btn-lg">
-          Browse Products
+          {t('common.browseProducts')}
         </Link>
       </div>
     );
@@ -77,7 +81,7 @@ export default function ProductDetailPage() {
             className="inline-flex items-center gap-2 text-sm text-stone-600 hover:text-primary-600"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Products
+            {t('product.backToProducts')}
           </Link>
         </nav>
 
@@ -131,12 +135,12 @@ export default function ProductDetailPage() {
                 to={`/category/${product.category?.slug}`}
                 className="text-sm text-primary-600 hover:text-primary-700 uppercase tracking-wide"
               >
-                {product.category?.name}
+                {translateCategory(product.category?.slug, product.category?.name || '')}
               </Link>
             </div>
 
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-stone-900 mb-4">
-              {product.name}
+              {tp.name}
             </h1>
 
             {/* Rating */}
@@ -171,11 +175,11 @@ export default function ProductDetailPage() {
                 </span>
               )}
               {product.badge && (
-                <span className="badge badge-primary">{product.badge}</span>
+                <span className="badge badge-primary">{tp.badge}</span>
               )}
             </div>
 
-            <p className="text-stone-600 mb-6">{product.description}</p>
+            <p className="text-stone-600 mb-6">{tp.description}</p>
 
             {/* Quantity & Add to Cart */}
             <div className="flex items-center gap-4 mb-6">
@@ -212,23 +216,23 @@ export default function ProductDetailPage() {
             <div className="flex items-center gap-6 py-4 border-y border-stone-200 mb-6">
               <div className="flex items-center gap-2 text-sm text-stone-600">
                 <Truck className="w-4 h-4" />
-                <span>{product.leadTime || 'Ships within 24 hours'}</span>
+                <span>{tp.leadTime || t('leadTimes.ships_within_24_hours')}</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-stone-600">
                 <Shield className="w-4 h-4" />
-                <span>30-day returns</span>
+                <span>{t('product.thirtyDayReturns')}</span>
               </div>
             </div>
 
             {/* Highlights */}
-            {product.highlights && product.highlights.length > 0 && (
+            {tp.highlights.length > 0 && (
               <div className="mb-6">
                 <h3 className="font-heading font-semibold text-stone-900 mb-3">{t('product.highlights')}</h3>
                 <ul className="space-y-2">
-                  {product.highlights.map((highlight) => (
-                    <li key={highlight.id} className="flex items-start gap-2 text-sm text-stone-600">
+                  {tp.highlights.map((text, index) => (
+                    <li key={index} className="flex items-start gap-2 text-sm text-stone-600">
                       <Check className="w-4 h-4 text-accent-500 shrink-0 mt-0.5" />
-                      {highlight.text}
+                      {text}
                     </li>
                   ))}
                 </ul>
@@ -241,7 +245,7 @@ export default function ProductDetailPage() {
                 <dl className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <dt className="text-stone-500">{t('product.materials')}</dt>
-                    <dd className="font-medium text-stone-900">{product.materials}</dd>
+                    <dd className="font-medium text-stone-900">{tp.materials}</dd>
                   </div>
                   <div>
                     <dt className="text-stone-500">SKU</dt>
@@ -256,7 +260,7 @@ export default function ProductDetailPage() {
         {/* Related Products */}
         {relatedProducts && relatedProducts.length > 0 && (
           <section className="mt-16 pt-12 border-t border-stone-200">
-            <h2 className="section-title mb-8">You Might Also Like</h2>
+            <h2 className="section-title mb-8">{t('home.youMightLike')}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {relatedProducts.map((product, index) => (
                 <ProductCard key={product.id} product={product} index={index} />

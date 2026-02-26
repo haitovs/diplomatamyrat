@@ -13,6 +13,7 @@ import {
     X
 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { getAdminOrders, updateOrderStatus, type AdminOrder } from '../../api/admin';
 import { getImageUrl } from '../../utils/format';
 
@@ -27,6 +28,7 @@ const statusConfig: Record<string, { color: string; bg: string; icon: any }> = {
 const statusOptions = ['PENDING', 'PROCESSING', 'SHIPPED', 'DELIVERED', 'CANCELLED'];
 
 export default function AdminOrders() {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const [statusFilter, setStatusFilter] = useState('');
   const [selectedOrder, setSelectedOrder] = useState<AdminOrder | null>(null);
@@ -54,8 +56,8 @@ export default function AdminOrders() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-heading font-semibold text-stone-900">Orders</h1>
-          <p className="text-stone-600 mt-1">Manage customer orders</p>
+          <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.orders')}</h1>
+          <p className="text-stone-600 mt-1">{t('admin.manageOrders')}</p>
         </div>
       </div>
 
@@ -69,7 +71,7 @@ export default function AdminOrders() {
               : 'bg-white text-stone-600 hover:bg-stone-50 border border-stone-200'
           }`}
         >
-          All Orders
+          {t('admin.allOrders')}
         </button>
         {statusOptions.map((status) => {
           const config = statusConfig[status];
@@ -83,7 +85,7 @@ export default function AdminOrders() {
                   : 'bg-white text-stone-600 hover:bg-stone-50 border border-stone-200'
               }`}
             >
-              {status.charAt(0) + status.slice(1).toLowerCase()}
+              {t(`orderStatuses.${status}`)}
             </button>
           );
         })}
@@ -100,7 +102,7 @@ export default function AdminOrders() {
         ) : data?.orders?.length === 0 ? (
           <div className="p-12 text-center">
             <ShoppingCart className="w-12 h-12 text-stone-300 mx-auto mb-4" />
-            <p className="text-stone-500">No orders found</p>
+            <p className="text-stone-500">{t('admin.noOrders')}</p>
           </div>
         ) : (
           <>
@@ -183,7 +185,7 @@ export default function AdminOrders() {
                           >
                             {statusOptions.map((status) => (
                               <option key={status} value={status}>
-                                {status.charAt(0) + status.slice(1).toLowerCase()}
+                                {t(`orderStatuses.${status}`)}
                               </option>
                             ))}
                           </select>
@@ -288,7 +290,7 @@ export default function AdminOrders() {
 
                 {/* Items */}
                 <div>
-                  <h4 className="font-medium text-stone-900 mb-3">Order Items</h4>
+                  <h4 className="font-medium text-stone-900 mb-3">{t('admin.orderItems')}</h4>
                   <div className="border border-stone-200 rounded-lg divide-y divide-stone-100">
                     {selectedOrder.items?.map((item: any) => (
                       <div key={item.id} className="p-3 flex items-center gap-3">

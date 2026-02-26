@@ -19,7 +19,7 @@
     "save": "Save",
     "cancel": "Cancel",
     "delete": "Delete",
-   "edit": "Edit",
+    "edit": "Edit",
     "view": "View",
     "close": "Close",
     "backToHome": "Back to Home",
@@ -53,7 +53,21 @@
     "livingDesc": "Lighting & textiles",
     "storageDesc": "Organization solutions",
     "laundryDesc": "Care essentials",
-    "outdoorDesc": "Patio & garden"
+    "outdoorDesc": "Patio & garden",
+    "kitchenLongDesc": "Cookware, serveware, and tools designed to celebrate everyday meals and elevate your culinary experience.",
+    "bathroomLongDesc": "Plush textures, aromatics, and rituals for your self-care sanctuary. Transform your bathroom into a spa.",
+    "livingLongDesc": "Warm lighting, purposeful decor, and lounge-ready textiles for every gathering and quiet moment.",
+    "storageLongDesc": "Smart organization that calms the chaos and keeps essentials within reach. Declutter with style.",
+    "laundryLongDesc": "Care rituals that leave linens fresh, folded, and ready for rotation. Make laundry day enjoyable.",
+    "outdoorLongDesc": "Weather-ready accents for patio hangs, impromptu picnics, and golden hour dining under the stars.",
+    "notFound": "Category Not Found",
+    "notFoundDesc": "The category you're looking for doesn't exist.",
+    "browseAll": "Browse All Products",
+    "browseOther": "Browse Other Products",
+    "comingSoon": "Coming Soon",
+    "comingSoonDesc": "We're curating the perfect products for this category.",
+    "productCount_one": "{{count}} product",
+    "productCount_other": "{{count}} products"
   },
   "product": {
     "details": "Product Details",
@@ -68,7 +82,10 @@
     "related": "Related Products",
     "featured": "Featured Products",
     "notFound": "Product Not Found",
-    "notFoundDesc": "The product you're looking for doesn't exist."
+    "notFoundDesc": "The product you're looking for doesn't exist.",
+    "backToProducts": "Back to Products",
+    "thirtyDayReturns": "30-day returns",
+    "addedToCart": "{{name}} added to cart"
   },
   "cart": {
     "title": "Your Cart",
@@ -147,7 +164,18 @@
     "fiveStarReviews": "Five-star reviews",
     "averageDelivery": "Average delivery",
     "sustainableMaterials": "Sustainable materials",
-    "youMightLike": "You Might Also Like"
+    "youMightLike": "You Might Also Like",
+    "springRefresh": "Spring Refresh 2024",
+    "viewAllProducts": "View All Products",
+    "testimonial1Quote": "The attention to detail on every delivery blew me away. The storage baskets transformed our entryway overnight.",
+    "testimonial1Name": "Priya S.",
+    "testimonial1Location": "Seattle, WA",
+    "testimonial2Quote": "I finally feel like my kitchen is pulled together. The herb planters and canisters ship fast and make cooking joyful.",
+    "testimonial2Name": "Evan M.",
+    "testimonial2Location": "Austin, TX",
+    "testimonial3Quote": "The design concierge helped me layer lighting in our lounge. Hearth & Home feels like the modern general store.",
+    "testimonial3Name": "Marina L.",
+    "testimonial3Location": "Savannah, GA"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -184,6 +212,355 @@
     "dragDropImages": "Drag and drop images or click to browse",
     "reorderImages": "Drag to reorder images",
     "primaryImage": "Primary Image",
-    "setPrimary": "Set as Primary"
+    "setPrimary": "Set as Primary",
+    "manageOrders": "Manage customer orders",
+    "allOrders": "All Orders",
+    "orderItems": "Order Items",
+    "noOrders": "No orders found",
+    "showing": "Showing",
+    "page": "Page {{page}} of {{total}}"
+  },
+  "badges": {
+    "bestseller": "Bestseller",
+    "new": "New",
+    "limited": "Limited",
+    "barista_favorite": "Barista Favorite",
+    "restocked": "Restocked",
+    "hotel_quality": "Hotel Quality",
+    "editors_pick": "Editor's Pick",
+    "small_space_hero": "Small Space Hero",
+    "made_to_order": "Made to Order",
+    "cozy_drop": "Cozy Drop",
+    "top_rated": "Top Rated",
+    "bundle": "Bundle",
+    "design_studio_pick": "Design Studio Pick",
+    "staff_favorite": "Staff Favorite",
+    "space_saver": "Space Saver",
+    "new_scent": "New Scent",
+    "pro_finish": "Pro Finish",
+    "outdoor_drop": "Outdoor Drop",
+    "glow_all_night": "Glow All Night",
+    "gathering_favorite": "Gathering Favorite",
+    "chef_favorite": "Chef Favorite",
+    "spa_upgrade": "Spa Upgrade",
+    "luxury": "Luxury",
+    "handcrafted": "Handcrafted",
+    "customizable": "Customizable",
+    "eco_pick": "Eco Pick",
+    "travel_ready": "Travel Ready",
+    "essential": "Essential",
+    "weekend_essential": "Weekend Essential",
+    "grow_your_own": "Grow Your Own"
+  },
+  "leadTimes": {
+    "ships_within_24_hours": "Ships within 24 hours",
+    "ships_in_2_days": "Ships in 2 days",
+    "ships_within_2_days": "Ships within 2 days",
+    "ships_in_1_2_days": "Ships in 1-2 days",
+    "ships_within_3_days": "Ships within 3 days",
+    "ships_in_3_days": "Ships in 3 days",
+    "ships_in_2_3_weeks": "Ships in 2-3 weeks",
+    "ships_next_business_day": "Ships next business day",
+    "ships_in_1_week": "Ships in 1 week",
+    "ships_in_5_days": "Ships in 5 days",
+    "ships_in_3_5_days": "Ships in 3-5 days",
+    "ships_in_5_7_days": "Ships in 5-7 days"
+  },
+  "orderStatuses": {
+    "PENDING": "Pending",
+    "PROCESSING": "Processing",
+    "SHIPPED": "Shipped",
+    "DELIVERED": "Delivered",
+    "CANCELLED": "Cancelled"
+  },
+  "products": {
+    "artisan-stoneware-canister-set": {
+      "name": "Artisan Stoneware Canister Set",
+      "description": "Wheel-thrown stoneware canisters with snug acacia lids to keep dry goods fresh and display ready.",
+      "materials": "Stoneware, acacia wood",
+      "highlights": ["Set of three nesting canisters", "Natural seal keeps ingredients fresh", "Dishwasher safe stoneware"]
+    },
+    "walnut-mise-en-place-board": {
+      "name": "Walnut Mise en Place Board",
+      "description": "Double-sided prep board with routed wells that keep chopped herbs and aromatics organized before cooking.",
+      "materials": "Walnut wood, rubber feet",
+      "highlights": ["Mineral oil finish repels moisture", "Juice groove on reverse side", "Non-slip walnut feet"]
+    },
+    "slate-stone-dinnerware-set": {
+      "name": "Slate Stone Dinnerware Set",
+      "description": "A twelve-piece dinnerware set cast in matte stone that transitions from everyday meals to entertaining.",
+      "materials": "Stoneware",
+      "highlights": ["Includes dinner, salad, and side plates", "Microwave and dishwasher safe", "Stackable with built-in feet"]
+    },
+    "copper-gooseneck-pour-over-kettle": {
+      "name": "Copper Gooseneck Pour-Over Kettle",
+      "description": "Precision gooseneck kettle with temperature control for pour-over mornings and tea service.",
+      "materials": "Copper, stainless steel",
+      "highlights": ["Built-in thermometer lid", "Induction-friendly base", "Ergonomic burn-resistant handle"]
+    },
+    "stonewashed-linen-apron-set": {
+      "name": "Stonewashed Linen Apron Set",
+      "description": "Cross-back aprons cut from stonewashed linen with generous pockets for prep tools and tasting spoons.",
+      "materials": "Linen, cotton straps",
+      "highlights": ["Adjustable cross-back straps relieve neck pressure", "Includes two matching tea towels", "Pre-washed to resist shrinking"]
+    },
+    "cloudweight-spa-towel-bundle": {
+      "name": "Cloudweight Spa Towel Bundle",
+      "description": "Ultra absorbent spa towels with a plush terry side and textured reverse for home spa mornings.",
+      "materials": "100% Turkish cotton",
+      "highlights": ["Includes two bath, two hand, two face towels", "OEKO-TEX certified cotton", "Corner loops for easy hanging"]
+    },
+    "teak-serenity-bath-caddy": {
+      "name": "Teak Serenity Bath Caddy",
+      "description": "Solid teak bath caddy with adjustable arms, space for a book, tablet, and candle for spa nights at home.",
+      "materials": "Sustainably harvested teak",
+      "highlights": ["Extends 27\" to 41\" to fit most tubs", "Includes safe slots for glass and devices", "Water resistant finish"]
+    },
+    "cedar-slatted-bath-mat": {
+      "name": "Cedar Slatted Bath Mat",
+      "description": "Aromatic cedar bath mat that wicks water and adds warmth to tile floors.",
+      "materials": "Cedar wood",
+      "highlights": ["Non-slip silicone feet", "Naturally mildew resistant", "Refreshes with simple sanding"]
+    },
+    "aromatherapy-shower-steamers": {
+      "name": "Aromatherapy Shower Steamers",
+      "description": "Eucalyptus and citrus shower steamers that transform quick showers into spa moments.",
+      "materials": "Natural minerals, essential oils",
+      "highlights": ["Includes eight individually wrapped steamers", "Vegan and cruelty free", "Reusable ceramic dish included"]
+    },
+    "bamboo-bath-storage-ladder": {
+      "name": "Bamboo Bath Storage Ladder",
+      "description": "Lean this ladder beside the tub to hang towels, store baskets, and keep bath trays within easy reach.",
+      "materials": "Bamboo, powder-coated steel",
+      "highlights": ["Five rungs with anti-slip feet", "Includes two removable storage caddies", "Sealed against humidity"]
+    },
+    "belgian-linen-throw": {
+      "name": "Belgian Linen Throw",
+      "description": "Lightweight linen throw woven in Flanders with a soft stonewashed finish for effortless layering.",
+      "materials": "100% Belgian flax linen",
+      "highlights": ["Generous 50\" x 70\" sizing", "Prewashed for lived-in softness", "Pairs with neutral palettes"]
+    },
+    "lowline-oak-coffee-table": {
+      "name": "Lowline Oak Coffee Table",
+      "description": "Oversized oak coffee table with a chamfered edge and concealed storage built in small batches.",
+      "materials": "FSC certified oak",
+      "highlights": ["Soft close storage drawer for remotes", "Finished with plant based oils", "Pairs with Hearth modular seating"]
+    },
+    "arc-ambient-floor-lamp": {
+      "name": "Arc Ambient Floor Lamp",
+      "description": "Oversized linen shade and arched steel base create soft, room-defining light.",
+      "materials": "Steel, linen, marble",
+      "highlights": ["Three-stage dimmer", "Weighted marble base", "Includes LED bulb"]
+    },
+    "hearth-ceramic-diffuser": {
+      "name": "Hearth Ceramic Diffuser",
+      "description": "Ultrasonic ceramic diffuser with a soft glow base for evening rituals.",
+      "materials": "Ceramic, BPA-free reservoir",
+      "highlights": ["Runs up to 8 hours", "Auto shut-off timer", "Includes two seasonal oil blends"]
+    },
+    "hearth-boucle-pillow-set": {
+      "name": "Hearth Bouclé Pillow Set",
+      "description": "Pair of pillows in boucle and linen that adds depth to sofas and reading chairs.",
+      "materials": "Bouclé polyester, linen, feather-down",
+      "highlights": ["Includes one 20\" and one 22\" pillow", "Feather-down insert with zipper cover", "Covers are machine washable"]
+    },
+    "pine-cane-storage-baskets": {
+      "name": "Pine + Cane Storage Baskets",
+      "description": "Modular storage baskets with cane webbing fronts and integrated labels that stack effortlessly.",
+      "materials": "Pine wood, cane webbing",
+      "highlights": ["Set of 2 medium and 1 large basket", "Collapsible for flat storage", "Comes with 6 interchangeable labels"]
+    },
+    "willow-entryway-console": {
+      "name": "Willow Entryway Console",
+      "description": "Slim console with concealed drawers and a floating shelf to corral entryway essentials.",
+      "materials": "FSC oak veneer, steel",
+      "highlights": ["Integrated cord cut-outs", "Includes two cane-front drawers", "Adjustable leveling feet"]
+    },
+    "clear-stackable-shoe-drawers": {
+      "name": "Clear Stackable Shoe Drawers",
+      "description": "Ventilated drawers that stack vertically to keep footwear easy to see and protected.",
+      "materials": "Recycled PET",
+      "highlights": ["Magnetic drop-front door", "Fits up to mens size 13", "Modular design locks in place"]
+    },
+    "pantry-closet-labeling-kit": {
+      "name": "Pantry & Closet Labeling Kit",
+      "description": "Water-resistant labels and chalk markers that keep bins, baskets, and jars organized.",
+      "materials": "Vinyl, chalk ink",
+      "highlights": ["Includes 120 pre-printed labels", "Two refillable chalk pens", "Sheets of blanks for custom naming"]
+    },
+    "atelier-wardrobe-rack": {
+      "name": "Atelier Wardrobe Rack",
+      "description": "Rolling wardrobe rack with a solid oak shelf for shoes and baskets—perfect for entryways or guest rooms.",
+      "materials": "Steel, solid oak",
+      "highlights": ["Locking casters for easy movement", "Includes removable hanging hooks", "Shelf holds two storage bins"]
+    },
+    "cedar-grove-laundry-trio": {
+      "name": "Cedar Grove Laundry Trio",
+      "description": "Plant based detergent, linen mist, and wool dryer balls with a crisp cedar scent for fresh laundry days.",
+      "materials": "Glass, wool, plant based surfactants",
+      "highlights": ["Detergent works in HE and standard machines", "Glass bottles refill easily", "Includes three reusable wool dryer balls"]
+    },
+    "canvas-crest-laundry-hamper": {
+      "name": "Canvas Crest Laundry Hamper",
+      "description": "Structured double hamper with removable cotton liners and walnut handles for easy sorting.",
+      "materials": "Cotton canvas, walnut",
+      "highlights": ["Two removable washable liners", "Rigid frame stands upright", "Handles crafted from reclaimed walnut"]
+    },
+    "foldaway-laundry-table": {
+      "name": "Foldaway Laundry Table",
+      "description": "Wall-mounted folding table with hidden shelves that creates a laundry workstation in seconds.",
+      "materials": "Birch plywood, steel",
+      "highlights": ["Folds flat to 4 inches from wall", "Includes peg rail for tools", "Integrated power strip"]
+    },
+    "coastal-linen-refresh-spray": {
+      "name": "Coastal Linen Refresh Spray",
+      "description": "Plant-based linen spray with notes of sea salt, bergamot, and amber for between-wash refreshes.",
+      "materials": "Distilled water, essential oils",
+      "highlights": ["Safe for upholstery and bedding", "Refillable glass bottle", "Paraben and phthalate free"]
+    },
+    "pressguard-steam-iron": {
+      "name": "PressGuard Steam Iron",
+      "description": "Hybrid iron and steamer with a stainless soleplate that glides over linens and delicates.",
+      "materials": "Stainless steel, BPA-free reservoir",
+      "highlights": ["Adjustable steam with vertical mode", "Auto shut-off safety", "Includes heat-resistant storage mat"]
+    },
+    "terrace-entertaining-set": {
+      "name": "Terrace Entertaining Set",
+      "description": "Weather-ready entertaining kit with a woven drink cooler, shatterproof glassware, and LED lantern.",
+      "materials": "Rattan, stainless steel, Tritan",
+      "highlights": ["Includes eight piece Tritan glassware set", "Cooler keeps ice for up to 12 hours", "Lantern offers three warm white settings"]
+    },
+    "all-season-picnic-blanket": {
+      "name": "All-Season Picnic Blanket",
+      "description": "Water-resistant picnic blanket with a quilted top and carrying strap for impromptu gatherings.",
+      "materials": "Recycled polyester, TPU backing",
+      "highlights": ["Sand-resistant underside wipes clean", "Machine washable and quick drying", "Includes adjustable carrying strap"]
+    },
+    "ridge-terracotta-planter-pair": {
+      "name": "Ridge Terracotta Planter Pair",
+      "description": "Set of two ridged terracotta planters with drainage trays for patios and balconies.",
+      "materials": "Terracotta",
+      "highlights": ["Frost and UV resistant finish", "Includes matching drip trays", "Ideal for herbs or small citrus"]
+    },
+    "solar-glow-lantern-trio": {
+      "name": "Solar Glow Lantern Trio",
+      "description": "Solar-powered lanterns with warm-white LEDs and woven exterior for ambient patios.",
+      "materials": "Woven poly, solar LED core",
+      "highlights": ["Charges in 6 hours of daylight", "Three brightness settings", "Weather-resistant woven housing"]
+    },
+    "cinder-bowl-gas-fire-pit": {
+      "name": "Cinder Bowl Gas Fire Pit",
+      "description": "Low-profile gas fire pit with lava rock fill that brings warmth to patios without smoke.",
+      "materials": "Glass fiber reinforced concrete, steel burner",
+      "highlights": ["Hidden propane compartment with quick ignition", "Includes weather cover and lava rock", "Adjustable flame height"]
+    },
+    "cast-iron-dutch-oven": {
+      "name": "Cast Iron Dutch Oven",
+      "description": "Enameled cast iron Dutch oven perfect for slow-cooked stews, fresh bread, and one-pot roasts.",
+      "materials": "Enameled cast iron",
+      "highlights": ["5.5 quart capacity", "Self-basting condensation ridges on lid", "Works on all stovetops including induction"]
+    },
+    "marble-pastry-board": {
+      "name": "Marble Pastry Board",
+      "description": "Naturally cool marble surface ideal for rolling dough, tempering chocolate, and presenting cheeses.",
+      "materials": "Carrara marble, felt feet",
+      "highlights": ["Stays cool for delicate pastry work", "Non-porous polished surface", "Includes leather hanging strap"]
+    },
+    "nested-mixing-bowl-set": {
+      "name": "Nested Mixing Bowl Set",
+      "description": "Seven-piece stoneware mixing bowl set in graduated sizes with pour spouts and non-slip bases.",
+      "materials": "Stoneware",
+      "highlights": ["Microwave and dishwasher safe", "Nested design saves cabinet space", "Each bowl in a different earth tone"]
+    },
+    "rainfall-showerhead-system": {
+      "name": "Rainfall Showerhead System",
+      "description": "Overhead rain shower with handheld wand and easy-install bracket that transforms any bathroom.",
+      "materials": "Brushed stainless steel",
+      "highlights": ["10-inch rainfall head with 6 spray modes", "Includes 60-inch flexible hose", "Tool-free installation"]
+    },
+    "organic-cotton-bath-robe": {
+      "name": "Organic Cotton Bath Robe",
+      "description": "Plush GOTS-certified organic cotton robe with waffle weave texture for quick drying.",
+      "materials": "100% GOTS organic cotton",
+      "highlights": ["Available in S/M and L/XL", "Deep pockets and adjustable belt", "Gets softer with every wash"]
+    },
+    "vanity-organization-tray": {
+      "name": "Vanity Organization Tray",
+      "description": "Three-compartment marble and brass tray that corrals daily essentials on any bathroom counter.",
+      "materials": "Italian marble, brass",
+      "highlights": ["Non-scratch felt base", "Removable dividers", "Pairs with matching soap dispenser"]
+    },
+    "woven-jute-area-rug": {
+      "name": "Woven Jute Area Rug",
+      "description": "Hand-braided jute rug that adds natural warmth and texture beneath coffee tables and reading nooks.",
+      "materials": "Natural jute fiber",
+      "highlights": ["Available in 5x7 and 8x10 sizes", "Reversible design", "Compatible with rug pads"]
+    },
+    "floating-oak-wall-shelf-set": {
+      "name": "Floating Oak Wall Shelf Set",
+      "description": "Set of three floating shelves in smoked oak with concealed brackets for clean gallery-wall displays.",
+      "materials": "Smoked oak, steel brackets",
+      "highlights": ["Three lengths: 24, 36, and 48 inches", "Each shelf holds up to 15 kg", "All mounting hardware included"]
+    },
+    "terracotta-table-lamp": {
+      "name": "Terracotta Table Lamp",
+      "description": "Sculptural terracotta lamp with linen drum shade that brings earthy warmth to bedside tables.",
+      "materials": "Terracotta, linen shade",
+      "highlights": ["Inline dimmer switch", "Includes LED bulb", "E26 socket fits most shades"]
+    },
+    "under-bed-rolling-drawer": {
+      "name": "Under-Bed Rolling Drawer",
+      "description": "Canvas and oak drawer on smooth casters that transforms wasted under-bed space into organized storage.",
+      "materials": "Canvas, oak frame, casters",
+      "highlights": ["Fits beds with 8 inches clearance", "Removable washable liner", "Reinforced handles"]
+    },
+    "pegboard-wall-organizer": {
+      "name": "Pegboard Wall Organizer",
+      "description": "Modular oak pegboard with shelves, hooks, and bins for entryways, offices, or craft rooms.",
+      "materials": "Solid oak, powder-coated steel pegs",
+      "highlights": ["Includes 12 pegs, 2 shelves, 1 bin", "Additional accessories sold separately", "Mounting hardware for drywall and studs"]
+    },
+    "tiered-corner-shelf-unit": {
+      "name": "Tiered Corner Shelf Unit",
+      "description": "Five-tier corner shelf that maximizes forgotten corner space in any room.",
+      "materials": "Bamboo, steel frame",
+      "highlights": ["Fits 90-degree wall corners perfectly", "Anti-tip wall anchor included", "Each shelf holds up to 10 kg"]
+    },
+    "retractable-clothesline-reel": {
+      "name": "Retractable Clothesline Reel",
+      "description": "Indoor-outdoor retractable clothesline with 12 meters of UV-resistant cord for air drying.",
+      "materials": "ABS plastic, stainless cord",
+      "highlights": ["Tension auto-lock mechanism", "Holds up to 20 kg of laundry", "Retracts flush to wall"]
+    },
+    "wrinkle-release-steamer": {
+      "name": "Wrinkle Release Steamer",
+      "description": "Compact garment steamer with continuous steam that freshens clothes in seconds without an ironing board.",
+      "materials": "Stainless steel plate, BPA-free tank",
+      "highlights": ["Heats up in 25 seconds", "200 ml tank for 15 minutes of steam", "Includes fabric brush attachment"]
+    },
+    "mesh-wash-bag-set": {
+      "name": "Mesh Wash Bag Set",
+      "description": "Set of six mesh bags in three sizes to protect delicates, activewear, and lingerie in the wash.",
+      "materials": "Polyester mesh, YKK zippers",
+      "highlights": ["Includes 2 large, 2 medium, 2 small bags", "Reinforced seams and rust-free zippers", "Machine washable and dryer safe"]
+    },
+    "hammock-with-steel-stand": {
+      "name": "Hammock with Steel Stand",
+      "description": "Double hammock on a portable steel frame — sets up in minutes for patio lounging or garden reading.",
+      "materials": "Cotton weave, powder-coated steel",
+      "highlights": ["Holds up to 200 kg", "Includes carrying bag for travel", "Spreader bars prevent tangling"]
+    },
+    "solar-pathway-light-set": {
+      "name": "Solar Pathway Light Set",
+      "description": "Eight solar-powered stake lights with warm amber LEDs that line walkways and garden paths.",
+      "materials": "Stainless steel, glass lens",
+      "highlights": ["Auto on at dusk, off at dawn", "IP65 waterproof rated", "Replaceable rechargeable batteries"]
+    },
+    "ceramic-herb-planter-kit": {
+      "name": "Ceramic Herb Planter Kit",
+      "description": "Window-sill planter set with three ceramic pots, bamboo tray, and seed packets for basil, mint, and cilantro.",
+      "materials": "Ceramic, bamboo, organic seeds",
+      "highlights": ["Includes drainage holes and bamboo tray", "Three seed packets with growing guide", "Perfect for apartment gardens"]
+    }
   }
 }
