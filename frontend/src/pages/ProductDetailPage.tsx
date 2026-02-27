@@ -32,6 +32,9 @@ export default function ProductDetailPage() {
     enabled: !!slug,
   });
 
+  const tp = useProductTranslation(product);
+  const translateCategory = useCategoryTranslation();
+
   const handleAddToCart = () => {
     if (!product) return;
     addItem(product, quantity);
@@ -53,9 +56,6 @@ export default function ProductDetailPage() {
       </div>
     );
   }
-
-  const tp = useProductTranslation(product);
-  const translateCategory = useCategoryTranslation();
 
   if (error || !product) {
     return (
