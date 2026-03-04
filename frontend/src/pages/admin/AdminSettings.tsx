@@ -13,6 +13,7 @@ import {
   X
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import api from '../../api/client';
 import { getSettings, updateSettings } from '../../api/settings';
 import type { SettingsFormData } from '../../types/settings';
@@ -25,12 +26,13 @@ import EmailTemplateSettings from './QuickSettings/EmailTemplateSettings';
 
 // Quick Settings Modal Component
 function QuickSettingsModal({ type, onClose }: { type: string; onClose: () => void }) {
+  const { t } = useTranslation();
   const titles: Record<string, string> = {
-    security: 'Security Settings',
-    localization: 'Localization Settings',
-    payments: 'Payment Settings',
-    shipping: 'Shipping Settings',
-    email: 'Email Templates',
+    security: t('admin.securitySettings'),
+    localization: t('admin.localizationSettings'),
+    payments: t('admin.paymentSettings'),
+    shipping: t('admin.shippingSettings'),
+    email: t('admin.emailTemplates'),
   };
 
   const renderContent = () => {
@@ -78,6 +80,7 @@ function QuickSettingsModal({ type, onClose }: { type: string; onClose: () => vo
 }
 
 export default function AdminSettings() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<SettingsFormData>({
     storeName: '',
     contactEmail: '',
@@ -122,7 +125,7 @@ export default function AdminSettings() {
       });
       applyPrimaryColor(settings.primaryColor);
     } catch (err) {
-      setError('Failed to load settings');
+      setError(t('admin.failedLoadSettingsMsg'));
       console.error('Error loading settings:', err);
     } finally {
       setLoading(false);
@@ -194,7 +197,7 @@ export default function AdminSettings() {
       setSuccess(true);
       setTimeout(() => setSuccess(false), 3000);
     } catch (err) {
-      setError('Failed to save settings');
+      setError(t('admin.failedSaveSettings'));
       console.error('Error saving settings:', err);
     } finally {
       setSaving(false);
@@ -210,7 +213,7 @@ export default function AdminSettings() {
       <div className="flex items-center justify-center min-h-[400px]">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-stone-600">Loading settings...</p>
+          <p className="text-stone-600">{t('admin.loadingSettings')}</p>
         </div>
       </div>
     );
@@ -218,30 +221,30 @@ export default function AdminSettings() {
 
   const settingsSections = [
     {
-      title: 'Store Settings',
+      title: t('admin.storeSettings'),
       icon: Store,
       fields: [
-        { label: 'Store Name', name: 'storeName', type: 'text', value: formData.storeName, placeholder: 'Your store name' },
-        { label: 'Contact Email', name: 'contactEmail', type: 'email', value: formData.contactEmail, placeholder: 'contact@example.com' },
-        { label: 'Contact Phone', name: 'contactPhone', type: 'tel', value: formData.contactPhone, placeholder: '+993 XX XXXXXX' },
+        { label: t('admin.storeName'), name: 'storeName', type: 'text', value: formData.storeName, placeholder: 'Your store name' },
+        { label: t('admin.contactEmail'), name: 'contactEmail', type: 'email', value: formData.contactEmail, placeholder: 'contact@example.com' },
+        { label: t('admin.contactPhone'), name: 'contactPhone', type: 'tel', value: formData.contactPhone, placeholder: '+993 XX XXXXXX' },
       ]
     },
     {
-      title: 'Appearance',
+      title: t('admin.appearance'),
       icon: Palette,
       fields: [
-        { label: 'Primary Color', name: 'primaryColor', type: 'color', value: formData.primaryColor },
-        { label: 'Logo', name: 'logoUrl', type: 'image', value: formData.logoUrl || '' },
-        { label: 'Favicon', name: 'faviconUrl', type: 'image', value: formData.faviconUrl || '' },
+        { label: t('admin.primaryColor'), name: 'primaryColor', type: 'color', value: formData.primaryColor },
+        { label: t('admin.logo'), name: 'logoUrl', type: 'image', value: formData.logoUrl || '' },
+        { label: t('admin.favicon'), name: 'faviconUrl', type: 'image', value: formData.faviconUrl || '' },
       ]
     },
     {
-      title: 'Notifications',
+      title: t('admin.notifications'),
       icon: Bell,
       fields: [
-        { label: 'Order Notifications', name: 'orderNotifications', type: 'checkbox', value: formData.orderNotifications, description: 'Receive email for new orders' },
-        { label: 'Low Stock Alerts', name: 'lowStockAlerts', type: 'checkbox', value: formData.lowStockAlerts, description: 'Alert when stock falls below 10' },
-        { label: 'Newsletter Signups', name: 'newsletterSignups', type: 'checkbox', value: formData.newsletterSignups, description: 'Notify on new newsletter subscribers' },
+        { label: t('admin.orderNotifications'), name: 'orderNotifications', type: 'checkbox', value: formData.orderNotifications, description: t('admin.orderNotificationsDesc') },
+        { label: t('admin.lowStockAlerts'), name: 'lowStockAlerts', type: 'checkbox', value: formData.lowStockAlerts, description: t('admin.lowStockAlertsDesc') },
+        { label: t('admin.newsletterSignups'), name: 'newsletterSignups', type: 'checkbox', value: formData.newsletterSignups, description: t('admin.newsletterSignupsDesc') },
       ]
     }
   ];
@@ -251,8 +254,8 @@ export default function AdminSettings() {
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Header */}
         <div>
-          <h1 className="text-2xl font-heading font-semibold text-stone-900">Settings</h1>
-          <p className="text-stone-600 mt-1">Manage your store configuration</p>
+          <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.settings')}</h1>
+          <p className="text-stone-600 mt-1">{t('admin.manageConfig')}</p>
         </div>
 
         {/* Success/Error Messages */}
@@ -262,7 +265,7 @@ export default function AdminSettings() {
             animate={{ opacity: 1, y: 0 }}
             className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg"
           >
-            ✓ Settings saved successfully!
+            ✓ {t('admin.settingsSaved')}
           </motion.div>
         )}
 
@@ -327,7 +330,7 @@ export default function AdminSettings() {
                             )}
                             <label className="btn btn-secondary btn-sm cursor-pointer">
                               <Upload className="w-4 h-4" />
-                              {uploading === field.name ? 'Uploading...' : 'Upload'}
+                              {uploading === field.name ? t('admin.uploading') : t('admin.upload')}
                               <input
                                 type="file"
                                 accept="image/*"
@@ -350,7 +353,7 @@ export default function AdminSettings() {
                                 onClick={() => handleInputChange(field.name as keyof SettingsFormData, '')}
                                 className="text-red-600 hover:text-red-700 text-sm"
                               >
-                                Remove
+                                {t('admin.remove')}
                               </button>
                             )}
                           </div>
@@ -388,14 +391,14 @@ export default function AdminSettings() {
             transition={{ delay: 0.3 }}
             className="bg-white rounded-xl shadow-sm border border-stone-100 p-5"
           >
-            <h2 className="font-heading font-semibold text-stone-900 mb-4">Quick Settings</h2>
+            <h2 className="font-heading font-semibold text-stone-900 mb-4">{t('admin.quickSettings')}</h2>
             <div className="space-y-3">
               {[
-                { icon: Shield, label: 'Security', desc: 'Password, 2FA, sessions', type: 'security' },
-                { icon: Globe, label: 'Localization', desc: 'Currency, timezone, language', type: 'localization' },
-                { icon: CreditCard, label: 'Payments', desc: 'Payment methods, taxes', type: 'payments' },
-                { icon: Truck, label: 'Shipping', desc: 'Zones, rates, carriers', type: 'shipping' },
-                { icon: Mail, label: 'Email Templates', desc: 'Order confirmation, receipts', type: 'email' },
+                { icon: Shield, label: t('admin.security'), desc: t('admin.securityDesc'), type: 'security' },
+                { icon: Globe, label: t('admin.localization'), desc: t('admin.localizationDesc'), type: 'localization' },
+                { icon: CreditCard, label: t('admin.payments'), desc: t('admin.paymentsDesc'), type: 'payments' },
+                { icon: Truck, label: t('admin.shippingLabel'), desc: t('admin.shippingDesc'), type: 'shipping' },
+                { icon: Mail, label: t('admin.emailTemplates'), desc: t('admin.emailTemplatesDesc'), type: 'email' },
               ].map((item) => (
                 <button
                   key={item.label}
@@ -431,12 +434,12 @@ export default function AdminSettings() {
             {saving ? (
               <>
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                Saving...
+                {t('common.saving')}
               </>
             ) : (
               <>
                 <Save className="w-5 h-5" />
-                Save Changes
+                {t('common.saveChanges')}
               </>
             )}
           </button>

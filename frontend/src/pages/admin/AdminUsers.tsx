@@ -11,9 +11,11 @@ import {
     Users
 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { getAdminUsers, type AdminUser } from '../../api/admin';
 
 export default function AdminUsers() {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState('');
   const limit = 15;
@@ -29,8 +31,8 @@ export default function AdminUsers() {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-heading font-semibold text-stone-900">Customers</h1>
-        <p className="text-stone-600 mt-1">View and manage registered users</p>
+        <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.users')}</h1>
+        <p className="text-stone-600 mt-1">{t('admin.manageUsers')}</p>
       </div>
 
       {/* Search */}
@@ -39,7 +41,7 @@ export default function AdminUsers() {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
           <input
             type="text"
-            placeholder="Search by name or email..."
+            placeholder={t('admin.searchUsers')}
             value={search}
             onChange={(e) => {
               setSearch(e.target.value);
@@ -60,7 +62,7 @@ export default function AdminUsers() {
       ) : data?.users?.length === 0 ? (
         <div className="bg-white rounded-xl p-12 text-center border border-stone-100">
           <Users className="w-12 h-12 text-stone-300 mx-auto mb-4" />
-          <p className="text-stone-500">No users found</p>
+          <p className="text-stone-500">{t('admin.noUsersFound')}</p>
         </div>
       ) : (
         <>
@@ -85,7 +87,7 @@ export default function AdminUsers() {
                       {user.role === 'ADMIN' && (
                         <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-100 text-amber-700 text-xs rounded-full font-medium">
                           <Shield className="w-3 h-3" />
-                          Admin
+                          {t('nav.admin')}
                         </span>
                       )}
                     </div>
@@ -99,7 +101,7 @@ export default function AdminUsers() {
                 <div className="flex items-center justify-between mt-4 pt-4 border-t border-stone-100 text-sm">
                   <div className="flex items-center gap-1 text-stone-500">
                     <ShoppingCart className="w-4 h-4" />
-                    <span>{user._count?.orders || 0} orders</span>
+                    <span>{user._count?.orders || 0} {t('admin.orders')}</span>
                   </div>
                   <div className="flex items-center gap-1 text-stone-400">
                     <Calendar className="w-4 h-4" />
@@ -121,7 +123,7 @@ export default function AdminUsers() {
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <span className="px-4 text-sm text-stone-600">
-                Page {page} of {totalPages}
+                {t('admin.page', { page, total: totalPages })}
               </span>
               <button
                 onClick={() => setPage(Math.min(totalPages, page + 1))}

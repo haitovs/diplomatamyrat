@@ -9,6 +9,7 @@ import {
     TrendingUp,
     Users
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { getAdminStats } from '../../api/admin';
 import { getImageUrl } from '../../utils/format';
@@ -16,28 +17,28 @@ import { getImageUrl } from '../../utils/format';
 const statCards = [
   { 
     key: 'totalProducts',
-    label: 'Total Products', 
+    label: 'admin.totalProducts',
     icon: Package, 
     color: 'from-blue-500 to-blue-600',
     link: '/admin/products'
   },
   { 
     key: 'totalOrders',
-    label: 'Total Orders', 
+    label: 'admin.totalOrders',
     icon: ShoppingCart, 
     color: 'from-emerald-500 to-emerald-600',
     link: '/admin/orders'
   },
   { 
     key: 'totalUsers',
-    label: 'Customers', 
+    label: 'admin.customers',
     icon: Users, 
     color: 'from-violet-500 to-violet-600',
     link: '/admin/users'
   },
   { 
     key: 'totalRevenue',
-    label: 'Revenue', 
+    label: 'admin.revenue',
     icon: DollarSign, 
     color: 'from-amber-500 to-amber-600',
     format: (val: number) => `$${val.toLocaleString()}`
@@ -53,6 +54,7 @@ const orderStatusColors: Record<string, string> = {
 };
 
 export default function AdminDashboard() {
+  const { t } = useTranslation();
   const { data: stats, isLoading, error } = useQuery({
     queryKey: ['admin', 'stats'],
     queryFn: getAdminStats
@@ -77,7 +79,7 @@ export default function AdminDashboard() {
   if (error) {
     return (
       <div className="bg-red-50 text-red-600 p-6 rounded-xl">
-        Failed to load dashboard stats. Please try again.
+        {t('admin.failedLoadStats')}
       </div>
     );
   }
@@ -86,8 +88,8 @@ export default function AdminDashboard() {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-heading font-semibold text-stone-900">Dashboard</h1>
-        <p className="text-stone-600 mt-1">Welcome back! Here's what's happening with your store.</p>
+        <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.dashboard')}</h1>
+        <p className="text-stone-600 mt-1">{t('admin.welcomeDesc')}</p>
       </div>
 
       {/* Stat Cards */}
@@ -110,7 +112,7 @@ export default function AdminDashboard() {
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="text-sm font-medium text-stone-500">{stat.label}</p>
+                    <p className="text-sm font-medium text-stone-500">{t(stat.label)}</p>
                     <p className="text-2xl font-semibold text-stone-900 mt-1">{displayValue}</p>
                   </div>
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center shadow-lg`}>
@@ -120,7 +122,7 @@ export default function AdminDashboard() {
                 <div className="flex items-center gap-1 mt-3 text-sm">
                   <TrendingUp className="w-4 h-4 text-green-500" />
                   <span className="text-green-600 font-medium">+12%</span>
-                  <span className="text-stone-400">vs last month</span>
+                  <span className="text-stone-400">{t('admin.vsLastMonth')}</span>
                 </div>
               </Link>
             </motion.div>
@@ -137,18 +139,18 @@ export default function AdminDashboard() {
           className="bg-white rounded-xl shadow-sm border border-stone-100"
         >
           <div className="p-5 border-b border-stone-100 flex items-center justify-between">
-            <h2 className="font-heading font-semibold text-stone-900">Recent Orders</h2>
-            <Link 
-              to="/admin/orders" 
+            <h2 className="font-heading font-semibold text-stone-900">{t('admin.recentOrders')}</h2>
+            <Link
+              to="/admin/orders"
               className="text-sm text-primary-600 hover:text-primary-700 font-medium flex items-center gap-1"
             >
-              View all <ArrowUpRight className="w-4 h-4" />
+              {t('admin.viewAll')} <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
           <div className="divide-y divide-stone-100">
             {stats?.recentOrders?.length === 0 ? (
               <div className="p-8 text-center text-stone-500">
-                No orders yet
+                {t('admin.noOrdersYet')}
               </div>
             ) : (
               stats?.recentOrders?.map((order: any) => (
@@ -163,7 +165,7 @@ export default function AdminDashboard() {
                     <div className="text-right">
                       <p className="font-medium text-stone-900">${order.total.toFixed(2)}</p>
                       <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium ${orderStatusColors[order.status] || 'bg-stone-100 text-stone-600'}`}>
-                        {order.status}
+                        {t(`orderStatuses.${order.status}`)}
                       </span>
                     </div>
                   </div>
@@ -185,18 +187,18 @@ export default function AdminDashboard() {
           className="bg-white rounded-xl shadow-sm border border-stone-100"
         >
           <div className="p-5 border-b border-stone-100 flex items-center justify-between">
-            <h2 className="font-heading font-semibold text-stone-900">Top Products</h2>
+            <h2 className="font-heading font-semibold text-stone-900">{t('admin.topProducts')}</h2>
             <Link 
               to="/admin/products" 
               className="text-sm text-primary-600 hover:text-primary-700 font-medium flex items-center gap-1"
             >
-              View all <ArrowUpRight className="w-4 h-4" />
+              {t('admin.viewAll')} <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
           <div className="divide-y divide-stone-100">
             {stats?.topProducts?.length === 0 ? (
               <div className="p-8 text-center text-stone-500">
-                No sales data yet
+                {t('admin.noSalesData')}
               </div>
             ) : (
               stats?.topProducts?.map((product: any, index: number) => (
@@ -219,7 +221,7 @@ export default function AdminDashboard() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-stone-900 truncate">{product?.name || 'Unknown'}</p>
-                    <p className="text-sm text-stone-500">{product?.totalSold || 0} sold</p>
+                    <p className="text-sm text-stone-500">{product?.totalSold || 0} {t('admin.sold')}</p>
                   </div>
                   <div className="text-right">
                     <p className="font-medium text-stone-900">${product?.price?.toFixed(2) || '0.00'}</p>
@@ -242,36 +244,36 @@ export default function AdminDashboard() {
         transition={{ delay: 0.6 }}
         className="bg-gradient-to-br from-stone-900 to-stone-800 rounded-xl p-6 text-white"
       >
-        <h2 className="font-heading font-semibold text-lg">Quick Actions</h2>
-        <p className="text-stone-400 text-sm mt-1">Common tasks you might want to do</p>
+        <h2 className="font-heading font-semibold text-lg">{t('admin.quickActions')}</h2>
+        <p className="text-stone-400 text-sm mt-1">{t('admin.quickActionsDesc')}</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
           <Link
             to="/admin/products"
             className="bg-white/10 hover:bg-white/20 backdrop-blur rounded-lg p-4 text-center transition-colors"
           >
             <Package className="w-6 h-6 mx-auto mb-2" />
-            <span className="text-sm font-medium">Add Product</span>
+            <span className="text-sm font-medium">{t('admin.addProduct')}</span>
           </Link>
           <Link
             to="/admin/orders"
             className="bg-white/10 hover:bg-white/20 backdrop-blur rounded-lg p-4 text-center transition-colors"
           >
             <ShoppingCart className="w-6 h-6 mx-auto mb-2" />
-            <span className="text-sm font-medium">View Orders</span>
+            <span className="text-sm font-medium">{t('admin.orders')}</span>
           </Link>
           <Link
             to="/admin/categories"
             className="bg-white/10 hover:bg-white/20 backdrop-blur rounded-lg p-4 text-center transition-colors"
           >
             <Package className="w-6 h-6 mx-auto mb-2" />
-            <span className="text-sm font-medium">Categories</span>
+            <span className="text-sm font-medium">{t('admin.categories')}</span>
           </Link>
           <Link
             to="/admin/users"
             className="bg-white/10 hover:bg-white/20 backdrop-blur rounded-lg p-4 text-center transition-colors"
           >
             <Users className="w-6 h-6 mx-auto mb-2" />
-            <span className="text-sm font-medium">Customers</span>
+            <span className="text-sm font-medium">{t('admin.customers')}</span>
           </Link>
         </div>
       </motion.div>

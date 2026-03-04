@@ -13,19 +13,21 @@ import {
     X
 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, Navigate, Outlet, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 
 const navItems = [
-  { path: '/admin', icon: LayoutDashboard, label: 'Dashboard', exact: true },
-  { path: '/admin/products', icon: Package, label: 'Products' },
-  { path: '/admin/categories', icon: FolderTree, label: 'Categories' },
-  { path: '/admin/orders', icon: ShoppingCart, label: 'Orders' },
-  { path: '/admin/users', icon: Users, label: 'Users' },
-  { path: '/admin/settings', icon: Settings, label: 'Settings' },
+  { path: '/admin', icon: LayoutDashboard, labelKey: 'admin.dashboard', exact: true },
+  { path: '/admin/products', icon: Package, labelKey: 'admin.products' },
+  { path: '/admin/categories', icon: FolderTree, labelKey: 'admin.categories' },
+  { path: '/admin/orders', icon: ShoppingCart, labelKey: 'admin.orders' },
+  { path: '/admin/users', icon: Users, labelKey: 'admin.users' },
+  { path: '/admin/settings', icon: Settings, labelKey: 'admin.settings' },
 ];
 
 export default function AdminLayout() {
+  const { t } = useTranslation();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const location = useLocation();
@@ -74,7 +76,7 @@ export default function AdminLayout() {
               <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
                 <Home className="w-5 h-5 text-white" />
               </div>
-              <span className="font-heading font-semibold">Admin Panel</span>
+              <span className="font-heading font-semibold">{t('nav.admin')}</span>
             </motion.div>
           )}
           <button
@@ -120,7 +122,7 @@ export default function AdminLayout() {
                     animate={{ opacity: 1, x: 0 }}
                     className="font-medium"
                   >
-                    {item.label}
+                    {t(item.labelKey)}
                   </motion.span>
                 )}
               </Link>
@@ -156,7 +158,7 @@ export default function AdminLayout() {
             `}
           >
             <LogOut className="w-5 h-5" />
-            {sidebarOpen && <span className="text-sm">Logout</span>}
+            {sidebarOpen && <span className="text-sm">{t('admin.logout')}</span>}
           </button>
         </div>
       </aside>
@@ -176,7 +178,7 @@ export default function AdminLayout() {
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm">
               <Link to="/admin" className="text-stone-500 hover:text-stone-700">
-                Admin
+                {t('nav.admin')}
               </Link>
               {location.pathname !== '/admin' && (
                 <>
@@ -194,7 +196,7 @@ export default function AdminLayout() {
             className="flex items-center gap-2 text-sm text-stone-600 hover:text-primary-600 transition-colors"
           >
             <Home className="w-4 h-4" />
-            <span className="hidden sm:inline">View Store</span>
+            <span className="hidden sm:inline">{t('admin.viewStore')}</span>
           </Link>
         </header>
 

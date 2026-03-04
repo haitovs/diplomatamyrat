@@ -9,6 +9,7 @@ import {
     X
 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { createCategory, deleteCategory, getAdminCategories, updateCategory } from '../../api/admin';
 
 interface Category {
@@ -22,6 +23,7 @@ interface Category {
 }
 
 export default function AdminCategories() {
+  const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
   const [editingCategory, setEditingCategory] = useState<Category | null>(null);
   const [showDeleteModal, setShowDeleteModal] = useState<string | null>(null);
@@ -46,15 +48,15 @@ export default function AdminCategories() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-heading font-semibold text-stone-900">Categories</h1>
-          <p className="text-stone-600 mt-1">Organize your products into categories</p>
+          <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.categories')}</h1>
+          <p className="text-stone-600 mt-1">{t('admin.organizeCategories')}</p>
         </div>
         <button
           onClick={() => { setEditingCategory(null); setShowModal(true); }}
           className="btn btn-primary btn-md"
         >
           <Plus className="w-5 h-5" />
-          Add Category
+          {t('admin.addCategory')}
         </button>
       </div>
 
@@ -68,12 +70,12 @@ export default function AdminCategories() {
       ) : categories?.length === 0 ? (
         <div className="bg-white rounded-xl p-12 text-center border border-stone-100">
           <FolderTree className="w-12 h-12 text-stone-300 mx-auto mb-4" />
-          <p className="text-stone-500">No categories yet</p>
+          <p className="text-stone-500">{t('admin.noCategoriesYet')}</p>
           <button
             onClick={() => { setEditingCategory(null); setShowModal(true); }}
             className="btn btn-primary btn-md mt-4"
           >
-            Create your first category
+            {t('admin.createFirstCategory')}
           </button>
         </div>
       ) : (
@@ -149,23 +151,23 @@ export default function AdminCategories() {
               className="bg-white rounded-xl p-6 max-w-md w-full shadow-xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <h3 className="text-lg font-semibold text-stone-900">Delete Category</h3>
+              <h3 className="text-lg font-semibold text-stone-900">{t('admin.deleteCategory')}</h3>
               <p className="text-stone-600 mt-2">
-                Are you sure you want to delete this category? This action cannot be undone.
+                {t('admin.confirmDeleteCategory')}
               </p>
               <div className="flex justify-end gap-3 mt-6">
                 <button
                   onClick={() => setShowDeleteModal(null)}
                   className="btn btn-secondary btn-md"
                 >
-                  Cancel
+                  {t('common.cancel')}
                 </button>
                 <button
                   onClick={() => deleteMutation.mutate(showDeleteModal)}
                   disabled={deleteMutation.isPending}
                   className="btn btn-md bg-red-600 text-white hover:bg-red-700"
                 >
-                  {deleteMutation.isPending ? 'Deleting...' : 'Delete'}
+                  {deleteMutation.isPending ? t('common.deleting') : t('admin.deleteCategory')}
                 </button>
               </div>
             </motion.div>
@@ -182,6 +184,7 @@ interface CategoryModalProps {
 }
 
 function CategoryModal({ category, onClose }: CategoryModalProps) {
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [formData, setFormData] = useState({
     name: category?.name || '',
@@ -246,7 +249,7 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
       >
         <div className="p-6 border-b border-stone-100 flex items-center justify-between">
           <h3 className="text-lg font-semibold text-stone-900">
-            {category ? 'Edit Category' : 'Add Category'}
+            {category ? t('admin.editCategory') : t('admin.addCategory')}
           </h3>
           <button onClick={onClose} className="p-2 hover:bg-stone-100 rounded-lg">
             <X className="w-5 h-5" />
@@ -255,7 +258,7 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">Name *</label>
+            <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.name')} *</label>
             <input
               type="text"
               name="name"
@@ -268,7 +271,7 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">Slug *</label>
+            <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.slug')} *</label>
             <input
               type="text"
               name="slug"
@@ -280,7 +283,7 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">Description</label>
+            <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.description')}</label>
             <textarea
               name="description"
               value={formData.description}
@@ -292,18 +295,18 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Icon</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.badge')}</label>
               <input
                 type="text"
                 name="icon"
                 value={formData.icon}
                 onChange={handleChange}
                 className="input"
-                placeholder="e.g., chef-hat"
+                placeholder={t('admin.iconPlaceholder')}
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Sort Order</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.sortOrder')}</label>
               <input
                 type="number"
                 name="sortOrder"
@@ -317,16 +320,16 @@ function CategoryModal({ category, onClose }: CategoryModalProps) {
 
           <div className="flex justify-end gap-3 pt-4">
             <button type="button" onClick={onClose} className="btn btn-secondary btn-md">
-              Cancel
+              {t('common.cancel')}
             </button>
             <button
               type="submit"
               disabled={createMutation.isPending || updateMutation.isPending}
               className="btn btn-primary btn-md"
             >
-              {(createMutation.isPending || updateMutation.isPending) 
-                ? 'Saving...' 
-                : category ? 'Save Changes' : 'Create Category'
+              {(createMutation.isPending || updateMutation.isPending)
+                ? t('common.saving')
+                : category ? t('common.saveChanges') : t('admin.createCategory')
               }
             </button>
           </div>

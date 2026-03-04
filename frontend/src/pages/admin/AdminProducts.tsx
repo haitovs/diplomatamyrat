@@ -15,12 +15,14 @@ import {
   X
 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { createProduct, deleteProduct, getAdminProducts, updateProduct, type AdminProduct } from '../../api/admin';
 import { getCategories } from '../../api/products';
 import ProductImageManager from '../../components/admin/ProductImageManager';
 import { getImageUrl } from '../../utils/format';
 
 export default function AdminProducts() {
+  const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState('');
   const [showDeleteModal, setShowDeleteModal] = useState<string | null>(null);
@@ -56,15 +58,15 @@ export default function AdminProducts() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-heading font-semibold text-stone-900">Products</h1>
-          <p className="text-stone-600 mt-1">Manage your product catalog</p>
+          <h1 className="text-2xl font-heading font-semibold text-stone-900">{t('admin.products')}</h1>
+          <p className="text-stone-600 mt-1">{t('admin.manageProducts')}</p>
         </div>
         <button
           onClick={() => setShowAddModal(true)}
           className="btn btn-primary btn-md"
         >
           <Plus className="w-5 h-5" />
-          Add Product
+          {t('admin.addProduct')}
         </button>
       </div>
 
@@ -75,7 +77,7 @@ export default function AdminProducts() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder={t('admin.searchProducts')}
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);
@@ -86,7 +88,7 @@ export default function AdminProducts() {
           </div>
           <button className="btn btn-secondary btn-md">
             <Filter className="w-5 h-5" />
-            Filters
+            {t('common.filters')}
           </button>
         </div>
       </div>
@@ -102,7 +104,7 @@ export default function AdminProducts() {
         ) : data?.products?.length === 0 ? (
           <div className="p-12 text-center">
             <Package className="w-12 h-12 text-stone-300 mx-auto mb-4" />
-            <p className="text-stone-500">No products found</p>
+            <p className="text-stone-500">{t('admin.noProductsFound')}</p>
           </div>
         ) : (
           <>
@@ -110,13 +112,13 @@ export default function AdminProducts() {
               <table className="w-full">
                 <thead className="bg-stone-50 border-b border-stone-100">
                   <tr>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Product</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">SKU</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Category</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Price</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Stock</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Status</th>
-                    <th className="text-right px-4 py-3 text-sm font-semibold text-stone-600">Actions</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.product')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.sku')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.category')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.price')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.stock')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.status')}</th>
+                    <th className="text-right px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.actions')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-stone-100">
@@ -149,7 +151,7 @@ export default function AdminProducts() {
                             {product.isFeatured && (
                               <span className="inline-flex items-center gap-1 text-xs text-amber-600">
                                 <Star className="w-3 h-3 fill-current" />
-                                Featured
+                                {t('admin.featuredProduct')}
                               </span>
                             )}
                           </div>
@@ -160,7 +162,7 @@ export default function AdminProducts() {
                       </td>
                       <td className="px-4 py-3">
                         <span className="inline-block px-2 py-1 bg-stone-100 text-stone-600 text-sm rounded">
-                          {product.category?.name || 'Uncategorized'}
+                          {product.category?.name || t('common.uncategorized')}
                         </span>
                       </td>
                       <td className="px-4 py-3">
@@ -182,7 +184,7 @@ export default function AdminProducts() {
                             ? 'bg-green-100 text-green-700' 
                             : 'bg-stone-100 text-stone-600'
                         }`}>
-                          {product.isActive ? 'Active' : 'Draft'}
+                          {product.isActive ? t('common.active') : t('common.draft')}
                         </span>
                       </td>
                       <td className="px-4 py-3">
@@ -190,28 +192,28 @@ export default function AdminProducts() {
                           <button 
                             onClick={() => window.open(`/product/${product.slug}`, '_blank')}
                             className="p-2 text-stone-400 hover:text-stone-600 hover:bg-stone-100 rounded-lg transition-colors"
-                            title="View"
+                            title={t('common.view')}
                           >
                             <Eye className="w-4 h-4" />
                           </button>
                           <button 
                             onClick={() => setManagingImages(product)}
                             className="p-2 text-stone-400 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
-                            title="Manage Images"
+                            title={t('admin.manageImages')}
                           >
                             <ImageIcon className="w-4 h-4" />
                           </button>
                           <button 
                             onClick={() => setEditingProduct(product)}
                             className="p-2 text-stone-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                            title="Edit"
+                            title={t('common.edit')}
                           >
                             <Edit2 className="w-4 h-4" />
                           </button>
                           <button 
                             onClick={() => setShowDeleteModal(product.id)}
                             className="p-2 text-stone-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                            title="Delete"
+                            title={t('common.delete')}
                           >
                             <Trash2 className="w-4 h-4" />
                           </button>
@@ -226,7 +228,7 @@ export default function AdminProducts() {
             {/* Pagination */}
             <div className="flex items-center justify-between p-4 border-t border-stone-100">
               <p className="text-sm text-stone-600">
-                Showing {((page - 1) * limit) + 1} - {Math.min(page * limit, data?.total || 0)} of {data?.total} products
+                {t('admin.showing')} {((page - 1) * limit) + 1} - {Math.min(page * limit, data?.total || 0)} / {data?.total} {t('admin.products').toLowerCase()}
               </p>
               <div className="flex items-center gap-2">
                 <button
@@ -282,23 +284,23 @@ export default function AdminProducts() {
               className="bg-white rounded-xl p-6 max-w-md w-full shadow-xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <h3 className="text-lg font-semibold text-stone-900">Delete Product</h3>
+              <h3 className="text-lg font-semibold text-stone-900">{t('admin.deleteProduct')}</h3>
               <p className="text-stone-600 mt-2">
-                Are you sure you want to delete this product? This action cannot be undone.
+                {t('admin.confirmDeleteProduct')}
               </p>
               <div className="flex justify-end gap-3 mt-6">
                 <button
                   onClick={() => setShowDeleteModal(null)}
                   className="btn btn-secondary btn-md"
                 >
-                  Cancel
+                  {t('common.cancel')}
                 </button>
                 <button
                   onClick={() => deleteMutation.mutate(showDeleteModal)}
                   disabled={deleteMutation.isPending}
                   className="btn btn-md bg-red-600 text-white hover:bg-red-700"
                 >
-                  {deleteMutation.isPending ? 'Deleting...' : 'Delete'}
+                  {deleteMutation.isPending ? t('common.deleting') : t('common.delete')}
                 </button>
               </div>
             </motion.div>
@@ -341,6 +343,7 @@ interface ProductModalProps {
 }
 
 function ProductModal({ product, categories, onClose }: ProductModalProps) {
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
@@ -432,7 +435,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
       >
         <div className="p-6 border-b border-stone-100 flex items-center justify-between sticky top-0 bg-white z-10">
           <h3 className="text-lg font-semibold text-stone-900">
-            {product ? 'Edit Product' : 'Add Product'}
+            {product ? t('admin.editProduct') : t('admin.addProduct')}
           </h3>
           <button onClick={onClose} className="p-2 hover:bg-stone-100 rounded-lg">
             <X className="w-5 h-5" />
@@ -447,7 +450,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Name *</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.name')} *</label>
               <input
                 type="text"
                 name="name"
@@ -459,7 +462,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Slug *</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.slug')} *</label>
               <input
                 type="text"
                 name="slug"
@@ -472,7 +475,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">Description *</label>
+            <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.description')} *</label>
             <textarea
               name="description"
               value={formData.description}
@@ -485,7 +488,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Price *</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.price')} *</label>
               <input
                 type="number"
                 name="price"
@@ -498,7 +501,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">SKU *</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.sku')} *</label>
               <input
                 type="text"
                 name="sku"
@@ -509,7 +512,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Stock</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.stock')}</label>
               <input
                 type="number"
                 name="stock"
@@ -523,7 +526,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Category *</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.category')} *</label>
               <select
                 name="categoryId"
                 value={formData.categoryId}
@@ -531,20 +534,20 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
                 className="input"
                 required
               >
-                <option value="">Select category</option>
+                <option value="">{t('admin.selectCategory')}</option>
                 {categories.map((cat: any) => (
                   <option key={cat.id} value={cat.id}>{cat.name}</option>
                 ))}
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Badge</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.badge')}</label>
               <input
                 type="text"
                 name="badge"
                 value={formData.badge}
                 onChange={handleChange}
-                placeholder="e.g., Bestseller, New, Limited"
+                placeholder={t('admin.badgePlaceholder')}
                 className="input"
               />
             </div>
@@ -552,7 +555,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Materials</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.materials')}</label>
               <input
                 type="text"
                 name="materials"
@@ -562,13 +565,13 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">Lead Time</label>
+              <label className="block text-sm font-medium text-stone-700 mb-1">{t('admin.leadTime')}</label>
               <input
                 type="text"
                 name="leadTime"
                 value={formData.leadTime}
                 onChange={handleChange}
-                placeholder="e.g., Ships within 24 hours"
+                placeholder={t('admin.leadTimePlaceholder')}
                 className="input"
               />
             </div>
@@ -583,7 +586,7 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
                 onChange={handleChange}
                 className="w-4 h-4 rounded border-stone-300 text-primary-600 focus:ring-primary-500"
               />
-              <span className="text-sm text-stone-700">Featured product</span>
+              <span className="text-sm text-stone-700">{t('admin.featuredProduct')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input
@@ -593,22 +596,22 @@ function ProductModal({ product, categories, onClose }: ProductModalProps) {
                 onChange={handleChange}
                 className="w-4 h-4 rounded border-stone-300 text-primary-600 focus:ring-primary-500"
               />
-              <span className="text-sm text-stone-700">Active (visible in store)</span>
+              <span className="text-sm text-stone-700">{t('admin.activeInStore')}</span>
             </label>
           </div>
         </form>
 
         <div className="p-6 border-t border-stone-100 flex justify-end gap-3 sticky bottom-0 bg-white">
           <button onClick={onClose} className="btn btn-secondary btn-md">
-            Cancel
+            {t('common.cancel')}
           </button>
-          <button 
+          <button
             type="submit"
             onClick={handleSubmit}
             disabled={isLoading}
             className="btn btn-primary btn-md"
           >
-            {isLoading ? (product ? 'Saving...' : 'Creating...') : (product ? 'Save Changes' : 'Create Product')}
+            {isLoading ? (product ? t('common.saving') : t('common.creating')) : (product ? t('common.saveChanges') : t('admin.createProduct'))}
           </button>
         </div>
       </motion.div>

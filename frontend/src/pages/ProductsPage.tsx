@@ -52,7 +52,7 @@ export default function ProductsPage() {
           </h1>
           {data && (
             <p className="text-stone-600 mt-2">
-              Showing {data.products.length} of {data.total} products
+              {t('product.showingCount', { shown: data.products.length, total: data.total })}
             </p>
           )}
         </div>
@@ -81,10 +81,10 @@ export default function ProductsPage() {
               onChange={(e) => handleSortChange(e.target.value)}
               className="input py-2 pr-8"
             >
-              <option value="createdAt">Newest</option>
-              <option value="name">Name A-Z</option>
-              <option value="price">Price: Low to High</option>
-              <option value="rating">Top Rated</option>
+              <option value="createdAt">{t('product.sortNewest')}</option>
+              <option value="name">{t('product.sortNameAZ')}</option>
+              <option value="price">{t('product.sortPriceLow')}</option>
+              <option value="rating">{t('product.sortTopRated')}</option>
             </select>
           </div>
 

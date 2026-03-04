@@ -1,4 +1,4 @@
-import { Heart, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-stone-500 text-sm">
-              © {currentYear} Hearth & Home. All rights reserved.
+              {t('common.copyrightYear', { year: currentYear })}
             </p>
             <div className="flex items-center gap-6 text-sm">
               <Link to="/privacy" className="text-stone-500 hover:text-white transition-colors">
@@ -131,11 +131,11 @@ export default function Footer() {
                 {t('footer.terms')}
               </Link>
               <Link to="/admin" className="text-stone-500 hover:text-white transition-colors">
-                Admin Panel
+                {t('footer.adminPanel')}
               </Link>
             </div>
             <p className="text-stone-500 text-sm flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> for your home
+              {t('footer.madeWithLove')}
             </p>
           </div>
         </div>

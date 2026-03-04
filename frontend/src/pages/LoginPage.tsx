@@ -60,10 +60,10 @@ export default function LoginPage() {
         {/* Login Card */}
         <div className="bg-white rounded-2xl shadow-xl p-8 border border-stone-100">
           <h1 className="text-2xl font-heading font-semibold text-stone-900 text-center">
-            Welcome Back
+            {t('auth.welcomeBack')}
           </h1>
           <p className="text-stone-500 text-center mt-2">
-            Sign in to your account
+            {t('auth.signInDesc')}
           </p>
 
           {error && (
@@ -126,12 +126,12 @@ export default function LoginPage() {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                   </svg>
-                  Signing in...
+                  {t('auth.signingIn')}
                 </span>
               ) : (
                 <span className="flex items-center gap-2">
                   <LogIn className="w-5 h-5" />
-                  Sign In
+                  {t('auth.loginButton')}
                 </span>
               )}
             </button>
@@ -149,10 +149,10 @@ export default function LoginPage() {
 
         {/* Demo accounts hint */}
         <div className="mt-6 bg-stone-800 rounded-xl p-4 text-white">
-          <p className="text-sm font-medium mb-2">Demo Accounts:</p>
+          <p className="text-sm font-medium mb-2">{t('auth.demoAccounts')}</p>
           <div className="space-y-1 text-sm text-stone-300">
-            <p><span className="text-stone-400">Admin:</span> admin@household.tm / admin123</p>
-            <p><span className="text-stone-400">Customer:</span> demo@example.com / demo123</p>
+            <p><span className="text-stone-400">{t('auth.demoAdmin')}</span> admin@household.tm / admin123</p>
+            <p><span className="text-stone-400">{t('auth.demoCustomer')}</span> demo@example.com / demo123</p>
           </div>
         </div>
       </motion.div>

@@ -110,13 +110,13 @@ export default function AdminOrders() {
               <table className="w-full">
                 <thead className="bg-stone-50 border-b border-stone-100">
                   <tr>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Order</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Customer</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Items</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Total</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Status</th>
-                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">Date</th>
-                    <th className="text-right px-4 py-3 text-sm font-semibold text-stone-600">Actions</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.order')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.customer')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.items')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.total')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.status')}</th>
+                    <th className="text-left px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.date')}</th>
+                    <th className="text-right px-4 py-3 text-sm font-semibold text-stone-600">{t('admin.actions')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-stone-100">
@@ -200,7 +200,7 @@ export default function AdminOrders() {
                           <button
                             onClick={() => setSelectedOrder(order)}
                             className="p-2 text-stone-400 hover:text-stone-600 hover:bg-stone-100 rounded-lg transition-colors"
-                            title="View Details"
+                            title={t('admin.viewDetails')}
                           >
                             <Eye className="w-4 h-4" />
                           </button>
@@ -216,7 +216,7 @@ export default function AdminOrders() {
             {totalPages > 1 && (
               <div className="flex items-center justify-between p-4 border-t border-stone-100">
                 <p className="text-sm text-stone-600">
-                  Showing {((page - 1) * limit) + 1} - {Math.min(page * limit, data?.total || 0)} of {data?.total} orders
+                  {t('common.showingRange', { from: ((page - 1) * limit) + 1, to: Math.min(page * limit, data?.total || 0), total: data?.total })}
                 </p>
                 <div className="flex items-center gap-2">
                   <button
@@ -227,7 +227,7 @@ export default function AdminOrders() {
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <span className="px-3 text-sm text-stone-600">
-                    Page {page} of {totalPages}
+                    {t('admin.page')} {page} / {totalPages}
                   </span>
                   <button
                     onClick={() => setPage(Math.min(totalPages, page + 1))}
@@ -263,7 +263,7 @@ export default function AdminOrders() {
               <div className="p-6 border-b border-stone-100 flex items-center justify-between">
                 <div>
                   <h3 className="text-lg font-semibold text-stone-900">
-                    Order #{selectedOrder.orderNumber}
+                    {t('admin.order')} #{selectedOrder.orderNumber}
                   </h3>
                   <p className="text-sm text-stone-500">
                     {new Date(selectedOrder.createdAt).toLocaleString()}
@@ -307,7 +307,7 @@ export default function AdminOrders() {
                         </div>
                         <div className="flex-1">
                           <p className="font-medium text-stone-900">{item.product?.name}</p>
-                          <p className="text-sm text-stone-500">Qty: {item.quantity}</p>
+                          <p className="text-sm text-stone-500">{t('admin.items')}: {item.quantity}</p>
                         </div>
                         <p className="font-medium text-stone-900">
                           ${(item.price * item.quantity).toFixed(2)}
@@ -320,7 +320,7 @@ export default function AdminOrders() {
                 {/* Totals */}
                 <div className="border-t border-stone-200 pt-4">
                   <div className="flex justify-between text-lg font-semibold text-stone-900">
-                    <span>Total</span>
+                    <span>{t('admin.total')}</span>
                     <span>${selectedOrder.total.toFixed(2)}</span>
                   </div>
                 </div>

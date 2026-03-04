@@ -104,7 +104,7 @@ export default function Header() {
                   </div>
                   <div className="p-2">
                     <Link to="/orders" className="block px-3 py-2 text-sm hover:bg-stone-50 rounded">
-                      My Orders
+                      {t('nav.myOrders')}
                     </Link>
                     <button
                       onClick={logout}
@@ -208,14 +208,14 @@ export default function Header() {
                     className="block px-4 py-3 rounded-lg text-primary-600 hover:bg-primary-50 font-medium"
                     onClick={closeMobileMenu}
                   >
-                    Sign In
+                    {t('nav.signIn')}
                   </Link>
                   <Link
                     to="/register"
                     className="block px-4 py-3 rounded-lg bg-primary-600 text-white text-center font-medium"
                     onClick={closeMobileMenu}
                   >
-                    Create Account
+                    {t('nav.createAccount')}
                   </Link>
                 </>
               )}

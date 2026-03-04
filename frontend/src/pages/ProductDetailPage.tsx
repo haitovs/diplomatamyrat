@@ -159,7 +159,7 @@ export default function ProductDetailPage() {
                   ))}
                 </div>
                 <span className="text-sm text-stone-600">
-                  {product.rating.toFixed(1)} ({product.reviewCount} reviews)
+                  {t('product.reviewsCount', { rating: product.rating.toFixed(1), count: product.reviewCount })}
                 </span>
               </div>
             )}
@@ -248,7 +248,7 @@ export default function ProductDetailPage() {
                     <dd className="font-medium text-stone-900">{tp.materials}</dd>
                   </div>
                   <div>
-                    <dt className="text-stone-500">SKU</dt>
+                    <dt className="text-stone-500">{t('admin.sku')}</dt>
                     <dd className="font-medium text-stone-900">{product.sku}</dd>
                   </div>
                 </dl>

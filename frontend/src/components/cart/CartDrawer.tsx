@@ -68,7 +68,7 @@ export default function CartDrawer() {
                     onClick={closeCart}
                     className="btn btn-primary btn-lg"
                   >
-                    Browse Products
+                    {t('common.browseProducts')}
                   </Link>
                 </div>
               ) : (
@@ -90,7 +90,7 @@ export default function CartDrawer() {
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-stone-400 text-xs">
-                            No image
+                            {t('common.noImage')}
                           </div>
                         )}
                       </div>
@@ -155,7 +155,7 @@ export default function CartDrawer() {
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-stone-600">{t('common.shipping')}</span>
-                    <span>{shipping === 0 ? 'Free' : formatPrice(shipping)}</span>
+                    <span>{shipping === 0 ? t('common.free') : formatPrice(shipping)}</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-stone-600">{t('common.tax')}</span>
@@ -169,7 +169,7 @@ export default function CartDrawer() {
 
                 {shipping > 0 && (
                   <p className="text-xs text-stone-500 mb-4 text-center">
-                    Add {formatPrice(2625 - subtotal)} more for free shipping
+                    {t('common.freeShippingMore', { amount: formatPrice(2625 - subtotal) })}
                   </p>
                 )}
 

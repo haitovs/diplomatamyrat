@@ -116,11 +116,11 @@ export default function CheckoutPage() {
             className="inline-flex items-center gap-2 text-sm text-stone-600 hover:text-primary-600"
           >
             <ArrowLeft className="w-4 h-4" />
-            {step === 'payment' ? 'Back to Shipping' : 'Back to Cart'}
+            {step === 'payment' ? t('common.backToShipping') : t('common.backToCart')}
           </button>
         </nav>
 
-        <h1 className="section-title mb-8">Checkout</h1>
+        <h1 className="section-title mb-8">{t('checkout.title')}</h1>
 
         {/* Progress Steps */}
         <div className="flex items-center gap-4 mb-12">
@@ -216,7 +216,7 @@ export default function CheckoutPage() {
 
                   <div>
                     <label className="block text-sm font-medium text-stone-700 mb-1">
-                      Street Address
+                      {t('checkout.address')}
                     </label>
                     <input
                       {...register('street')}
@@ -231,7 +231,7 @@ export default function CheckoutPage() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-stone-700 mb-1">
-                        City
+                        {t('checkout.city')}
                       </label>
                       <input
                         {...register('city')}
@@ -244,7 +244,7 @@ export default function CheckoutPage() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-stone-700 mb-1">
-                        Postal Code
+                        {t('checkout.postalCode')}
                       </label>
                       <input
                         {...register('postalCode')}
@@ -258,7 +258,7 @@ export default function CheckoutPage() {
                   </div>
 
                   <button type="submit" className="btn btn-primary btn-xl w-full mt-6">
-                    Continue to Payment
+                    {t('checkout.continueToPayment')}
                   </button>
                 </div>
               )}
@@ -267,18 +267,18 @@ export default function CheckoutPage() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-3 mb-6">
                     <CreditCard className="w-5 h-5 text-primary-600" />
-                    <h2 className="text-xl font-heading font-semibold">Payment Method</h2>
+                    <h2 className="text-xl font-heading font-semibold">{t('checkout.paymentInfo')}</h2>
                   </div>
 
                   <div className="bg-stone-50 rounded-xl p-6 border border-stone-200">
                     <p className="text-sm text-stone-600 mb-4">
-                      This is a demo checkout. No real payment will be processed.
+                      {t('checkout.demoNotice')}
                     </p>
                     
                     <div className="space-y-4">
                       <div>
                         <label className="block text-sm font-medium text-stone-700 mb-1">
-                          Card Number
+                          {t('checkout.cardNumber')}
                         </label>
                         <input
                           type="text"
@@ -290,7 +290,7 @@ export default function CheckoutPage() {
                       <div className="grid grid-cols-2 gap-4">
                         <div>
                           <label className="block text-sm font-medium text-stone-700 mb-1">
-                            Expiry
+                            {t('checkout.expiry')}
                           </label>
                           <input
                             type="text"
@@ -301,7 +301,7 @@ export default function CheckoutPage() {
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-stone-700 mb-1">
-                            CVC
+                            {t('checkout.cvc')}
                           </label>
                           <input
                             type="text"
@@ -322,10 +322,10 @@ export default function CheckoutPage() {
                     {isProcessing ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                        Processing...
+                        {t('checkout.processing')}
                       </>
                     ) : (
-                      `Pay $${total.toFixed(2)}`
+                      t('checkout.payButton', { amount: formatPrice(total) })
                     )}
                   </button>
                 </div>
@@ -336,7 +336,7 @@ export default function CheckoutPage() {
           {/* Order Summary */}
           <div>
             <div className="bg-stone-50 rounded-xl p-6 sticky top-24">
-              <h3 className="font-heading font-semibold text-lg mb-4">Order Summary</h3>
+              <h3 className="font-heading font-semibold text-lg mb-4">{t('checkout.orderSummary')}</h3>
               
               <div className="space-y-3 mb-6">
                 {items.map((item) => (
@@ -350,7 +350,7 @@ export default function CheckoutPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate">{item.product.name}</p>
-                      <p className="text-xs text-stone-500">Qty: {item.quantity}</p>
+                      <p className="text-xs text-stone-500">{t('common.qty', { count: item.quantity })}</p>
                     </div>
                     <p className="text-sm font-medium">
                       ${(item.product.price * item.quantity).toFixed(2)}
@@ -366,7 +366,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-600">{t('common.shipping')}</span>
-                  <span>{shipping === 0 ? t('cart.title') : formatPrice(shipping)}</span>
+                  <span>{shipping === 0 ? t('common.free') : formatPrice(shipping)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-stone-600">{t('common.tax')}</span>
