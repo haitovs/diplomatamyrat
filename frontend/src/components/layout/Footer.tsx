@@ -36,7 +36,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link to="/" className="inline-block">
+            <Link to="/" className="inline-flex items-center gap-3">
+              <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
               <h3 className="text-2xl font-heading font-semibold text-white">
                 Hearth & Home
               </h3>

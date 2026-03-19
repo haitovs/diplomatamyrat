@@ -1,6 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
-import { AlertCircle, Eye, EyeOff, Home, LogIn } from 'lucide-react';
+import { AlertCircle, Eye, EyeOff, LogIn } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -50,10 +50,8 @@ export default function LoginPage() {
         className="w-full max-w-md"
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center justify-center gap-2 mb-8">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
-            <Home className="w-6 h-6 text-white" />
-          </div>
+        <Link to="/" className="flex items-center justify-center gap-3 mb-8">
+          <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
           <span className="font-heading font-semibold text-xl text-stone-900">Hearth & Home</span>
         </Link>
 

@@ -73,9 +73,7 @@ export default function AdminLayout() {
               animate={{ opacity: 1 }}
               className="flex items-center gap-2"
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-white" />
-              </div>
+              <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
               <span className="font-heading font-semibold">{t('nav.admin')}</span>
             </motion.div>
           )}
