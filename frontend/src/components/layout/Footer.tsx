@@ -32,41 +32,41 @@ export default function Footer() {
   return (
     <footer className="bg-stone-900 text-stone-300">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="grid grid-cols-2 gap-8 sm:gap-10 lg:grid-cols-4 lg:gap-12">
           {/* Brand */}
-          <div className="space-y-6">
+          <div className="col-span-2 space-y-5 lg:col-span-1">
             <Link to="/" className="inline-flex items-center gap-3">
-              <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
+              <img src="/logo.png" alt="Logo" className="w-11 h-11 object-contain" />
               <h3 className="text-2xl font-heading font-semibold text-white">
                 Hearth & Home
               </h3>
             </Link>
-            <p className="text-stone-400 leading-relaxed">
-              {t('footer.tagline')}
-            </p>
-            <div className="flex items-center gap-4">
-              <a 
-                href="mailto:hello@hearthandhome.com" 
+            <div className="space-y-3">
+              <a
+                href="mailto:hello@hearthandhome.com"
                 className="flex items-center gap-2 text-stone-400 hover:text-white transition-colors"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-4 h-4 shrink-0" />
                 <span className="text-sm">hello@hearthandhome.com</span>
               </a>
-            </div>
-            <div className="flex items-center gap-2 text-stone-400">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm">+1 (555) 123-4567</span>
-            </div>
-            <div className="flex items-center gap-2 text-stone-400">
-              <MapPin className="w-4 h-4" />
-              <span className="text-sm">Portland, Oregon</span>
+              <a
+                href="tel:+99312123456"
+                className="flex items-center gap-2 text-stone-400 hover:text-white transition-colors"
+              >
+                <Phone className="w-4 h-4 shrink-0" />
+                <span className="text-sm">+993 (12) 12-34-56</span>
+              </a>
+              <div className="flex items-center gap-2 text-stone-400">
+                <MapPin className="w-4 h-4 shrink-0" />
+                <span className="text-sm">{t('footer.address')}</span>
+              </div>
             </div>
           </div>
 
           {/* Categories */}
           <div>
-            <h4 className="text-white font-semibold mb-6">{t('footer.shop')}</h4>
+            <h4 className="text-white font-semibold mb-5 sm:mb-6">{t('footer.shop')}</h4>
             <ul className="space-y-3">
               {categories.map((cat) => (
                 <li key={cat.slug}>
@@ -120,11 +120,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-stone-800">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-stone-500 text-sm">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left">
+            <p className="text-stone-500 text-sm order-2 md:order-1">
               {t('common.copyrightYear', { year: currentYear })}
             </p>
-            <div className="flex items-center gap-6 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm order-1 md:order-2">
               <Link to="/privacy" className="text-stone-500 hover:text-white transition-colors">
                 {t('footer.privacy')}
               </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
                 {t('footer.adminPanel')}
               </Link>
             </div>
-            <p className="text-stone-500 text-sm flex items-center gap-1">
+            <p className="text-stone-500 text-sm flex items-center gap-1 order-3">
               {t('footer.madeWithLove')}
             </p>
           </div>

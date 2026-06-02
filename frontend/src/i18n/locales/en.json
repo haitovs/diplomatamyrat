@@ -226,7 +226,8 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "madeWithLove": "Made with ❤️ for your home",
-    "adminPanel": "Admin Panel"
+    "adminPanel": "Admin Panel",
+    "address": "Ashgabat, Turkmenistan"
   },
   "admin": {
     "dashboard": "Dashboard",
@@ -407,289 +408,1078 @@
       "name": "Artisan Stoneware Canister Set",
       "description": "Wheel-thrown stoneware canisters with snug acacia lids to keep dry goods fresh and display ready.",
       "materials": "Stoneware, acacia wood",
-      "highlights": ["Set of three nesting canisters", "Natural seal keeps ingredients fresh", "Dishwasher safe stoneware"]
+      "highlights": [
+        "Set of three nesting canisters",
+        "Natural seal keeps ingredients fresh",
+        "Dishwasher safe stoneware"
+      ]
     },
     "walnut-mise-en-place-board": {
       "name": "Walnut Mise en Place Board",
       "description": "Double-sided prep board with routed wells that keep chopped herbs and aromatics organized before cooking.",
       "materials": "Walnut wood, rubber feet",
-      "highlights": ["Mineral oil finish repels moisture", "Juice groove on reverse side", "Non-slip walnut feet"]
+      "highlights": [
+        "Mineral oil finish repels moisture",
+        "Juice groove on reverse side",
+        "Non-slip walnut feet"
+      ]
     },
     "slate-stone-dinnerware-set": {
       "name": "Slate Stone Dinnerware Set",
       "description": "A twelve-piece dinnerware set cast in matte stone that transitions from everyday meals to entertaining.",
       "materials": "Stoneware",
-      "highlights": ["Includes dinner, salad, and side plates", "Microwave and dishwasher safe", "Stackable with built-in feet"]
+      "highlights": [
+        "Includes dinner, salad, and side plates",
+        "Microwave and dishwasher safe",
+        "Stackable with built-in feet"
+      ]
     },
     "copper-gooseneck-pour-over-kettle": {
       "name": "Copper Gooseneck Pour-Over Kettle",
       "description": "Precision gooseneck kettle with temperature control for pour-over mornings and tea service.",
       "materials": "Copper, stainless steel",
-      "highlights": ["Built-in thermometer lid", "Induction-friendly base", "Ergonomic burn-resistant handle"]
+      "highlights": [
+        "Built-in thermometer lid",
+        "Induction-friendly base",
+        "Ergonomic burn-resistant handle"
+      ]
     },
     "stonewashed-linen-apron-set": {
       "name": "Stonewashed Linen Apron Set",
       "description": "Cross-back aprons cut from stonewashed linen with generous pockets for prep tools and tasting spoons.",
       "materials": "Linen, cotton straps",
-      "highlights": ["Adjustable cross-back straps relieve neck pressure", "Includes two matching tea towels", "Pre-washed to resist shrinking"]
+      "highlights": [
+        "Adjustable cross-back straps relieve neck pressure",
+        "Includes two matching tea towels",
+        "Pre-washed to resist shrinking"
+      ]
     },
     "cloudweight-spa-towel-bundle": {
       "name": "Cloudweight Spa Towel Bundle",
       "description": "Ultra absorbent spa towels with a plush terry side and textured reverse for home spa mornings.",
       "materials": "100% Turkish cotton",
-      "highlights": ["Includes two bath, two hand, two face towels", "OEKO-TEX certified cotton", "Corner loops for easy hanging"]
+      "highlights": [
+        "Includes two bath, two hand, two face towels",
+        "OEKO-TEX certified cotton",
+        "Corner loops for easy hanging"
+      ]
     },
     "teak-serenity-bath-caddy": {
       "name": "Teak Serenity Bath Caddy",
       "description": "Solid teak bath caddy with adjustable arms, space for a book, tablet, and candle for spa nights at home.",
       "materials": "Sustainably harvested teak",
-      "highlights": ["Extends 27\" to 41\" to fit most tubs", "Includes safe slots for glass and devices", "Water resistant finish"]
+      "highlights": [
+        "Extends 27\" to 41\" to fit most tubs",
+        "Includes safe slots for glass and devices",
+        "Water resistant finish"
+      ]
     },
     "cedar-slatted-bath-mat": {
       "name": "Cedar Slatted Bath Mat",
       "description": "Aromatic cedar bath mat that wicks water and adds warmth to tile floors.",
       "materials": "Cedar wood",
-      "highlights": ["Non-slip silicone feet", "Naturally mildew resistant", "Refreshes with simple sanding"]
+      "highlights": [
+        "Non-slip silicone feet",
+        "Naturally mildew resistant",
+        "Refreshes with simple sanding"
+      ]
     },
     "aromatherapy-shower-steamers": {
       "name": "Aromatherapy Shower Steamers",
       "description": "Eucalyptus and citrus shower steamers that transform quick showers into spa moments.",
       "materials": "Natural minerals, essential oils",
-      "highlights": ["Includes eight individually wrapped steamers", "Vegan and cruelty free", "Reusable ceramic dish included"]
+      "highlights": [
+        "Includes eight individually wrapped steamers",
+        "Vegan and cruelty free",
+        "Reusable ceramic dish included"
+      ]
     },
     "bamboo-bath-storage-ladder": {
       "name": "Bamboo Bath Storage Ladder",
       "description": "Lean this ladder beside the tub to hang towels, store baskets, and keep bath trays within easy reach.",
       "materials": "Bamboo, powder-coated steel",
-      "highlights": ["Five rungs with anti-slip feet", "Includes two removable storage caddies", "Sealed against humidity"]
+      "highlights": [
+        "Five rungs with anti-slip feet",
+        "Includes two removable storage caddies",
+        "Sealed against humidity"
+      ]
     },
     "belgian-linen-throw": {
       "name": "Belgian Linen Throw",
       "description": "Lightweight linen throw woven in Flanders with a soft stonewashed finish for effortless layering.",
       "materials": "100% Belgian flax linen",
-      "highlights": ["Generous 50\" x 70\" sizing", "Prewashed for lived-in softness", "Pairs with neutral palettes"]
+      "highlights": [
+        "Generous 50\" x 70\" sizing",
+        "Prewashed for lived-in softness",
+        "Pairs with neutral palettes"
+      ]
     },
     "lowline-oak-coffee-table": {
       "name": "Lowline Oak Coffee Table",
       "description": "Oversized oak coffee table with a chamfered edge and concealed storage built in small batches.",
       "materials": "FSC certified oak",
-      "highlights": ["Soft close storage drawer for remotes", "Finished with plant based oils", "Pairs with Hearth modular seating"]
+      "highlights": [
+        "Soft close storage drawer for remotes",
+        "Finished with plant based oils",
+        "Pairs with Hearth modular seating"
+      ]
     },
     "arc-ambient-floor-lamp": {
       "name": "Arc Ambient Floor Lamp",
       "description": "Oversized linen shade and arched steel base create soft, room-defining light.",
       "materials": "Steel, linen, marble",
-      "highlights": ["Three-stage dimmer", "Weighted marble base", "Includes LED bulb"]
+      "highlights": [
+        "Three-stage dimmer",
+        "Weighted marble base",
+        "Includes LED bulb"
+      ]
     },
     "hearth-ceramic-diffuser": {
       "name": "Hearth Ceramic Diffuser",
       "description": "Ultrasonic ceramic diffuser with a soft glow base for evening rituals.",
       "materials": "Ceramic, BPA-free reservoir",
-      "highlights": ["Runs up to 8 hours", "Auto shut-off timer", "Includes two seasonal oil blends"]
+      "highlights": [
+        "Runs up to 8 hours",
+        "Auto shut-off timer",
+        "Includes two seasonal oil blends"
+      ]
     },
     "hearth-boucle-pillow-set": {
       "name": "Hearth Bouclé Pillow Set",
       "description": "Pair of pillows in boucle and linen that adds depth to sofas and reading chairs.",
       "materials": "Bouclé polyester, linen, feather-down",
-      "highlights": ["Includes one 20\" and one 22\" pillow", "Feather-down insert with zipper cover", "Covers are machine washable"]
+      "highlights": [
+        "Includes one 20\" and one 22\" pillow",
+        "Feather-down insert with zipper cover",
+        "Covers are machine washable"
+      ]
     },
     "pine-cane-storage-baskets": {
       "name": "Pine + Cane Storage Baskets",
       "description": "Modular storage baskets with cane webbing fronts and integrated labels that stack effortlessly.",
       "materials": "Pine wood, cane webbing",
-      "highlights": ["Set of 2 medium and 1 large basket", "Collapsible for flat storage", "Comes with 6 interchangeable labels"]
+      "highlights": [
+        "Set of 2 medium and 1 large basket",
+        "Collapsible for flat storage",
+        "Comes with 6 interchangeable labels"
+      ]
     },
     "willow-entryway-console": {
       "name": "Willow Entryway Console",
       "description": "Slim console with concealed drawers and a floating shelf to corral entryway essentials.",
       "materials": "FSC oak veneer, steel",
-      "highlights": ["Integrated cord cut-outs", "Includes two cane-front drawers", "Adjustable leveling feet"]
+      "highlights": [
+        "Integrated cord cut-outs",
+        "Includes two cane-front drawers",
+        "Adjustable leveling feet"
+      ]
     },
     "clear-stackable-shoe-drawers": {
       "name": "Clear Stackable Shoe Drawers",
       "description": "Ventilated drawers that stack vertically to keep footwear easy to see and protected.",
       "materials": "Recycled PET",
-      "highlights": ["Magnetic drop-front door", "Fits up to mens size 13", "Modular design locks in place"]
+      "highlights": [
+        "Magnetic drop-front door",
+        "Fits up to mens size 13",
+        "Modular design locks in place"
+      ]
     },
     "pantry-closet-labeling-kit": {
       "name": "Pantry & Closet Labeling Kit",
       "description": "Water-resistant labels and chalk markers that keep bins, baskets, and jars organized.",
       "materials": "Vinyl, chalk ink",
-      "highlights": ["Includes 120 pre-printed labels", "Two refillable chalk pens", "Sheets of blanks for custom naming"]
+      "highlights": [
+        "Includes 120 pre-printed labels",
+        "Two refillable chalk pens",
+        "Sheets of blanks for custom naming"
+      ]
     },
     "atelier-wardrobe-rack": {
       "name": "Atelier Wardrobe Rack",
       "description": "Rolling wardrobe rack with a solid oak shelf for shoes and baskets—perfect for entryways or guest rooms.",
       "materials": "Steel, solid oak",
-      "highlights": ["Locking casters for easy movement", "Includes removable hanging hooks", "Shelf holds two storage bins"]
+      "highlights": [
+        "Locking casters for easy movement",
+        "Includes removable hanging hooks",
+        "Shelf holds two storage bins"
+      ]
     },
     "cedar-grove-laundry-trio": {
       "name": "Cedar Grove Laundry Trio",
       "description": "Plant based detergent, linen mist, and wool dryer balls with a crisp cedar scent for fresh laundry days.",
       "materials": "Glass, wool, plant based surfactants",
-      "highlights": ["Detergent works in HE and standard machines", "Glass bottles refill easily", "Includes three reusable wool dryer balls"]
+      "highlights": [
+        "Detergent works in HE and standard machines",
+        "Glass bottles refill easily",
+        "Includes three reusable wool dryer balls"
+      ]
     },
     "canvas-crest-laundry-hamper": {
       "name": "Canvas Crest Laundry Hamper",
       "description": "Structured double hamper with removable cotton liners and walnut handles for easy sorting.",
       "materials": "Cotton canvas, walnut",
-      "highlights": ["Two removable washable liners", "Rigid frame stands upright", "Handles crafted from reclaimed walnut"]
+      "highlights": [
+        "Two removable washable liners",
+        "Rigid frame stands upright",
+        "Handles crafted from reclaimed walnut"
+      ]
     },
     "foldaway-laundry-table": {
       "name": "Foldaway Laundry Table",
       "description": "Wall-mounted folding table with hidden shelves that creates a laundry workstation in seconds.",
       "materials": "Birch plywood, steel",
-      "highlights": ["Folds flat to 4 inches from wall", "Includes peg rail for tools", "Integrated power strip"]
+      "highlights": [
+        "Folds flat to 4 inches from wall",
+        "Includes peg rail for tools",
+        "Integrated power strip"
+      ]
     },
     "coastal-linen-refresh-spray": {
       "name": "Coastal Linen Refresh Spray",
       "description": "Plant-based linen spray with notes of sea salt, bergamot, and amber for between-wash refreshes.",
       "materials": "Distilled water, essential oils",
-      "highlights": ["Safe for upholstery and bedding", "Refillable glass bottle", "Paraben and phthalate free"]
+      "highlights": [
+        "Safe for upholstery and bedding",
+        "Refillable glass bottle",
+        "Paraben and phthalate free"
+      ]
     },
     "pressguard-steam-iron": {
       "name": "PressGuard Steam Iron",
       "description": "Hybrid iron and steamer with a stainless soleplate that glides over linens and delicates.",
       "materials": "Stainless steel, BPA-free reservoir",
-      "highlights": ["Adjustable steam with vertical mode", "Auto shut-off safety", "Includes heat-resistant storage mat"]
+      "highlights": [
+        "Adjustable steam with vertical mode",
+        "Auto shut-off safety",
+        "Includes heat-resistant storage mat"
+      ]
     },
     "terrace-entertaining-set": {
       "name": "Terrace Entertaining Set",
       "description": "Weather-ready entertaining kit with a woven drink cooler, shatterproof glassware, and LED lantern.",
       "materials": "Rattan, stainless steel, Tritan",
-      "highlights": ["Includes eight piece Tritan glassware set", "Cooler keeps ice for up to 12 hours", "Lantern offers three warm white settings"]
+      "highlights": [
+        "Includes eight piece Tritan glassware set",
+        "Cooler keeps ice for up to 12 hours",
+        "Lantern offers three warm white settings"
+      ]
     },
     "all-season-picnic-blanket": {
       "name": "All-Season Picnic Blanket",
       "description": "Water-resistant picnic blanket with a quilted top and carrying strap for impromptu gatherings.",
       "materials": "Recycled polyester, TPU backing",
-      "highlights": ["Sand-resistant underside wipes clean", "Machine washable and quick drying", "Includes adjustable carrying strap"]
+      "highlights": [
+        "Sand-resistant underside wipes clean",
+        "Machine washable and quick drying",
+        "Includes adjustable carrying strap"
+      ]
     },
     "ridge-terracotta-planter-pair": {
       "name": "Ridge Terracotta Planter Pair",
       "description": "Set of two ridged terracotta planters with drainage trays for patios and balconies.",
       "materials": "Terracotta",
-      "highlights": ["Frost and UV resistant finish", "Includes matching drip trays", "Ideal for herbs or small citrus"]
+      "highlights": [
+        "Frost and UV resistant finish",
+        "Includes matching drip trays",
+        "Ideal for herbs or small citrus"
+      ]
     },
     "solar-glow-lantern-trio": {
       "name": "Solar Glow Lantern Trio",
       "description": "Solar-powered lanterns with warm-white LEDs and woven exterior for ambient patios.",
       "materials": "Woven poly, solar LED core",
-      "highlights": ["Charges in 6 hours of daylight", "Three brightness settings", "Weather-resistant woven housing"]
+      "highlights": [
+        "Charges in 6 hours of daylight",
+        "Three brightness settings",
+        "Weather-resistant woven housing"
+      ]
     },
     "cinder-bowl-gas-fire-pit": {
       "name": "Cinder Bowl Gas Fire Pit",
       "description": "Low-profile gas fire pit with lava rock fill that brings warmth to patios without smoke.",
       "materials": "Glass fiber reinforced concrete, steel burner",
-      "highlights": ["Hidden propane compartment with quick ignition", "Includes weather cover and lava rock", "Adjustable flame height"]
+      "highlights": [
+        "Hidden propane compartment with quick ignition",
+        "Includes weather cover and lava rock",
+        "Adjustable flame height"
+      ]
     },
     "cast-iron-dutch-oven": {
       "name": "Cast Iron Dutch Oven",
       "description": "Enameled cast iron Dutch oven perfect for slow-cooked stews, fresh bread, and one-pot roasts.",
       "materials": "Enameled cast iron",
-      "highlights": ["5.5 quart capacity", "Self-basting condensation ridges on lid", "Works on all stovetops including induction"]
+      "highlights": [
+        "5.5 quart capacity",
+        "Self-basting condensation ridges on lid",
+        "Works on all stovetops including induction"
+      ]
     },
     "marble-pastry-board": {
       "name": "Marble Pastry Board",
       "description": "Naturally cool marble surface ideal for rolling dough, tempering chocolate, and presenting cheeses.",
       "materials": "Carrara marble, felt feet",
-      "highlights": ["Stays cool for delicate pastry work", "Non-porous polished surface", "Includes leather hanging strap"]
+      "highlights": [
+        "Stays cool for delicate pastry work",
+        "Non-porous polished surface",
+        "Includes leather hanging strap"
+      ]
     },
     "nested-mixing-bowl-set": {
       "name": "Nested Mixing Bowl Set",
       "description": "Seven-piece stoneware mixing bowl set in graduated sizes with pour spouts and non-slip bases.",
       "materials": "Stoneware",
-      "highlights": ["Microwave and dishwasher safe", "Nested design saves cabinet space", "Each bowl in a different earth tone"]
+      "highlights": [
+        "Microwave and dishwasher safe",
+        "Nested design saves cabinet space",
+        "Each bowl in a different earth tone"
+      ]
     },
     "rainfall-showerhead-system": {
       "name": "Rainfall Showerhead System",
       "description": "Overhead rain shower with handheld wand and easy-install bracket that transforms any bathroom.",
       "materials": "Brushed stainless steel",
-      "highlights": ["10-inch rainfall head with 6 spray modes", "Includes 60-inch flexible hose", "Tool-free installation"]
+      "highlights": [
+        "10-inch rainfall head with 6 spray modes",
+        "Includes 60-inch flexible hose",
+        "Tool-free installation"
+      ]
     },
     "organic-cotton-bath-robe": {
       "name": "Organic Cotton Bath Robe",
       "description": "Plush GOTS-certified organic cotton robe with waffle weave texture for quick drying.",
       "materials": "100% GOTS organic cotton",
-      "highlights": ["Available in S/M and L/XL", "Deep pockets and adjustable belt", "Gets softer with every wash"]
+      "highlights": [
+        "Available in S/M and L/XL",
+        "Deep pockets and adjustable belt",
+        "Gets softer with every wash"
+      ]
     },
     "vanity-organization-tray": {
       "name": "Vanity Organization Tray",
       "description": "Three-compartment marble and brass tray that corrals daily essentials on any bathroom counter.",
       "materials": "Italian marble, brass",
-      "highlights": ["Non-scratch felt base", "Removable dividers", "Pairs with matching soap dispenser"]
+      "highlights": [
+        "Non-scratch felt base",
+        "Removable dividers",
+        "Pairs with matching soap dispenser"
+      ]
     },
     "woven-jute-area-rug": {
       "name": "Woven Jute Area Rug",
       "description": "Hand-braided jute rug that adds natural warmth and texture beneath coffee tables and reading nooks.",
       "materials": "Natural jute fiber",
-      "highlights": ["Available in 5x7 and 8x10 sizes", "Reversible design", "Compatible with rug pads"]
+      "highlights": [
+        "Available in 5x7 and 8x10 sizes",
+        "Reversible design",
+        "Compatible with rug pads"
+      ]
     },
     "floating-oak-wall-shelf-set": {
       "name": "Floating Oak Wall Shelf Set",
       "description": "Set of three floating shelves in smoked oak with concealed brackets for clean gallery-wall displays.",
       "materials": "Smoked oak, steel brackets",
-      "highlights": ["Three lengths: 24, 36, and 48 inches", "Each shelf holds up to 15 kg", "All mounting hardware included"]
+      "highlights": [
+        "Three lengths: 24, 36, and 48 inches",
+        "Each shelf holds up to 15 kg",
+        "All mounting hardware included"
+      ]
     },
     "terracotta-table-lamp": {
       "name": "Terracotta Table Lamp",
       "description": "Sculptural terracotta lamp with linen drum shade that brings earthy warmth to bedside tables.",
       "materials": "Terracotta, linen shade",
-      "highlights": ["Inline dimmer switch", "Includes LED bulb", "E26 socket fits most shades"]
+      "highlights": [
+        "Inline dimmer switch",
+        "Includes LED bulb",
+        "E26 socket fits most shades"
+      ]
     },
     "under-bed-rolling-drawer": {
       "name": "Under-Bed Rolling Drawer",
       "description": "Canvas and oak drawer on smooth casters that transforms wasted under-bed space into organized storage.",
       "materials": "Canvas, oak frame, casters",
-      "highlights": ["Fits beds with 8 inches clearance", "Removable washable liner", "Reinforced handles"]
+      "highlights": [
+        "Fits beds with 8 inches clearance",
+        "Removable washable liner",
+        "Reinforced handles"
+      ]
     },
     "pegboard-wall-organizer": {
       "name": "Pegboard Wall Organizer",
       "description": "Modular oak pegboard with shelves, hooks, and bins for entryways, offices, or craft rooms.",
       "materials": "Solid oak, powder-coated steel pegs",
-      "highlights": ["Includes 12 pegs, 2 shelves, 1 bin", "Additional accessories sold separately", "Mounting hardware for drywall and studs"]
+      "highlights": [
+        "Includes 12 pegs, 2 shelves, 1 bin",
+        "Additional accessories sold separately",
+        "Mounting hardware for drywall and studs"
+      ]
     },
     "tiered-corner-shelf-unit": {
       "name": "Tiered Corner Shelf Unit",
       "description": "Five-tier corner shelf that maximizes forgotten corner space in any room.",
       "materials": "Bamboo, steel frame",
-      "highlights": ["Fits 90-degree wall corners perfectly", "Anti-tip wall anchor included", "Each shelf holds up to 10 kg"]
+      "highlights": [
+        "Fits 90-degree wall corners perfectly",
+        "Anti-tip wall anchor included",
+        "Each shelf holds up to 10 kg"
+      ]
     },
     "retractable-clothesline-reel": {
       "name": "Retractable Clothesline Reel",
       "description": "Indoor-outdoor retractable clothesline with 12 meters of UV-resistant cord for air drying.",
       "materials": "ABS plastic, stainless cord",
-      "highlights": ["Tension auto-lock mechanism", "Holds up to 20 kg of laundry", "Retracts flush to wall"]
+      "highlights": [
+        "Tension auto-lock mechanism",
+        "Holds up to 20 kg of laundry",
+        "Retracts flush to wall"
+      ]
     },
     "wrinkle-release-steamer": {
       "name": "Wrinkle Release Steamer",
       "description": "Compact garment steamer with continuous steam that freshens clothes in seconds without an ironing board.",
       "materials": "Stainless steel plate, BPA-free tank",
-      "highlights": ["Heats up in 25 seconds", "200 ml tank for 15 minutes of steam", "Includes fabric brush attachment"]
+      "highlights": [
+        "Heats up in 25 seconds",
+        "200 ml tank for 15 minutes of steam",
+        "Includes fabric brush attachment"
+      ]
     },
     "mesh-wash-bag-set": {
       "name": "Mesh Wash Bag Set",
       "description": "Set of six mesh bags in three sizes to protect delicates, activewear, and lingerie in the wash.",
       "materials": "Polyester mesh, YKK zippers",
-      "highlights": ["Includes 2 large, 2 medium, 2 small bags", "Reinforced seams and rust-free zippers", "Machine washable and dryer safe"]
+      "highlights": [
+        "Includes 2 large, 2 medium, 2 small bags",
+        "Reinforced seams and rust-free zippers",
+        "Machine washable and dryer safe"
+      ]
     },
     "hammock-with-steel-stand": {
       "name": "Hammock with Steel Stand",
       "description": "Double hammock on a portable steel frame — sets up in minutes for patio lounging or garden reading.",
       "materials": "Cotton weave, powder-coated steel",
-      "highlights": ["Holds up to 200 kg", "Includes carrying bag for travel", "Spreader bars prevent tangling"]
+      "highlights": [
+        "Holds up to 200 kg",
+        "Includes carrying bag for travel",
+        "Spreader bars prevent tangling"
+      ]
     },
     "solar-pathway-light-set": {
       "name": "Solar Pathway Light Set",
       "description": "Eight solar-powered stake lights with warm amber LEDs that line walkways and garden paths.",
       "materials": "Stainless steel, glass lens",
-      "highlights": ["Auto on at dusk, off at dawn", "IP65 waterproof rated", "Replaceable rechargeable batteries"]
+      "highlights": [
+        "Auto on at dusk, off at dawn",
+        "IP65 waterproof rated",
+        "Replaceable rechargeable batteries"
+      ]
     },
     "ceramic-herb-planter-kit": {
       "name": "Ceramic Herb Planter Kit",
       "description": "Window-sill planter set with three ceramic pots, bamboo tray, and seed packets for basil, mint, and cilantro.",
       "materials": "Ceramic, bamboo, organic seeds",
-      "highlights": ["Includes drainage holes and bamboo tray", "Three seed packets with growing guide", "Perfect for apartment gardens"]
+      "highlights": [
+        "Includes drainage holes and bamboo tray",
+        "Three seed packets with growing guide",
+        "Perfect for apartment gardens"
+      ]
+    }
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "About Us",
+      "title": "Creating calm in every home",
+      "subtitle": "Hearth & Home crafts thoughtful household essentials that make everyday living more beautiful.",
+      "storyTitle": "Our story",
+      "storyParagraphs": [
+        "We started with a simple belief: household goods can be beautiful, durable, and kind to the planet. Today we bring sustainably made essentials to homes across Turkmenistan.",
+        "Every product is chosen for quality that lasts for years, not seasons. We believe in fewer, more meaningful things.",
+        "From a small workshop, our journey has now reached thousands of homes — but our goal stays the same: to make everyday living simple and beautiful."
+      ],
+      "valuesTitle": "Our values",
+      "values": [
+        {
+          "title": "Quality",
+          "desc": "Every item is tested for durability and long-term use."
+        },
+        {
+          "title": "From nature",
+          "desc": "Eco-friendly and recyclable materials."
+        },
+        {
+          "title": "Simplicity",
+          "desc": "Nothing excessive — only what your home truly needs."
+        }
+      ],
+      "stats": [
+        {
+          "num": "2,500+",
+          "label": "Happy customers"
+        },
+        {
+          "num": "48 hr",
+          "label": "Average delivery"
+        },
+        {
+          "num": "95%",
+          "label": "Natural materials"
+        }
+      ],
+      "ctaTitle": "Explore our collection",
+      "ctaDesc": "Find beautiful, practical goods for your home.",
+      "ctaButton": "Shop products",
+      "philosophyTitle": "Our philosophy",
+      "philosophyText": "Beauty should live not only in how something looks, but in how it is used. We want every piece to feel good in your hand, to last for years, and to become a quiet part of your home over time.",
+      "principles": [
+        {
+          "title": "Thoughtful design",
+          "desc": "Every detail is considered with purpose."
+        },
+        {
+          "title": "Craftsmanship",
+          "desc": "Goods made by the hands of skilled makers."
+        },
+        {
+          "title": "Timeless",
+          "desc": "Design that never goes out of style."
+        }
+      ],
+      "milestonesTitle": "Our journey",
+      "milestones": [
+        {
+          "year": "2019",
+          "title": "The beginning",
+          "desc": "Our first products were made in a small workshop."
+        },
+        {
+          "year": "2021",
+          "title": "Online store",
+          "desc": "We began serving the whole country online."
+        },
+        {
+          "year": "2023",
+          "title": "Eco packaging",
+          "desc": "We moved away from plastic completely."
+        },
+        {
+          "year": "2026",
+          "title": "Thousands of homes",
+          "desc": "Our goods are now in over 2,500 homes."
+        }
+      ]
+    },
+    "sustainability": {
+      "eyebrow": "Sustainability",
+      "title": "Made with respect for nature",
+      "subtitle": "We work to reduce the impact of every product — from materials to packaging.",
+      "introTitle": "Our commitment",
+      "introText": "We believe beauty and responsibility belong together, so we choose sustainable solutions at every step of production.",
+      "commitments": [
+        {
+          "title": "Recycled materials",
+          "desc": "95% of our products use natural or recycled raw materials."
+        },
+        {
+          "title": "Plastic-free packaging",
+          "desc": "Every order arrives in recyclable paper."
+        },
+        {
+          "title": "Fair production",
+          "desc": "Fair and transparent partnerships with our makers."
+        },
+        {
+          "title": "Lower carbon footprint",
+          "desc": "Working with local suppliers to reduce transport."
+        }
+      ],
+      "impactTitle": "Our impact",
+      "impactStats": [
+        {
+          "num": "95%",
+          "label": "Natural materials"
+        },
+        {
+          "num": "0",
+          "label": "Plastic packaging"
+        },
+        {
+          "num": "12 t",
+          "label": "Waste cut per year"
+        },
+        {
+          "num": "40+",
+          "label": "Local suppliers"
+        }
+      ],
+      "materialsTitle": "The materials we use",
+      "materials": [
+        {
+          "title": "Stoneware & ceramics",
+          "desc": "Hand-made from natural clay, built to last."
+        },
+        {
+          "title": "FSC wood",
+          "desc": "Sourced from responsibly managed forests."
+        },
+        {
+          "title": "Organic textiles",
+          "desc": "Cotton and linen grown without harsh chemicals."
+        },
+        {
+          "title": "Recycled glass",
+          "desc": "Energy-saving products made from reused glass."
+        }
+      ],
+      "goalsTitle": "Our goals by 2030",
+      "goals": [
+        {
+          "title": "Full carbon neutrality",
+          "desc": "Reducing emissions in production and delivery to zero."
+        },
+        {
+          "title": "100% recyclable packaging",
+          "desc": "Making all packaging fully recyclable."
+        },
+        {
+          "title": "Local partnerships",
+          "desc": "Sourcing 80% of suppliers from local businesses."
+        }
+      ]
+    },
+    "journal": {
+      "eyebrow": "Journal",
+      "title": "Ideas & inspiration",
+      "subtitle": "Articles about home, lifestyle, and sustainable living.",
+      "readMore": "Read more",
+      "articles": [
+        {
+          "category": "Kitchen",
+          "title": "5 tips for a simpler kitchen",
+          "excerpt": "How to create a tidier, more functional kitchen with less.",
+          "date": "May 12, 2026"
+        },
+        {
+          "category": "Sustainability",
+          "title": "Natural materials instead of plastic",
+          "excerpt": "Easy ways to reduce plastic in your home.",
+          "date": "Apr 28, 2026"
+        },
+        {
+          "category": "Decor",
+          "title": "The power of warm lighting",
+          "excerpt": "Ways to make any room cosy and welcoming.",
+          "date": "Apr 15, 2026"
+        },
+        {
+          "category": "Care",
+          "title": "Make your homeware last",
+          "excerpt": "Simple care habits that extend the life of your goods.",
+          "date": "Apr 2, 2026"
+        },
+        {
+          "category": "Inspiration",
+          "title": "Styling a small space",
+          "excerpt": "Ideas to make a small home feel more open and tidy.",
+          "date": "Mar 20, 2026"
+        },
+        {
+          "category": "Sustainability",
+          "title": "First steps to a zero-waste home",
+          "excerpt": "Simple starting points for cutting waste in daily life.",
+          "date": "Mar 8, 2026"
+        }
+      ],
+      "topicsTitle": "Topics",
+      "topics": [
+        "Kitchen",
+        "Sustainability",
+        "Decor",
+        "Care",
+        "Inspiration"
+      ]
+    },
+    "careers": {
+      "eyebrow": "Careers",
+      "title": "Join our team",
+      "subtitle": "We're looking for people passionate about beautiful, sustainable homeware.",
+      "introText": "At Hearth & Home we value learning, growth, and supporting one another. Take a look at our open positions below.",
+      "perksTitle": "What we offer",
+      "perks": [
+        {
+          "title": "Flexible hours",
+          "desc": "We support a healthy work-life balance."
+        },
+        {
+          "title": "Growth",
+          "desc": "Opportunities to learn and develop."
+        },
+        {
+          "title": "Discounts",
+          "desc": "Employee discount on all products."
+        },
+        {
+          "title": "Friendly team",
+          "desc": "An open and supportive workplace."
+        }
+      ],
+      "openingsTitle": "Open positions",
+      "openings": [
+        {
+          "title": "Product Designer",
+          "dept": "Design",
+          "location": "Ashgabat",
+          "type": "Full-time"
+        },
+        {
+          "title": "Customer Support Specialist",
+          "dept": "Support",
+          "location": "Ashgabat",
+          "type": "Full-time"
+        },
+        {
+          "title": "Content Writer",
+          "dept": "Marketing",
+          "location": "Remote",
+          "type": "Part-time"
+        },
+        {
+          "title": "Warehouse Logistics",
+          "dept": "Operations",
+          "location": "Ashgabat",
+          "type": "Full-time"
+        }
+      ],
+      "applyButton": "Apply",
+      "cultureTitle": "Life at Hearth & Home",
+      "cultureText": "We value openness, respect, and learning from one another. Our team members share ideas freely and make a real impact.",
+      "culturePoints": [
+        {
+          "title": "Open dialogue",
+          "desc": "Every voice is heard and valued."
+        },
+        {
+          "title": "Learning culture",
+          "desc": "Mistakes are treated as part of growth."
+        },
+        {
+          "title": "Meaningful work",
+          "desc": "We see our work reach real homes."
+        }
+      ],
+      "processTitle": "Our hiring process",
+      "processSteps": [
+        {
+          "title": "Apply",
+          "desc": "Send your application for the role."
+        },
+        {
+          "title": "Interview",
+          "desc": "An introductory chat with the team."
+        },
+        {
+          "title": "Task",
+          "desc": "Show your skills with a small practical task."
+        },
+        {
+          "title": "Offer",
+          "desc": "We agree on terms and you join the team."
+        }
+      ]
+    },
+    "help": {
+      "eyebrow": "Help Center",
+      "title": "How can we help?",
+      "subtitle": "Answers to common questions. Can't find yours? Get in touch.",
+      "faqs": [
+        {
+          "q": "When will my order arrive?",
+          "a": "Within 24-48 hours in Ashgabat, and 3-5 business days to the regions."
+        },
+        {
+          "q": "What payment methods do you accept?",
+          "a": "Cash on delivery, bank cards, and online payment."
+        },
+        {
+          "q": "Can I return an item?",
+          "a": "Yes, unused items can be returned within 14 days."
+        },
+        {
+          "q": "Is delivery free?",
+          "a": "Delivery is free on orders over 2,625 TMT."
+        },
+        {
+          "q": "How do I track my order?",
+          "a": "You'll receive tracking details once your order is confirmed."
+        },
+        {
+          "q": "What if my item arrives damaged?",
+          "a": "Contact us with a photo — we'll replace it or refund you right away."
+        },
+        {
+          "q": "Do I need an account?",
+          "a": "No, you can order as a guest, though an account makes tracking easier."
+        },
+        {
+          "q": "Are your products guaranteed?",
+          "a": "Yes, we offer a guarantee against manufacturing defects."
+        }
+      ],
+      "ctaTitle": "Didn't find your answer?",
+      "ctaDesc": "Our team is ready to help.",
+      "ctaButton": "Contact us",
+      "topicsTitle": "Help topics",
+      "topics": [
+        {
+          "title": "Orders",
+          "desc": "Placing and tracking your orders."
+        },
+        {
+          "title": "Shipping",
+          "desc": "Timeframes, zones, and costs."
+        },
+        {
+          "title": "Returns",
+          "desc": "Exchanges and refund policy."
+        },
+        {
+          "title": "Payment",
+          "desc": "Payment methods and security."
+        }
+      ]
+    },
+    "shipping": {
+      "eyebrow": "Shipping",
+      "title": "Shipping information",
+      "subtitle": "Reliable, fast delivery to every region of Turkmenistan.",
+      "zonesTitle": "Delivery zones",
+      "zones": [
+        {
+          "region": "Ashgabat city",
+          "time": "24-48 hours",
+          "cost": "15 TMT"
+        },
+        {
+          "region": "Regional centers",
+          "time": "2-3 business days",
+          "cost": "25 TMT"
+        },
+        {
+          "region": "Other districts",
+          "time": "3-5 business days",
+          "cost": "35 TMT"
+        }
+      ],
+      "freeTitle": "Free shipping",
+      "freeDesc": "Free delivery on all orders over 2,625 TMT.",
+      "processTitle": "How delivery works",
+      "steps": [
+        {
+          "title": "Order",
+          "desc": "Confirm your order online."
+        },
+        {
+          "title": "Preparation",
+          "desc": "We pack your items with care."
+        },
+        {
+          "title": "Delivery",
+          "desc": "We deliver to your address."
+        }
+      ],
+      "packagingTitle": "About packaging",
+      "packagingText": "Every order arrives in recyclable paper and plastic-free materials. Fragile items are packed carefully with extra protection.",
+      "faqTitle": "Shipping questions",
+      "faqs": [
+        {
+          "q": "Can I track my order?",
+          "a": "Yes, a tracking number is sent when your order ships."
+        },
+        {
+          "q": "Can I choose a delivery time?",
+          "a": "In Ashgabat you can pick a convenient time window."
+        },
+        {
+          "q": "Do you ship internationally?",
+          "a": "For now we deliver only within Turkmenistan."
+        }
+      ]
+    },
+    "returns": {
+      "eyebrow": "Returns",
+      "title": "Returns & exchanges",
+      "subtitle": "Not satisfied? You can return your item easily.",
+      "introText": "You can return items within 14 days of receipt, as long as they are unused and in original packaging.",
+      "steps": [
+        {
+          "title": "Contact us",
+          "desc": "Reach out with your order number."
+        },
+        {
+          "title": "Pack",
+          "desc": "Place the item in its original packaging."
+        },
+        {
+          "title": "Send",
+          "desc": "Our courier will collect the item."
+        },
+        {
+          "title": "Refund",
+          "desc": "Refunds are issued within 3-5 days of approval."
+        }
+      ],
+      "policyTitle": "Policy",
+      "policy": [
+        "Items must be unused and undamaged.",
+        "Original packaging and tags must be kept.",
+        "Personal care items cannot be returned.",
+        "A receipt or order number must be provided."
+      ],
+      "methodsTitle": "Refund methods",
+      "methods": [
+        {
+          "title": "Original payment",
+          "desc": "Refunded to your original payment method."
+        },
+        {
+          "title": "Store credit",
+          "desc": "Issued as balance for your next purchase."
+        },
+        {
+          "title": "Exchange",
+          "desc": "Swap the item for a different size or style."
+        }
+      ],
+      "faqTitle": "Returns questions",
+      "faqs": [
+        {
+          "q": "How long does a refund take?",
+          "a": "Refunds are issued within 3-5 business days after the item is checked."
+        },
+        {
+          "q": "Is return shipping free?",
+          "a": "If the item is faulty, returns are free. Otherwise a small fee may apply."
+        },
+        {
+          "q": "Can I exchange an item?",
+          "a": "Yes, if the style you want is in stock."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Get in touch",
+      "subtitle": "Have a question? Write to us — we'll reply as soon as we can.",
+      "formName": "Your name",
+      "formEmail": "Your email",
+      "formMessage": "Your message",
+      "formSubmit": "Send message",
+      "successMsg": "Your message has been sent! We'll reply soon.",
+      "infoTitle": "Contact details",
+      "addressLabel": "Address",
+      "addressValue": "Ashgabat, Turkmenistan",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Working hours",
+      "hoursValue": "Mon–Fri, 9:00–18:00",
+      "channelsTitle": "Contact channels",
+      "channels": [
+        {
+          "title": "General enquiries",
+          "desc": "About products and orders.",
+          "value": "hello@hearthandhome.com"
+        },
+        {
+          "title": "Customer support",
+          "desc": "For orders and returns.",
+          "value": "+993 (12) 12-34-56"
+        },
+        {
+          "title": "Partnerships",
+          "desc": "Business and partnership requests.",
+          "value": "partners@hearthandhome.com"
+        }
+      ],
+      "responseNote": "We usually reply within 24 hours."
+    },
+    "legal": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "subtitle": "How we protect your personal information.",
+        "lastUpdated": "Last updated: June 1, 2026",
+        "sections": [
+          {
+            "title": "Information we collect",
+            "body": "When you place an order we collect necessary details such as your name, address, and contact information."
+          },
+          {
+            "title": "How we use information",
+            "body": "Your information is used only to fulfil orders and improve our service."
+          },
+          {
+            "title": "Data protection",
+            "body": "Your personal data is stored securely and is never sold to third parties."
+          },
+          {
+            "title": "Cookies",
+            "body": "We use cookies to improve the site. You can disable them in your browser."
+          },
+          {
+            "title": "Payment security",
+            "body": "Your payment details are processed encrypted and are not stored by us."
+          },
+          {
+            "title": "Third-party services",
+            "body": "We work with trusted partners for delivery and payment; they receive only what is needed."
+          },
+          {
+            "title": "Your rights",
+            "body": "You can contact us to view, correct, or delete your information."
+          },
+          {
+            "title": "Contact",
+            "body": "For privacy questions, write to hello@hearthandhome.com."
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "subtitle": "The terms for using our website.",
+        "lastUpdated": "Last updated: June 1, 2026",
+        "sections": [
+          {
+            "title": "General",
+            "body": "By using this site you accept the following terms."
+          },
+          {
+            "title": "Account",
+            "body": "You are responsible for the security of your account and all activity on it."
+          },
+          {
+            "title": "Orders",
+            "body": "An order takes effect once confirmed. Prices may change without notice."
+          },
+          {
+            "title": "Payments",
+            "body": "All payments are processed in the displayed currency (TMT)."
+          },
+          {
+            "title": "Delivery",
+            "body": "Delivery times are estimates and may vary due to external factors."
+          },
+          {
+            "title": "Intellectual property",
+            "body": "All content and images on the site belong to Hearth & Home."
+          },
+          {
+            "title": "Responsibility",
+            "body": "Using products as intended is the customer's responsibility."
+          },
+          {
+            "title": "Changes",
+            "body": "We may update these terms at any time. Changes are posted on the site."
+          }
+        ]
+      }
     }
   }
 }

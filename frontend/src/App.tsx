@@ -5,19 +5,29 @@ import CartDrawer from './components/cart/CartDrawer';
 import ToastContainer from './components/common/Toast';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
+import ScrollToTop from './components/layout/ScrollToTop';
 import AdminCategories from './pages/admin/AdminCategories';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminOrders from './pages/admin/AdminOrders';
 import AdminProducts from './pages/admin/AdminProducts';
 import AdminSettings from './pages/admin/AdminSettings';
 import AdminUsers from './pages/admin/AdminUsers';
+import AboutPage from './pages/AboutPage';
+import CareersPage from './pages/CareersPage';
 import CategoryPage from './pages/CategoryPage';
 import CheckoutPage from './pages/CheckoutPage';
+import ContactPage from './pages/ContactPage';
+import HelpCenterPage from './pages/HelpCenterPage';
 import HomePage from './pages/HomePage';
+import JournalPage from './pages/JournalPage';
+import LegalPage from './pages/LegalPage';
 import LoginPage from './pages/LoginPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ProductsPage from './pages/ProductsPage';
+import ReturnsPage from './pages/ReturnsPage';
+import ShippingPage from './pages/ShippingPage';
+import SustainabilityPage from './pages/SustainabilityPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -44,6 +54,7 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Login Route */}
           <Route path="/login" element={<LoginPage />} />
@@ -69,6 +80,23 @@ export default function App() {
                   <Route path="/product/:slug" element={<ProductDetailPage />} />
                   <Route path="/category/:slug" element={<CategoryPage />} />
                   <Route path="/checkout" element={<CheckoutPage />} />
+
+                  {/* Company */}
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/sustainability" element={<SustainabilityPage />} />
+                  <Route path="/journal" element={<JournalPage />} />
+                  <Route path="/careers" element={<CareersPage />} />
+
+                  {/* Support */}
+                  <Route path="/support" element={<HelpCenterPage />} />
+                  <Route path="/shipping" element={<ShippingPage />} />
+                  <Route path="/returns" element={<ReturnsPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+
+                  {/* Legal */}
+                  <Route path="/privacy" element={<LegalPage kind="privacy" />} />
+                  <Route path="/terms" element={<LegalPage kind="terms" />} />
+
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>
               </AppLayout>

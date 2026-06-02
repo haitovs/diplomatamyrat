@@ -211,7 +211,7 @@
     "description": "Gözleýän sahypaňyz ýok ýa-da göçürildi."
   },
   "footer": {
-    "tagline": "Akyldarlyk bilen ýaşamak üçin öýlenen öý harytlary. Ekologiýa taýdan ýasalan, gözel ýönekeý.",
+    "tagline": "Aňly-düşünjeli durmuş üçin oýlanyşykly öý esbaplary. Ekologik taýdan arassa, sada hem owadan harytlar.",
     "shop": "Söwda",
     "company": "Kompaniýa",
     "aboutUs": "Biz barada",
@@ -226,7 +226,8 @@
     "privacy": "Gizlinlik syýasaty",
     "terms": "Ulanyş şertleri",
     "madeWithLove": "Siziň öýüňiz üçin ❤️ bilen ýasaldy",
-    "adminPanel": "Admin paneli"
+    "adminPanel": "Admin paneli",
+    "address": "Aşgabat, Türkmenistan"
   },
   "admin": {
     "dashboard": "Dolandyryş paneli",
@@ -407,289 +408,1078 @@
       "name": "Ussatlyk keramiki banka toplumy",
       "description": "Gury önümleri täze saklamak üçin akasiýa agaç gapagy bolan keramiki bankalar.",
       "materials": "Keramika, akasiýa agajy",
-      "highlights": ["Üç sany salynýan banka", "Tebigy möhür önümleri täze saklaýar", "Gap-gaç ýuwýan maşynda ýuwup bolýar"]
+      "highlights": [
+        "Üç sany salynýan banka",
+        "Tebigy möhür önümleri täze saklaýar",
+        "Gap-gaç ýuwýan maşynda ýuwup bolýar"
+      ]
     },
     "walnut-mise-en-place-board": {
       "name": "Hozy agaç taýýarlyk tagtasy",
       "description": "Dogralan otlary we ysly zatlary guramaçylykly saklamak üçin iki taraply tagta.",
       "materials": "Hoz agajy, rezin aýaklar",
-      "highlights": ["Mineral ýag çyglylyga garşy", "Ters tarapynda şire çukurjygy", "Süýşmeýän aýaklar"]
+      "highlights": [
+        "Mineral ýag çyglylyga garşy",
+        "Ters tarapynda şire çukurjygy",
+        "Süýşmeýän aýaklar"
+      ]
     },
     "slate-stone-dinnerware-set": {
       "name": "Şifer daş gap-gaç toplumy",
       "description": "Gündelik we baýramçylyk üçin mat keramiki on iki bölekli gap-gaç toplumy.",
       "materials": "Keramika",
-      "highlights": ["Nahar, salat we gapdal tabaklar goşulýar", "Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk", "Gurlan aýaklary bilen üýşürip bolýar"]
+      "highlights": [
+        "Nahar, salat we gapdal tabaklar goşulýar",
+        "Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk",
+        "Gurlan aýaklary bilen üýşürip bolýar"
+      ]
     },
     "copper-gooseneck-pour-over-kettle": {
       "name": "Mis gaz boýunly çaýnek",
       "description": "Irdenki kofe we çaý üçin temperatura gözegçilikli çaýnek.",
       "materials": "Mis, poslamaýan polat",
-      "highlights": ["Gapagy termometrli", "Induksiýa üçin ýaramly", "Ergonomik ýanmaýan tutawajy"]
+      "highlights": [
+        "Gapagy termometrli",
+        "Induksiýa üçin ýaramly",
+        "Ergonomik ýanmaýan tutawajy"
+      ]
     },
     "stonewashed-linen-apron-set": {
       "name": "Ýuwlan zygyr mata öňlük toplumy",
       "description": "Giň jübüli kesişýän gaýyşly ýuwlan zygyr mata öňlükler.",
       "materials": "Zygyr mata, pagta gaýyşlar",
-      "highlights": ["Sazlanyp bolýan gaýyşlar boýnuňyzy rahatlandyrýar", "Iki sany el süpürgisi goşulýar", "Öňünden ýuwlup kiçelmä garşy"]
+      "highlights": [
+        "Sazlanyp bolýan gaýyşlar boýnuňyzy rahatlandyrýar",
+        "Iki sany el süpürgisi goşulýar",
+        "Öňünden ýuwlup kiçelmä garşy"
+      ]
     },
     "cloudweight-spa-towel-bundle": {
       "name": "Spa polotentse toplumy",
       "description": "Irdenki spa üçin ýumşak mahry tarapy bolan aşa siňdiriji spa polotenseleri.",
       "materials": "100% Türk pagtasy",
-      "highlights": ["Iki hammam, iki el, iki ýüz polotenseleri", "OEKO-TEX sertifikatly pagta", "Asmak üçin burç halkalary"]
+      "highlights": [
+        "Iki hammam, iki el, iki ýüz polotenseleri",
+        "OEKO-TEX sertifikatly pagta",
+        "Asmak üçin burç halkalary"
+      ]
     },
     "teak-serenity-bath-caddy": {
       "name": "Tik agaç hammam tekjesi",
       "description": "Kitap, planşet we şem üçin ýerli sazlanýan tik agaç tekje.",
       "materials": "Durnukly tokaýlardan tik agajy",
-      "highlights": ["68 sm-den 104 sm-e çenli uzaýar", "Stakan we enjam üçin ygtybarly ýerler", "Suwa çydamly örtük"]
+      "highlights": [
+        "68 sm-den 104 sm-e çenli uzaýar",
+        "Stakan we enjam üçin ygtybarly ýerler",
+        "Suwa çydamly örtük"
+      ]
     },
     "cedar-slatted-bath-mat": {
       "name": "Kedr reýkaly hammam düşegi",
       "description": "Suwy çekýän we kafel pola ýylylyk goşýan ysly kedr düşegi.",
       "materials": "Kedr agajy",
-      "highlights": ["Süýşmeýän silikon aýaklar", "Tebigy çyglylyga garşy", "Ýönekeý zımpara bilen täzelenýär"]
+      "highlights": [
+        "Süýşmeýän silikon aýaklar",
+        "Tebigy çyglylyga garşy",
+        "Ýönekeý zımpara bilen täzelenýär"
+      ]
     },
     "aromatherapy-shower-steamers": {
       "name": "Aromaterapiýa duş tabletkasy",
       "description": "Çalt duşy spa pursatyna öwürýän ewkalipt we sitrus tabletkalar.",
       "materials": "Tebigy minerallar, efir ýaglary",
-      "highlights": ["Sekiz sany aýratyn gaplanan tabletka", "Wegan we rehimsizliksiz", "Keramiki gapjagaz goşulýar"]
+      "highlights": [
+        "Sekiz sany aýratyn gaplanan tabletka",
+        "Wegan we rehimsizliksiz",
+        "Keramiki gapjagaz goşulýar"
+      ]
     },
     "bamboo-bath-storage-ladder": {
       "name": "Bambuk hammam basgançagy",
       "description": "Polotentse asmak we hammam esbaplaryny saklamak üçin söýenç basgançak.",
       "materials": "Bambuk, tozan örtükli polat",
-      "highlights": ["Süýşmeýän aýakly bäş basgançak", "Iki sany aýrylýan sebet goşulýar", "Çyglylyga garşy goralýar"]
+      "highlights": [
+        "Süýşmeýän aýakly bäş basgançak",
+        "Iki sany aýrylýan sebet goşulýar",
+        "Çyglylyga garşy goralýar"
+      ]
     },
     "belgian-linen-throw": {
       "name": "Belgiýa zygyr ýorgan",
       "description": "Flandriýada dokalan ýeňil zygyr ýorgan, ýumşak ýuwlan örtügi bilen.",
       "materials": "100% Belgiýa zygyr süýümi",
-      "highlights": ["127×178 sm ölçegi", "Ýumşaklyk üçin öňünden ýuwlan", "Neýtral reňkler bilen jübütlenýär"]
+      "highlights": [
+        "127×178 sm ölçegi",
+        "Ýumşaklyk üçin öňünden ýuwlan",
+        "Neýtral reňkler bilen jübütlenýär"
+      ]
     },
     "lowline-oak-coffee-table": {
       "name": "Pes dub kofe stoly",
       "description": "Gizlin saklaýyş we ýalpak gyrasyny bolan uly dub stoly.",
       "materials": "FSC sertifikatly dub",
-      "highlights": ["Pultlar üçin ýuwaş çekmesi", "Ösümlik ýaglary bilen bejerilen", "Hearth modully mebele laýyk"]
+      "highlights": [
+        "Pultlar üçin ýuwaş çekmesi",
+        "Ösümlik ýaglary bilen bejerilen",
+        "Hearth modully mebele laýyk"
+      ]
     },
     "arc-ambient-floor-lamp": {
       "name": "Arka ýer çyrasy",
       "description": "Uly zygyr abažury we arka polat esasy ýumşak yşyk döredýär.",
       "materials": "Polat, zygyr, mermer",
-      "highlights": ["Üç basgançakly dimmer", "Agyrlaşdyrylan mermer esasy", "LED lampa goşulýar"]
+      "highlights": [
+        "Üç basgançakly dimmer",
+        "Agyrlaşdyrylan mermer esasy",
+        "LED lampa goşulýar"
+      ]
     },
     "hearth-ceramic-diffuser": {
       "name": "Hearth keramiki diffuzor",
       "description": "Agşam däpleri üçin ýumşak yşykly ultrases keramiki diffuzor.",
       "materials": "Keramika, BPA-syz rezerwuar",
-      "highlights": ["8 sagada çenli işleýär", "Awtomatiki öçüriji taýmer", "Iki sany möwsümleýin ýag goşulýar"]
+      "highlights": [
+        "8 sagada çenli işleýär",
+        "Awtomatiki öçüriji taýmer",
+        "Iki sany möwsümleýin ýag goşulýar"
+      ]
     },
     "hearth-boucle-pillow-set": {
       "name": "Hearth Bouclé ýassyk toplumy",
       "description": "Diwanlara we oturgyçlara çuňluk goşýan bukle we zygyr ýassyk jübüti.",
       "materials": "Bukle poliester, zygyr, guş ýelegi",
-      "highlights": ["50 sm we 56 sm ýassyklar", "Ýelek daşlygy zipper gaply", "Gaplar maşynda ýuwulýar"]
+      "highlights": [
+        "50 sm we 56 sm ýassyklar",
+        "Ýelek daşlygy zipper gaply",
+        "Gaplar maşynda ýuwulýar"
+      ]
     },
     "pine-cane-storage-baskets": {
       "name": "Sosna we gamyş saklaýyş sebetleri",
       "description": "Gamyş öňlükli we birleşdirilen ýazgyly modully saklaýyş sebetleri.",
       "materials": "Sosna agajy, gamyş örme",
-      "highlights": ["2 orta we 1 uly sebet toplumy", "Tekiz saklanmak üçin ýygnap bolýar", "6 sany çalyşyp bolýan ýazgy"]
+      "highlights": [
+        "2 orta we 1 uly sebet toplumy",
+        "Tekiz saklanmak üçin ýygnap bolýar",
+        "6 sany çalyşyp bolýan ýazgy"
+      ]
     },
     "willow-entryway-console": {
       "name": "Willow girelge konsoly",
       "description": "Gizlin çekmeli we ýüzýän tekjeli inçe konsol.",
       "materials": "FSC dub şpony, polat",
-      "highlights": ["Kabel üçin gurlan deşikler", "Iki sany gamyş öňlükli çekmä", "Sazlanyp bolýan deňleşdiriji aýaklar"]
+      "highlights": [
+        "Kabel üçin gurlan deşikler",
+        "Iki sany gamyş öňlükli çekmä",
+        "Sazlanyp bolýan deňleşdiriji aýaklar"
+      ]
     },
     "clear-stackable-shoe-drawers": {
       "name": "Aýdyň üýşürilýän aýakgap çekmeleri",
       "description": "Aýakgaplary görünýän we goragly saklamak üçin dik üýşürilýän howa geçirýän çekmeler.",
       "materials": "Gaýtadan işlenen PET",
-      "highlights": ["Magnit açylan gapy", "47-nji ölçege çenli laýyk", "Modully dizaýn ýerinde gulplanýar"]
+      "highlights": [
+        "Magnit açylan gapy",
+        "47-nji ölçege çenli laýyk",
+        "Modully dizaýn ýerinde gulplanýar"
+      ]
     },
     "pantry-closet-labeling-kit": {
       "name": "Ammar ýazgy toplumy",
       "description": "Gaplary we bankalary guramaçylykly saklamak üçin suwa çydamly ýazgylar we hek markerler.",
       "materials": "Winil, hek syýa",
-      "highlights": ["120 sany taýýar ýazgy", "Iki sany doldurylýan hek marker", "Öz ýazgyňyz üçin boş listler"]
+      "highlights": [
+        "120 sany taýýar ýazgy",
+        "Iki sany doldurylýan hek marker",
+        "Öz ýazgyňyz üçin boş listler"
+      ]
     },
     "atelier-wardrobe-rack": {
       "name": "Atelier eşik asgyçy",
       "description": "Aýakgap üçin dub tekjeli hereket edýän eşik asgyçy — girelge ýa myhman otagy üçin ajaýyp.",
       "materials": "Polat, gaty dub",
-      "highlights": ["Gulplanýan tigirler", "Aýrylýan asgyç ilgençekler goşulýar", "Tekje iki sebet ýerleşdirýär"]
+      "highlights": [
+        "Gulplanýan tigirler",
+        "Aýrylýan asgyç ilgençekler goşulýar",
+        "Tekje iki sebet ýerleşdirýär"
+      ]
     },
     "cedar-grove-laundry-trio": {
       "name": "Cedar Grove kir ýuwuş toplumy",
       "description": "Kedr ysy bilen ösümlik esasly kir serişdesi, zygyr spreýi we ýüň guradyjy toplar.",
       "materials": "Aýna, ýüň, ösümlik esasly ýuwujy maddalar",
-      "highlights": ["HE we adaty maşynlara laýyk", "Aýna çüýşeler aňsatlyk bilen doldurylýar", "Üç sany gaýtadan ulanylýan ýüň guradyjy top"]
+      "highlights": [
+        "HE we adaty maşynlara laýyk",
+        "Aýna çüýşeler aňsatlyk bilen doldurylýar",
+        "Üç sany gaýtadan ulanylýan ýüň guradyjy top"
+      ]
     },
     "canvas-crest-laundry-hamper": {
       "name": "Canvas Crest kir sebedi",
       "description": "Aýrylýan pagta içlikleri we hoz tutawaçly goşa sebet.",
       "materials": "Pagta kanwas, hoz",
-      "highlights": ["Iki aýrylýan ýuwulýan içlik", "Berk çarçuwasy dik durýar", "Gaýtadan işlenen hoz tutawaçlar"]
+      "highlights": [
+        "Iki aýrylýan ýuwulýan içlik",
+        "Berk çarçuwasy dik durýar",
+        "Gaýtadan işlenen hoz tutawaçlar"
+      ]
     },
     "foldaway-laundry-table": {
       "name": "Ýygnalýan kir stoly",
       "description": "Gizlin tekjeli diwara dakylýan ýygnalýan stol — sekuntda kir iş ýerini döredýär.",
       "materials": "Gaýyň fanerasy, polat",
-      "highlights": ["Diwardan 10 sm-de tekiz ýygnanýar", "Gurallar üçin çüý reýkasy goşulýar", "Gurlan elektrik uzadyjy"]
+      "highlights": [
+        "Diwardan 10 sm-de tekiz ýygnanýar",
+        "Gurallar üçin çüý reýkasy goşulýar",
+        "Gurlan elektrik uzadyjy"
+      ]
     },
     "coastal-linen-refresh-spray": {
       "name": "Coastal zygyr täzelenme spreýi",
       "description": "Ýuwuş arasy täzelenmek üçin deňiz duzy, bergamot we amber ysly ösümlik esasly spreý.",
       "materials": "Arassalanan suw, efir ýaglary",
-      "highlights": ["Mebel we ýorgan-düşek üçin howpsuz", "Doldurylýan aýna çüýşe", "Paraben we ftalat ýok"]
+      "highlights": [
+        "Mebel we ýorgan-düşek üçin howpsuz",
+        "Doldurylýan aýna çüýşe",
+        "Paraben we ftalat ýok"
+      ]
     },
     "pressguard-steam-iron": {
       "name": "PressGuard bug ütügi",
       "description": "Poslamaýan polat dabanly gibrid ütük we bug generatory.",
       "materials": "Poslamaýan polat, BPA-syz rezerwuar",
-      "highlights": ["Dik rejimli sazlanýan bug", "Howpsuzlyk üçin awtomatiki öçüriji", "Ýylylyga çydamly düşekçe goşulýar"]
+      "highlights": [
+        "Dik rejimli sazlanýan bug",
+        "Howpsuzlyk üçin awtomatiki öçüriji",
+        "Ýylylyga çydamly düşekçe goşulýar"
+      ]
     },
     "terrace-entertaining-set": {
       "name": "Eýwan güýmenje toplumy",
       "description": "Örülen sowadyjy, döwülmeýän gap-gaç we LED çyra bilen howa çydamly toplum.",
       "materials": "Rattan, poslamaýan polat, Tritan",
-      "highlights": ["8 bölekli Tritan gap-gaç toplumy", "Sowadyjy buzy 12 sagat saklaýar", "Çyra üç sany ýyly reňk hödürleýär"]
+      "highlights": [
+        "8 bölekli Tritan gap-gaç toplumy",
+        "Sowadyjy buzy 12 sagat saklaýar",
+        "Çyra üç sany ýyly reňk hödürleýär"
+      ]
     },
     "all-season-picnic-blanket": {
       "name": "Hemme möwsüm piknik ýorgany",
       "description": "Stýogan ýokarsy we daşaýyş gaýyşly suwa çydamly piknik ýorgany.",
       "materials": "Gaýtadan işlenen poliester, TPU örtügi",
-      "highlights": ["Gum garşy aşagy süpürilýär", "Maşynda ýuwulýar we çalt guradylýar", "Sazlanyp bolýan daşaýyş gaýyşy"]
+      "highlights": [
+        "Gum garşy aşagy süpürilýär",
+        "Maşynda ýuwulýar we çalt guradylýar",
+        "Sazlanyp bolýan daşaýyş gaýyşy"
+      ]
     },
     "ridge-terracotta-planter-pair": {
       "name": "Rebraly terrakota küýze jübüti",
       "description": "Eýwan we balkon üçin drenaž tabakly iki sany rebraly terrakota küýze.",
       "materials": "Terrakota",
-      "highlights": ["Sowuga we UV-a çydamly", "Damja tabaklary goşulýar", "Otlar we kiçi sitrus üçin ajaýyp"]
+      "highlights": [
+        "Sowuga we UV-a çydamly",
+        "Damja tabaklary goşulýar",
+        "Otlar we kiçi sitrus üçin ajaýyp"
+      ]
     },
     "solar-glow-lantern-trio": {
       "name": "Gün energiýaly çyra toplumy",
       "description": "Ýyly ak LED yşykly we örülen daşky görnüşli gün energiýaly çyralar.",
       "materials": "Örülen polimer, gün LED ýadrosy",
-      "highlights": ["6 sagat gün şöhlesinde zarýad alýar", "Üç ýagtylyk derejesi", "Howa çydamly örülen gapy"]
+      "highlights": [
+        "6 sagat gün şöhlesinde zarýad alýar",
+        "Üç ýagtylyk derejesi",
+        "Howa çydamly örülen gapy"
+      ]
     },
     "cinder-bowl-gas-fire-pit": {
       "name": "Cinder Bowl gaz ojagy",
       "description": "Tüssesiz ýylylyk berýän lawy daşly pes profilli gaz ojagy.",
       "materials": "Aýna süýümli beton, polat ýakyjy",
-      "highlights": ["Gizlin propan bölümi", "Howa örtügi we lawy daşy goşulýar", "Sazlanýan ýalyn beýikligi"]
+      "highlights": [
+        "Gizlin propan bölümi",
+        "Howa örtügi we lawy daşy goşulýar",
+        "Sazlanýan ýalyn beýikligi"
+      ]
     },
     "cast-iron-dutch-oven": {
       "name": "Guýma demir gazany",
       "description": "Pomidorly et, çörek we bir gazanly bişirmek üçin emally guýma demir gazan.",
       "materials": "Emally guýma demir",
-      "highlights": ["5.2 litr göwrüm", "Gapagynda özüni ýaglaýan çyzyklar", "Induksiýa dahil ähli plitalara laýyk"]
+      "highlights": [
+        "5.2 litr göwrüm",
+        "Gapagynda özüni ýaglaýan çyzyklar",
+        "Induksiýa dahil ähli plitalara laýyk"
+      ]
     },
     "marble-pastry-board": {
       "name": "Mermer hamyr tagtasy",
       "description": "Hamyr ýaýmak, şokolad taýýarlamak we peýnir hödürlemek üçin sowuk mermer ýüzü.",
       "materials": "Karrara mermeri, keçe aýaklar",
-      "highlights": ["Näzik hamyr üçin sowuk galýar", "Gözeneksiz ýylmanan ýüzü", "Deri asmak gaýyşy goşulýar"]
+      "highlights": [
+        "Näzik hamyr üçin sowuk galýar",
+        "Gözeneksiz ýylmanan ýüzü",
+        "Deri asmak gaýyşy goşulýar"
+      ]
     },
     "nested-mixing-bowl-set": {
       "name": "Salynýan garyşdyrma gap toplumy",
       "description": "Guýujy we süýşmeýän düýbi bolan ýedi sany dürli ölçegli keramiki gap.",
       "materials": "Keramika",
-      "highlights": ["Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk", "Salynýan dizaýn ýer tygşytlaýar", "Her gap dürli toprak reňkde"]
+      "highlights": [
+        "Mikrotolkunly we gap-gaç ýuwýan maşyna laýyk",
+        "Salynýan dizaýn ýer tygşytlaýar",
+        "Her gap dürli toprak reňkde"
+      ]
     },
     "rainfall-showerhead-system": {
       "name": "Ýagyş duş ulgamy",
       "description": "El leýkasy we ýönekeý gurnamak bilen islendik hammamy üýtgedýän ýokarky duş.",
       "materials": "Sürtülen poslamaýan polat",
-      "highlights": ["6 rejimli 25 sm ýagyş başy", "150 sm çeýe şlang goşulýar", "Guralsyz gurnamak"]
+      "highlights": [
+        "6 rejimli 25 sm ýagyş başy",
+        "150 sm çeýe şlang goşulýar",
+        "Guralsyz gurnamak"
+      ]
     },
     "organic-cotton-bath-robe": {
       "name": "Organiki pagta hammam halady",
       "description": "Çalt guramak üçin wafli örmeli GOTS sertifikatly organiki pagta halat.",
       "materials": "100% GOTS organiki pagta",
-      "highlights": ["S/M we L/XL ölçegleri bar", "Çuň jübler we sazlanýan guşak", "Her ýuwuşda has ýumşak bolýar"]
+      "highlights": [
+        "S/M we L/XL ölçegleri bar",
+        "Çuň jübler we sazlanýan guşak",
+        "Her ýuwuşda has ýumşak bolýar"
+      ]
     },
     "vanity-organization-tray": {
       "name": "Bezeg stoly guramaçy tarelkasy",
       "description": "Hammam üstündäki gündelik zatlary guramaçylykly saklaýan mermer we bürünç tabak.",
       "materials": "Italýan mermeri, bürünç",
-      "highlights": ["Çyzylmaz keçe düýbi", "Aýrylýan bölüjiler", "Sabyn dispenseri bilen jübütlenýär"]
+      "highlights": [
+        "Çyzylmaz keçe düýbi",
+        "Aýrylýan bölüjiler",
+        "Sabyn dispenseri bilen jübütlenýär"
+      ]
     },
     "woven-jute-area-rug": {
       "name": "Dokalan jut halysy",
       "description": "Kofe stollarynyň aşagyna tebigy ýylylyk we dokma goşýan el örmeli jut haly.",
       "materials": "Tebigy jut süýümi",
-      "highlights": ["150×210 we 240×300 sm ölçegleri bar", "Iki taraply dizaýn", "Haly düşekleri bilen gabat gelýär"]
+      "highlights": [
+        "150×210 we 240×300 sm ölçegleri bar",
+        "Iki taraply dizaýn",
+        "Haly düşekleri bilen gabat gelýär"
+      ]
     },
     "floating-oak-wall-shelf-set": {
       "name": "Ýüzýän dub diwar tekje toplumy",
       "description": "Gizlin kronşteýnli tüsseli dubdan ýasalan üç sany ýüzýän tekje.",
       "materials": "Tüsseli dub, polat kronşteýnler",
-      "highlights": ["Üç uzynlyk: 60, 90 we 120 sm", "Her tekje 15 kg-a çenli göterýär", "Ähli berkidiji enjamlar goşulýar"]
+      "highlights": [
+        "Üç uzynlyk: 60, 90 we 120 sm",
+        "Her tekje 15 kg-a çenli göterýär",
+        "Ähli berkidiji enjamlar goşulýar"
+      ]
     },
     "terracotta-table-lamp": {
       "name": "Terrakota stol çyrasy",
       "description": "Düşek ýanyndaky stollar üçin zygyr abažurly heýkel terrakota çyrasy.",
       "materials": "Terrakota, zygyr abažur",
-      "highlights": ["Içerki dimmer wyklýuçatel", "LED lampa goşulýar", "E26 rozetka köp abažurlara laýyk"]
+      "highlights": [
+        "Içerki dimmer wyklýuçatel",
+        "LED lampa goşulýar",
+        "E26 rozetka köp abažurlara laýyk"
+      ]
     },
     "under-bed-rolling-drawer": {
       "name": "Krowat aşagyndaky tigirli çekmä",
       "description": "Krowat aşagyndaky boş ýeri guramaçylykly saklaýşa öwürýän kanwas we dub çekmä.",
       "materials": "Kanwas, dub çarçuwa, tigirler",
-      "highlights": ["20 sm aralykly krowatlara laýyk", "Aýrylýan ýuwulýan içlik", "Güýçlendirilen tutawaçlar"]
+      "highlights": [
+        "20 sm aralykly krowatlara laýyk",
+        "Aýrylýan ýuwulýan içlik",
+        "Güýçlendirilen tutawaçlar"
+      ]
     },
     "pegboard-wall-organizer": {
       "name": "Perforasiýaly diwar guramaçysy",
       "description": "Girelge, ofis ýa-da ussahana üçin tekjeli, ilgençekli we gapjygazly modully dub tagtasy.",
       "materials": "Gaty dub, örtükli polat çüýler",
-      "highlights": ["12 çüý, 2 tekje, 1 gapjygaz goşulýar", "Goşmaça esbaplar aýratyn satylýar", "Gipsokarton we agaç üçin berkidiji"]
+      "highlights": [
+        "12 çüý, 2 tekje, 1 gapjygaz goşulýar",
+        "Goşmaça esbaplar aýratyn satylýar",
+        "Gipsokarton we agaç üçin berkidiji"
+      ]
     },
     "tiered-corner-shelf-unit": {
       "name": "Gatly burç tekjesi",
       "description": "Islendik otagda burç giňişligini ulanýan bäş gatly burç tekje.",
       "materials": "Bambuk, polat çarçuwa",
-      "highlights": ["90 gradus burçlara ajaýyp gabat gelýär", "Agdarylyşmaga garşy diwar ankeri goşulýar", "Her tekje 10 kg-a çenli göterýär"]
+      "highlights": [
+        "90 gradus burçlara ajaýyp gabat gelýär",
+        "Agdarylyşmaga garşy diwar ankeri goşulýar",
+        "Her tekje 10 kg-a çenli göterýär"
+      ]
     },
     "retractable-clothesline-reel": {
       "name": "Yza çekilýän kir ýüpi",
       "description": "Howa guratmak üçin 12 metr UV-a çydamly şnurly kir ýüpi.",
       "materials": "ABS plastik, poslamaýan şnur",
-      "highlights": ["Awtomatiki gulplama mehanizmi", "20 kg-a çenli kir göterýär", "Diwara tekiz ýygnanýar"]
+      "highlights": [
+        "Awtomatiki gulplama mehanizmi",
+        "20 kg-a çenli kir göterýär",
+        "Diwara tekiz ýygnanýar"
+      ]
     },
     "wrinkle-release-steamer": {
       "name": "Kompakt bug generatory",
       "description": "Ütük tagtasyz egin-eşikleri sekuntda täzeleýän üznüksiz bugly kompakt otpariwatel.",
       "materials": "Poslamaýan polat, BPA-syz bak",
-      "highlights": ["25 sekuntda gyzýar", "200 ml bak 15 minut bug", "Mata çotga goşulýar"]
+      "highlights": [
+        "25 sekuntda gyzýar",
+        "200 ml bak 15 minut bug",
+        "Mata çotga goşulýar"
+      ]
     },
     "mesh-wash-bag-set": {
       "name": "Tor kir haltasy toplumy",
       "description": "Näzik egin-eşikleri goramak üçin üç ölçegli alty sany tor halta.",
       "materials": "Poliester tor, YKK fermuarlar",
-      "highlights": ["2 uly, 2 orta, 2 kiçi halta", "Güýçlendirilen tikişler we poslanmaýan fermuarlar", "Maşynda ýuwulýar we guradylýar"]
+      "highlights": [
+        "2 uly, 2 orta, 2 kiçi halta",
+        "Güýçlendirilen tikişler we poslanmaýan fermuarlar",
+        "Maşynda ýuwulýar we guradylýar"
+      ]
     },
     "hammock-with-steel-stand": {
       "name": "Polat duralga bilen gamak",
       "description": "Eýwanda dynç almak üçin minutda gurulýan göçme polat çarçuwaly goşa gamak.",
       "materials": "Pagta mata, örtükli polat",
-      "highlights": ["200 kg-a çenli göterýär", "Syýahat sumkasy goşulýar", "Ýaýradyjy çybyklar çolaşmany öňüni alýar"]
+      "highlights": [
+        "200 kg-a çenli göterýär",
+        "Syýahat sumkasy goşulýar",
+        "Ýaýradyjy çybyklar çolaşmany öňüni alýar"
+      ]
     },
     "solar-pathway-light-set": {
       "name": "Gün energiýaly ýol çyrasy toplumy",
       "description": "Bag ýollary üçin ýyly kehraba LED yşykly sekiz sany gün batareýaly çyra.",
       "materials": "Poslamaýan polat, aýna linza",
-      "highlights": ["Garaňkyda awtomatiki ýakylýar", "IP65 suwa çydamly", "Çalşylýan zarýadlanýan batareýalar"]
+      "highlights": [
+        "Garaňkyda awtomatiki ýakylýar",
+        "IP65 suwa çydamly",
+        "Çalşylýan zarýadlanýan batareýalar"
+      ]
     },
     "ceramic-herb-planter-kit": {
       "name": "Keramiki ot ösümlik toplumy",
       "description": "Üç keramiki küýze, bambuk tabak we reyhan, narpyz, kinza tohumlary bilen penjire toplumy.",
       "materials": "Keramika, bambuk, organiki tohumlar",
-      "highlights": ["Drenaž deşikleri we bambuk tabak", "Ösdüriş gollanmasy bilen üç tohum bukjasy", "Kwartira baglary üçin ajaýyp"]
+      "highlights": [
+        "Drenaž deşikleri we bambuk tabak",
+        "Ösdüriş gollanmasy bilen üç tohum bukjasy",
+        "Kwartira baglary üçin ajaýyp"
+      ]
+    }
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "Biz barada",
+      "title": "Her bir öýde rahatlyk dörediň",
+      "subtitle": "Hearth & Home — gündelik durmuşy gözelleşdirýän, ussatlyk bilen taýýarlanan öý esbaplaryny hödürleýär.",
+      "storyTitle": "Biziň hekaýamyz",
+      "storyParagraphs": [
+        "Biz sada pikirden başladyk: öý esbaplary owadan, çydamly hem-de tebigata zyýansyz bolup biler. Şu gün biz Türkmenistanyň öýlerine ekologik taýdan arassa harytlary ýetirýäris.",
+        "Her bir önüm seýrek däl-de, uzak ýyllar hyzmat etjek hil bilen saýlanýar. Biz az, emma manyly zatlara ynanýarys.",
+        "Kiçijik ussahanadan başlan ýolumyz indi müňlerçe öýe ýetdi, ýöne maksadymyz üýtgewsiz galýar — gündelik durmuşy ýönekeý we gözel etmek."
+      ],
+      "valuesTitle": "Biziň gymmatlyklarymyz",
+      "values": [
+        {
+          "title": "Hil",
+          "desc": "Her önüm berklige we uzak möhletli ulanyşa synagdan geçirilýär."
+        },
+        {
+          "title": "Tebigatdan",
+          "desc": "Ekologik taýdan arassa we gaýtadan ulanylýan materiallar."
+        },
+        {
+          "title": "Sadalyk",
+          "desc": "Artykmaç zat ýok — diňe öýüňize hakykatdanam gerek zatlar."
+        }
+      ],
+      "stats": [
+        {
+          "num": "2 500+",
+          "label": "Kanagatlanan müşderi"
+        },
+        {
+          "num": "48 sag",
+          "label": "Ortaça eltip bermek"
+        },
+        {
+          "num": "95%",
+          "label": "Tebigy materiallar"
+        }
+      ],
+      "ctaTitle": "Ýygyndymyza göz aýlaň",
+      "ctaDesc": "Öýüňiz üçin amatly we owadan harytlary tapyň.",
+      "ctaButton": "Harytlara geçiň",
+      "philosophyTitle": "Biziň pelsepämiz",
+      "philosophyText": "Owadanlyk diňe görnüşde däl, eýsem ulanyşda hem bolmaly. Her bir esbabyň eliňize ýakymly degmegini, uzak hyzmat etmegini we wagtyň geçmegi bilen öýüňiziň bir bölegine öwrülmegini isleýäris.",
+      "principles": [
+        {
+          "title": "Pikirlenip dizaýn",
+          "desc": "Her jikme-jiklik bir maksat bilen oýlanylýar."
+        },
+        {
+          "title": "Ussatlyk",
+          "desc": "Tejribeli ussalaryň elinden çykan harytlar."
+        },
+        {
+          "title": "Wagtlaýyn däl",
+          "desc": "Modadan çykmaýan, hemişe ýerlikli dizaýn."
+        }
+      ],
+      "milestonesTitle": "Biziň ýolumyz",
+      "milestones": [
+        {
+          "year": "2019",
+          "title": "Başlangyç",
+          "desc": "Kiçi ussahanada ilkinji önümler döredildi."
+        },
+        {
+          "year": "2021",
+          "title": "Onlaýn dükan",
+          "desc": "Internet arkaly tutuş ýurda hyzmat edip başladyk."
+        },
+        {
+          "year": "2023",
+          "title": "Ekologik gaplama",
+          "desc": "Plastikden doly ýüz öwürdik."
+        },
+        {
+          "year": "2026",
+          "title": "Müňlerçe öý",
+          "desc": "Indi 2 500-den gowrak öýde harytlarymyz bar."
+        }
+      ]
+    },
+    "sustainability": {
+      "eyebrow": "Durnuklylyk",
+      "title": "Tebigata hormat bilen ýasalan",
+      "subtitle": "Biz her bir önümiň tebigata täsirini azaltmaga çalyşýarys — materialdan gaplama çenli.",
+      "introTitle": "Biziň borjumyz",
+      "introText": "Owadanlyk bilen jogapkärçiligi bir ýere jemläp bolýandygyna ynanýarys. Şonuň üçin önümçiligiň her ädiminde durnukly çözgütleri saýlaýarys.",
+      "commitments": [
+        {
+          "title": "Gaýtadan ulanylýan materiallar",
+          "desc": "Önümlerimiziň 95%-i tebigy ýa-da gaýtadan işlenen çig maldan."
+        },
+        {
+          "title": "Plastiksiz gaplama",
+          "desc": "Ähli sargytlar gaýtadan işlenýän kagyzda gelýär."
+        },
+        {
+          "title": "Adalatly önümçilik",
+          "desc": "Ussalarymyz bilen adalatly we açyk hyzmatdaşlyk."
+        },
+        {
+          "title": "Uglerod yzyny azaltmak",
+          "desc": "Ýerli üpjün edijiler bilen işläp, daşamagy azaldýarys."
+        }
+      ],
+      "impactTitle": "Biziň täsirimiz",
+      "impactStats": [
+        {
+          "num": "95%",
+          "label": "Tebigy materiallar"
+        },
+        {
+          "num": "0",
+          "label": "Plastik gaplama"
+        },
+        {
+          "num": "12 t",
+          "label": "Ýylda azaldylan galyndy"
+        },
+        {
+          "num": "40+",
+          "label": "Ýerli üpjün ediji"
+        }
+      ],
+      "materialsTitle": "Ulanýan materiallarymyz",
+      "materials": [
+        {
+          "title": "Toýun we keramika",
+          "desc": "Tebigy palçykdan elde ýasalan, uzak hyzmat edýän gaplar."
+        },
+        {
+          "title": "FSC agajy",
+          "desc": "Jogapkärli dolandyrylýan tokaýlardan alnan agaç."
+        },
+        {
+          "title": "Organiki mata",
+          "desc": "Himiki dökünsiz ösdürilen pagta we zygyr."
+        },
+        {
+          "title": "Gaýtadan işlenen aýna",
+          "desc": "Energiýany tygşytlaýan, gaýtadan ulanylan aýna önümleri."
+        }
+      ],
+      "goalsTitle": "2030-njy ýyla çenli maksatlarymyz",
+      "goals": [
+        {
+          "title": "Doly uglerod bitaraplygy",
+          "desc": "Önümçilik we eltip bermekde kömürturşy gazyny nola düşürmek."
+        },
+        {
+          "title": "100% gaýtadan ulanylýan gaplama",
+          "desc": "Ähli gaplamany doly täzeden işlenýän edip ýetirmek."
+        },
+        {
+          "title": "Ýerli hyzmatdaşlyk",
+          "desc": "Üpjün edijileriň 80%-ini ýerli kärhanalardan saýlamak."
+        }
+      ]
+    },
+    "journal": {
+      "eyebrow": "Žurnal",
+      "title": "Pikirler we ylham",
+      "subtitle": "Öý, durmuş ýörelgesi we durnukly ýaşaýyş barada makalalar.",
+      "readMore": "Dowamyny oka",
+      "articles": [
+        {
+          "category": "Aşhana",
+          "title": "Sada aşhana üçin 5 maslahat",
+          "excerpt": "Az zat bilen has tertipli we amatly aşhana nähili döretmeli.",
+          "date": "12 Maý, 2026"
+        },
+        {
+          "category": "Durnuklylyk",
+          "title": "Plastige derek tebigy materiallar",
+          "excerpt": "Öýüňizde plastigi azaltmagyň aňsat ýollary.",
+          "date": "28 Aprel, 2026"
+        },
+        {
+          "category": "Bezeg",
+          "title": "Ýyly yşyklandyryşyň güýji",
+          "excerpt": "Otagyňyzy rahat we myhmansöýer etmegiň usullary.",
+          "date": "15 Aprel, 2026"
+        },
+        {
+          "category": "Ideg",
+          "title": "Öý esbaplaryňyzy uzak saklamak",
+          "excerpt": "Harytlaryňyzyň ömrüni uzaltjak ýönekeý ideg düzgünleri.",
+          "date": "2 Aprel, 2026"
+        },
+        {
+          "category": "Ylham",
+          "title": "Kiçi giňişligi gurnamak",
+          "excerpt": "Kiçi öýi has giň we tertipli görkezmegiň pikirleri.",
+          "date": "20 Mart, 2026"
+        },
+        {
+          "category": "Durnuklylyk",
+          "title": "Galyndysyz durmuşa ilkinji ädimler",
+          "excerpt": "Gündelik durmuşda galyndyny azaltmagyň ýönekeý başlangyçlary.",
+          "date": "8 Mart, 2026"
+        }
+      ],
+      "topicsTitle": "Mowzuklar",
+      "topics": [
+        "Aşhana",
+        "Durnuklylyk",
+        "Bezeg",
+        "Ideg",
+        "Ylham"
+      ]
+    },
+    "careers": {
+      "eyebrow": "Karyera",
+      "title": "Biziň toparymyza goşulyň",
+      "subtitle": "Owadan we durnukly öý esbaplaryny döretmäge höwesli adamlary gözleýäris.",
+      "introText": "Hearth & Home-da biz öwrenmegi, ösmegi we biri-birimize goldaw bermegi gymmat saýýarys. Aşakdaky açyk wezipelere serediň.",
+      "perksTitle": "Näme hödürleýäris",
+      "perks": [
+        {
+          "title": "Çeýe iş wagty",
+          "desc": "Iş bilen durmuşyň deňagramlylygyny goldaýarys."
+        },
+        {
+          "title": "Hünär ösüşi",
+          "desc": "Okuw we ösüş üçin mümkinçilikler."
+        },
+        {
+          "title": "Arzanladyşlar",
+          "desc": "Ähli önümlere işgärler üçin arzanladyş."
+        },
+        {
+          "title": "Dostlukly topar",
+          "desc": "Açyk we goldawly iş gurşawy."
+        }
+      ],
+      "openingsTitle": "Açyk wezipeler",
+      "openings": [
+        {
+          "title": "Önüm dizaýneri",
+          "dept": "Dizaýn",
+          "location": "Aşgabat",
+          "type": "Doly wagt"
+        },
+        {
+          "title": "Müşderi hyzmaty hünärmeni",
+          "dept": "Goldaw",
+          "location": "Aşgabat",
+          "type": "Doly wagt"
+        },
+        {
+          "title": "Mazmun ýazyjysy",
+          "dept": "Marketing",
+          "location": "Uzakdan",
+          "type": "Ýarym wagt"
+        },
+        {
+          "title": "Ammar logistikasy",
+          "dept": "Operasiýalar",
+          "location": "Aşgabat",
+          "type": "Doly wagt"
+        }
+      ],
+      "applyButton": "Ýüz tutmak",
+      "cultureTitle": "Bizde işlemek",
+      "cultureText": "Biz açyklyga, hormata we biri-birimizden öwrenmäge gymmat berýäris. Topar agzalarymyz öz pikirlerini erkin paýlaşyp, hakyky täsir döredip bilýärler.",
+      "culturePoints": [
+        {
+          "title": "Açyk gepleşik",
+          "desc": "Her kesiň sesi eşidilýär we ähmiýet berilýär."
+        },
+        {
+          "title": "Öwrenmek medeniýeti",
+          "desc": "Säwlikler ösüşiň bir bölegi hökmünde kabul edilýär."
+        },
+        {
+          "title": "Maksatly iş",
+          "desc": "Işimiziň hakyky öýlere ýetýändigini görýäris."
+        }
+      ],
+      "processTitle": "Işe kabul ediş tertibi",
+      "processSteps": [
+        {
+          "title": "Ýüz tutmak",
+          "desc": "Wezipä laýyk arzaňyzy iberiň."
+        },
+        {
+          "title": "Söhbetdeşlik",
+          "desc": "Topar bilen tanyşlyk söhbetdeşligi."
+        },
+        {
+          "title": "Synag tabşyrygy",
+          "desc": "Kiçi amaly tabşyryk bilen tejribäňizi görkeziň."
+        },
+        {
+          "title": "Teklip",
+          "desc": "Şertler ylalaşylyp, toparymyza goşulýarsyňyz."
+        }
+      ]
+    },
+    "help": {
+      "eyebrow": "Kömek merkezi",
+      "title": "Size nähili kömek edip bileris?",
+      "subtitle": "Köp berilýän soraglara jogaplar. Tapmadyk bolsaňyz, biz bilen habarlaşyň.",
+      "faqs": [
+        {
+          "q": "Sargydym haçan gelýär?",
+          "a": "Aşgabat boýunça 24-48 sagatda, welaýatlara 3-5 iş gününde eltýäris."
+        },
+        {
+          "q": "Töleg usullary haýsylar?",
+          "a": "Nagt töleg (eltip berlende), bank kartlary we onlaýn töleg kabul edýäris."
+        },
+        {
+          "q": "Harydy yzyna gaýtaryp bilýärinmi?",
+          "a": "Hawa, ulanylmadyk harytlary 14 günüň dowamynda yzyna gaýtaryp bilersiňiz."
+        },
+        {
+          "q": "Eltip bermek mugtmy?",
+          "a": "2 625 TMT-den ýokary sargytlar üçin eltip bermek mugt."
+        },
+        {
+          "q": "Sargydymy nädip yzarlap bilerin?",
+          "a": "Sargyt tassyklananda size yzarlaýyş maglumaty iberilýär."
+        },
+        {
+          "q": "Haryt zaýalanan gelse näme etmeli?",
+          "a": "Surat bilen biz bilen habarlaşyň — derrew çalşyp ýa-da pulyňyzy gaýtaryp bereris."
+        },
+        {
+          "q": "Hasaby hökman açmalymy?",
+          "a": "Ýok, myhman hökmünde-de sargyt edip bilersiňiz, emma hasap yzarlamagy aňsatlaşdyrýar."
+        },
+        {
+          "q": "Harytlaryňyz kepillikli mi?",
+          "a": "Hawa, önümçilik kemçiliklerine garşy kepillik berýäris."
+        }
+      ],
+      "ctaTitle": "Jogabyňyzy tapmadyňyzmy?",
+      "ctaDesc": "Toparymyz size kömek etmäge taýýar.",
+      "ctaButton": "Biz bilen habarlaşyň",
+      "topicsTitle": "Kömek mowzuklary",
+      "topics": [
+        {
+          "title": "Sargytlar",
+          "desc": "Sargyt bermek we yzarlamak barada."
+        },
+        {
+          "title": "Eltip bermek",
+          "desc": "Möhletler, sebitler we tölegler."
+        },
+        {
+          "title": "Yzyna gaýtarmak",
+          "desc": "Çalyşmak we pul gaýtaryş düzgünleri."
+        },
+        {
+          "title": "Töleg",
+          "desc": "Töleg usullary we howpsuzlyk."
+        }
+      ]
+    },
+    "shipping": {
+      "eyebrow": "Eltip bermek",
+      "title": "Eltip bermek maglumaty",
+      "subtitle": "Türkmenistanyň ähli sebitlerine ynamdar we çalt eltip bermek.",
+      "zonesTitle": "Eltip bermek sebitleri",
+      "zones": [
+        {
+          "region": "Aşgabat şäheri",
+          "time": "24-48 sagat",
+          "cost": "15 TMT"
+        },
+        {
+          "region": "Welaýat merkezleri",
+          "time": "2-3 iş güni",
+          "cost": "25 TMT"
+        },
+        {
+          "region": "Beýleki etraplar",
+          "time": "3-5 iş güni",
+          "cost": "35 TMT"
+        }
+      ],
+      "freeTitle": "Mugt eltip bermek",
+      "freeDesc": "2 625 TMT-den ýokary ähli sargytlar üçin eltip bermek mugt.",
+      "processTitle": "Eltip bermek tertibi",
+      "steps": [
+        {
+          "title": "Sargyt",
+          "desc": "Sargydyňyzy onlaýn tassyklaň."
+        },
+        {
+          "title": "Taýýarlamak",
+          "desc": "Harytlary ünsli gaplaýarys."
+        },
+        {
+          "title": "Eltip bermek",
+          "desc": "Görkezilen salga eltip berýäris."
+        }
+      ],
+      "packagingTitle": "Gaplama barada",
+      "packagingText": "Ähli sargytlar gaýtadan işlenýän kagyzda we plastiksiz materiallarda gelýär. Döwülmegi mümkin harytlar goşmaça gorag bilen ünsli gaplanýar.",
+      "faqTitle": "Eltip bermek barada soraglar",
+      "faqs": [
+        {
+          "q": "Sargydymy yzarlap bilerinmi?",
+          "a": "Hawa, sargyt ugradylanda yzarlaýyş belgisi iberilýär."
+        },
+        {
+          "q": "Eltip bermek wagtyny saýlap bilerinmi?",
+          "a": "Aşgabatda amatly wagt aralygyny saýlamaga mümkinçilik bar."
+        },
+        {
+          "q": "Halkara eltip bermek barmy?",
+          "a": "Häzirlikçe diňe Türkmenistanyň içinde eltip berýäris."
+        }
+      ]
+    },
+    "returns": {
+      "eyebrow": "Yzyna gaýtarmak",
+      "title": "Yzyna gaýtarmak we çalyşmak",
+      "subtitle": "Kanagatlanmadyk bolsaňyz, harydy aňsatlyk bilen yzyna gaýtaryp bilersiňiz.",
+      "introText": "Harydy alanyňyzdan soň 14 günüň dowamynda, ulanylmadyk we asyl gaplamasynda bolsa, yzyna gaýtaryp bilersiňiz.",
+      "steps": [
+        {
+          "title": "Habarlaşyň",
+          "desc": "Biz bilen habarlaşyp, sargyt belgiňizi aýdyň."
+        },
+        {
+          "title": "Gaplaň",
+          "desc": "Harydy asyl gaplamasyna salyň."
+        },
+        {
+          "title": "Iberiň",
+          "desc": "Kurýerimiz harydy alyp gider."
+        },
+        {
+          "title": "Pul gaýtaryş",
+          "desc": "Tassyklanandan soň 3-5 günde pul gaýtarylýar."
+        }
+      ],
+      "policyTitle": "Düzgünler",
+      "policy": [
+        "Haryt ulanylmadyk we zaýalanmadyk bolmaly.",
+        "Asyl gaplama we bellikler saklanmaly.",
+        "Şahsy ideg harytlary yzyna alynmaýar.",
+        "Çek ýa-da sargyt belgisi görkezilmeli."
+      ],
+      "methodsTitle": "Pul gaýtaryş usullary",
+      "methods": [
+        {
+          "title": "Asyl töleg usulyna",
+          "desc": "Pul töleg eden usulyňyza gaýtarylýar."
+        },
+        {
+          "title": "Dükan krediti",
+          "desc": "Indiki söwdaňyz üçin balans hökmünde."
+        },
+        {
+          "title": "Çalyşmak",
+          "desc": "Harydy başga ölçeg ýa-da görnüş bilen çalşyň."
+        }
+      ],
+      "faqTitle": "Yzyna gaýtarmak barada soraglar",
+      "faqs": [
+        {
+          "q": "Yzyna gaýtarmak näçe wagt alýar?",
+          "a": "Haryt barlanandan soň 3-5 iş gününde pul gaýtarylýar."
+        },
+        {
+          "q": "Yzyna gaýtarmak tölegli mi?",
+          "a": "Önüm kemçilikli bolsa, gaýtaryş mugt. Beýleki halatlarda kiçi töleg bolup biler."
+        },
+        {
+          "q": "Çalyşmak mümkinmi?",
+          "a": "Hawa, eger isleýän görnüşiňiz ammarymyzda bar bolsa."
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Habarlaşmak",
+      "title": "Biz bilen habarlaşyň",
+      "subtitle": "Sowalyňyz barmy? Bize ýazyň — mümkin boldugyça çalt jogap bereris.",
+      "formName": "Adyňyz",
+      "formEmail": "E-poçtaňyz",
+      "formMessage": "Habaryňyz",
+      "formSubmit": "Habary ibermek",
+      "successMsg": "Habaryňyz iberildi! Tiz wagtda jogap bereris.",
+      "infoTitle": "Aragatnaşyk maglumatlary",
+      "addressLabel": "Salgy",
+      "addressValue": "Aşgabat, Türkmenistan",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-poçta",
+      "hoursLabel": "Iş wagty",
+      "hoursValue": "Duşenbe–Anna, 9:00–18:00",
+      "channelsTitle": "Aragatnaşyk kanallary",
+      "channels": [
+        {
+          "title": "Umumy soraglar",
+          "desc": "Önümler we sargytlar barada.",
+          "value": "hello@hearthandhome.com"
+        },
+        {
+          "title": "Müşderi goldawy",
+          "desc": "Sargyt we yzyna gaýtarmak boýunça.",
+          "value": "+993 (12) 12-34-56"
+        },
+        {
+          "title": "Hyzmatdaşlyk",
+          "desc": "Iş we hyzmatdaşlyk teklipleri.",
+          "value": "partners@hearthandhome.com"
+        }
+      ],
+      "responseNote": "Adatça 24 sagadyň dowamynda jogap berýäris."
+    },
+    "legal": {
+      "privacy": {
+        "title": "Gizlinlik syýasaty",
+        "subtitle": "Şahsy maglumatlaryňyzy nähili goraýandygymyz barada.",
+        "lastUpdated": "Soňky täzelenme: 1 Iýun, 2026",
+        "sections": [
+          {
+            "title": "Maglumat ýygnamak",
+            "body": "Sargyt eden wagtyňyz adyňyz, salgyňyz we aragatnaşyk maglumatlaryňyz ýaly zerur maglumatlary ýygnaýarys."
+          },
+          {
+            "title": "Maglumatlary ulanmak",
+            "body": "Maglumatlaryňyz diňe sargytlary ýerine ýetirmek we hyzmaty gowulandyrmak üçin ulanylýar."
+          },
+          {
+            "title": "Maglumat goragy",
+            "body": "Şahsy maglumatlaryňyz howpsuz saklanýar we üçünji taraplara satylmaýar."
+          },
+          {
+            "title": "Süýjüjikler (cookies)",
+            "body": "Saýtyň işini gowulandyrmak üçin süýjüjikleri ulanýarys. Olary brauzeriňizden öçürip bilersiňiz."
+          },
+          {
+            "title": "Töleg howpsuzlygy",
+            "body": "Töleg maglumatlaryňyz şifrlenen görnüşde işlenýär we biz tarapyndan saklanmaýar."
+          },
+          {
+            "title": "Üçünji tarap hyzmatlary",
+            "body": "Eltip bermek we töleg üçin ynamdar hyzmatdaşlar bilen işleýäris; olar diňe zerur maglumaty alýar."
+          },
+          {
+            "title": "Siziň hukuklaryňyz",
+            "body": "Maglumatlaryňyzy görmek, düzetmek ýa-da pozmak isleseňiz, biz bilen habarlaşyp bilersiňiz."
+          },
+          {
+            "title": "Habarlaşmak",
+            "body": "Gizlinlik baradaky soraglaryňyz üçin hello@hearthandhome.com salgysyna ýazyň."
+          }
+        ]
+      },
+      "terms": {
+        "title": "Ulanyş şertleri",
+        "subtitle": "Saýtymyzy ulanmagyň şertleri.",
+        "lastUpdated": "Soňky täzelenme: 1 Iýun, 2026",
+        "sections": [
+          {
+            "title": "Umumy düzgünler",
+            "body": "Bu saýty ulanmak bilen aşakdaky şertleri kabul edýärsiňiz."
+          },
+          {
+            "title": "Hasap",
+            "body": "Hasabyňyzyň howpsuzlygy we ähli amallar üçin siz jogapkärsiňiz."
+          },
+          {
+            "title": "Sargytlar",
+            "body": "Sargyt tassyklanandan soň güýje girýär. Bahalar duýduryşsyz üýtgäp biler."
+          },
+          {
+            "title": "Tölegler",
+            "body": "Ähli tölegler görkezilen pulda (TMT) amala aşyrylýar."
+          },
+          {
+            "title": "Eltip bermek",
+            "body": "Eltip bermek möhletleri çaklamadyr we daşarky ýagdaýlara görä üýtgäp biler."
+          },
+          {
+            "title": "Intellektual eýeçilik",
+            "body": "Saýtdaky ähli mazmun we suratlar Hearth & Home-a degişlidir."
+          },
+          {
+            "title": "Jogapkärçilik",
+            "body": "Harytlary maksadyna laýyk ulanmak müşderiniň jogapkärçiligindedir."
+          },
+          {
+            "title": "Üýtgetmeler",
+            "body": "Bu şertleri islendik wagt täzeläp bileris. Üýtgeşmeler saýtda yglan edilýär."
+          }
+        ]
+      }
     }
   }
 }
